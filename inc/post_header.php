@@ -33,7 +33,7 @@
 		<meta name='publisher' content='업카운트 - 롤 계정거래'>
 		<meta name='author' content='".$userOnlineName."'>
 		<meta name='description' content='".$row['intro']."'/>
-		<meta name='keywords' content='롤 계정거래, 롤 아이디, 롤 대리, 롤 계정 구매, 롤 계정판매, 롤 닉네임, 리그오브레전드 계정, 롤 다이아, 롤 챌린저, 롤 마스터'>
+		<meta name='keywords' content='업카운트, 롤 계정, 롤 아이디, 롤 닉네임, 아이디판매 사이트, 계정 판매, 계정 거래, 리그오브레전드 계정, 롤 대리, 리그오브레전드 판매, 롤 계정 판매 구매, 롤 다이아, 롤 마스터, 롤 챌린저'>
 		<meta name='theme-color' content='#000000'>
 		<link rel='shortcut icon' href='../resources/img/fav_icon.png' />
 		

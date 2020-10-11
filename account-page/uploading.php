@@ -46,7 +46,7 @@ if(isset($_POST['submit'])) {
     $title = $_POST["title"];
     $tel = $_POST["tel"];
     $price = $_POST["price"];
-    $intro = $_POST["intro"];
+    $intro = nl2br($_POST["intro"]);
     $user_id = $_SESSION['user_id'];
 
     $sql_post = "INSERT INTO posts (summonerName, isPrivate, soloRank, flexRank, fWins, fLoses, sWins, sLoses, level, owner, numOfChams, numOfSkins,

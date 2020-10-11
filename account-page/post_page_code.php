@@ -2,15 +2,20 @@
     include_once '../inc/post_header.php';
     // Make sure pay attention to the current file name!!
 
-    $result_post = mysqli_query($conn, $sql_post);
+    $sql_post_detail = "SELECT * FROM posts WHERE post_id = $post_id;";
+
+    $result_post_detail = mysqli_query($conn, $sql_post_detail);
     
-    while($row = mysqli_fetch_assoc($result_post)) {
+    
+    while($rows = mysqli_fetch_assoc($result_post_detail)) {
         $owner = "명의: 1대 본주";
+        $summonerName = "비공개";
+        $fWinRate = round(($rows['fWins'] / ($rows['fWins'] + $rows['fLoses'])) * 100, 2);
 
-        if($row['owner'] == "second") $owner = "명의: 2대 본주";
-        if($row['owner'] == "third") $owner = "명의: 3대 본주";
+        if($rows['owner'] == "second") $owner = "명의: 2대 본주";
+        if($rows['owner'] == "third") $owner = "명의: 3대 본주";
 
-        switch($row['serverLocation']) {
+        switch($rows['serverLocation']) {
             case "default":
                 $serverLocation = "한국";
                 break;
@@ -54,8 +59,164 @@
                 $serverLocation = "브라질";
                 break;
             default:
-            $serverLocation = "알수없음";
+                $serverLocation = "알수없음";
         }
+        
+        switch($rows['soloRank']) {
+            case "unranked":
+                $soloRank = "Unranked";
+                break;
+            case "i4":
+                $soloRank = "Iron IV";
+                break;
+            case "i3":
+                $soloRank = "Iron III";
+                break;
+            case "i2":
+                $soloRank = "Iron II";
+                break;
+            case "i1":
+                $soloRank = "Iron I";
+                break;
+            case "s4":
+                $soloRank = "Silver IV";
+                break;
+            case "s3":
+                $soloRank = "Silver III";
+                break;
+            case "s2":
+                $soloRank = "Silver II";
+                break;
+            case "s1":
+                $soloRank = "Silver I";
+                break;
+            case "g4":
+                $soloRank = "Gold IV";
+                break;
+            case "g3":
+                $soloRank = "Gold III";
+                break;
+            case "g2":
+                $soloRank = "Gold II";
+                break;
+            case "g1":
+                $soloRank = "Gold I";
+                break;
+            case "p4":
+                $soloRank = "Platinum IV";
+                break;
+            case "p3":
+                $soloRank = "Platinum III";
+                break;
+            case "p2":
+                $soloRank = "Platinum II";
+                break;
+            case "p1":
+                $soloRank = "Platinum I";
+                break;
+            case "d4":
+                $soloRank = "Diamond IV";
+                break;
+            case "d3":
+                $soloRank = "Diamond III";
+                break;
+            case "d2":
+                $soloRank = "Diamond II";
+                break;
+            case "d1":
+                $soloRank = "Diamond I";
+                break;
+            case "m1":
+                $soloRank = "Master I";
+                break;
+            case "gm1":
+                $soloRank = "GrandMaster I";
+                break;
+            case "c1":
+                $soloRank = "Challenger I";
+                break;
+            default:
+            $soloRank = "Unranked";
+        }
+
+        switch($rows['flexRank']) {
+            case "unranked":
+                $flexRank = "Unranked";
+                break;
+            case "i4":
+                $flexRank = "Iron IV";
+                break;
+            case "i3":
+                $flexRank = "Iron III";
+                break;
+            case "i2":
+                $flexRank = "Iron II";
+                break;
+            case "i1":
+                $flexRank = "Iron I";
+                break;
+            case "s4":
+                $flexRank = "Silver IV";
+                break;
+            case "s3":
+                $flexRank = "Silver III";
+                break;
+            case "s2":
+                $flexRank = "Silver II";
+                break;
+            case "s1":
+                $flexRank = "Silver I";
+                break;
+            case "g4":
+                $flexRank = "Gold IV";
+                break;
+            case "g3":
+                $flexRank = "Gold III";
+                break;
+            case "g2":
+                $flexRank = "Gold II";
+                break;
+            case "g1":
+                $flexRank = "Gold I";
+                break;
+            case "p4":
+                $flexRank = "Platinum IV";
+                break;
+            case "p3":
+                $flexRank = "Platinum III";
+                break;
+            case "p2":
+                $flexRank = "Platinum II";
+                break;
+            case "p1":
+                $flexRank = "Platinum I";
+                break;
+            case "d4":
+                $flexRank = "Diamond IV";
+                break;
+            case "d3":
+                $flexRank = "Diamond III";
+                break;
+            case "d2":
+                $flexRank = "Diamond II";
+                break;
+            case "d1":
+                $flexRank = "Diamond I";
+                break;
+            case "m1":
+                $flexRank = "Master I";
+                break;
+            case "gm1":
+                $flexRank = "GrandMaster I";
+                break;
+            case "c1":
+                $flexRank = "Challenger I";
+                break;
+            default:
+            $flexRank = "Unranked";
+        }
+
+        if($rows['isPrivate'] == 1) $summonerName = $rows['summonerName'];
     
         echo "<div class='flex-container'>
         <div style='position: static; z-index: inherit;'>
@@ -68,13 +229,13 @@
                             </div>
                             <div class='teacherCard'>
                                 <div class='teacherCard-left'>
-                                    <div class='avatar avatar-big avatar-shadow avatar-placeholder' ><img src='../40.png' alt='Avatar'></div>
+                                    <div class='avatar avatar-big avatar-shadow avatar-placeholder' ><img src='../resources/img/tier-img/g4.png' alt='Avatar'></div>
 
                                 </div>
                                 <div class='teacherCard-body'>
                                     <div class='teacherCard-part1'>
                                         <div class='teacherCard-middle'>
-                                            <div class='teacherCard-name'>".$row['title']."</div>
+                                            <div class='teacherCard-name'>".$rows['title']."</div>
                                             <div class='teacherCard-personalInfo'>
                                                 <div><span>".$owner."</span></div>
                                                 <div><span></span>
@@ -88,7 +249,7 @@
                                             <div class='teacherCard-right-body'>
                                                 <div class='teacherCard-stars'>
                                                     <div class='stars-box'>
-                                                        <span class='number'>레벨: ".$row['level']."</span>
+                                                        <span class='number'>레벨: ".$rows['level']."</span>
                                                     </div>
                                                 </div>
                                                 <div><span>서버: ".$serverLocation."</span></div>
@@ -99,11 +260,11 @@
                                         <div>
                                             <div class='teacherCard-teaches'><span class='teacherCard-teaches-title'><span>컬렉션</span></span>
                                         <div class='teacherCard-teaches-languages'>
-                                            <div><span class='language'><b>챔피언: 55개</b></span>
+                                            <div><span class='language'><b>챔피언: ".$rows['numOfChams']."개</b></span>
                                         </div>
-                                        <div><span class='language'><b>스킨: 22개</b></span>
+                                        <div><span class='language'><b>스킨: ".$rows['numOfSkins']."개</b></span>
                                     </div>
-                                    <div><span class='language'><b>파랑정수: 52,000</b></span>
+                                    <div><span class='language'><b>파랑정수: ".$rows['blueEssence']."</b></span>
                                 </div>
                             </div>
                         </div>
@@ -113,22 +274,13 @@
         </div>
         <div class='aboutMe' style='padding: 0px;'>
             <h2 class='cardTitle' style='margin: 0'><span>소개</span><span class='aboutMeTime'><span>업카운트 | 리그오브레전드 계정거래 사이트</span></span></h2>
-                <div class='TextOverflow'>[더킹카지노]
-                    여러 곳에서 검증된 우리계열 소속 카지노(구 33카지노)
-                    입금보너스: 평일3% 주말5%
-                    무한 체험머니로 각 게임사 영상 체험가능!
-
-                    &lt;출금규정&gt;
-                    최소 출금: 5만원
-                    &lt;배터규정&gt;
-                    21이상 가입가능
-            </div>
+                <div class='TextOverflow'>".$rows['intro']."</div>
         </div>
     </div>
 <div id='teacher_profile_nav_statistics' class='StatisticsCard StatisticsCard-desktop'>
     <div class='teacherCard-box' id='StatisticsCard'>
         <div class='teacherCard-bar'>
-            <h2 class='cardTitle'><span>소환사명: 노말미드</span><span class='aboutMeTime' style='font-size: 12px;'><span>업카운트 | 소환사 정보</span></span></h2>
+            <h2 class='cardTitle'><span>소환사명: ".$summonerName."</span><span class='aboutMeTime' style='font-size: 12px;'><span>업카운트 | 소환사 정보</span></span></h2>
             <div class='statistics'>
             <div class='box box-padding-10 summoner-rankings'>
                 <h3 class='box-title' style='color: black;'>솔로랭크</h3>
@@ -138,11 +290,11 @@
                             <div class='medium-24 small-24 columns'>
                             <div class='img-align-block'>
                                 <div>
-                                    <img src='//lolg-cdn.porofessor.gg/img/league-icons-v2/160/4-4.png' alt='Gold IV' title='Gold IV' height='137' width='160' class='' style='width:100%;max-width:160px;'>                            
+                                    <img src='../resources/img/tier-img/".$rows['soloRank'].".png' alt='".$soloRank."' height='137' width='160' class='' style='width:100%;max-width:160px;'>                            
                                 </div>
                                 <div class='txt mainRankingDescriptionText'>
                                     <div class='leagueTier'>
-                                        Gold IV                                                                    
+                                        ".$soloRank."                                                                    
                                     </div>
                                     <div class='queueLine'>
                                         <span class='queue'>솔로랭크</span>
@@ -152,9 +304,9 @@
                                     <div class='rank'>
                                     </div>
                                     <div class='winslosses'>
-                                        <span class='wins'>승리: <span class='winsNumber'>85</span></span>
+                                        <span class='wins'>승리: <span class='winsNumber'>".$rows['sWins']."</span></span>
                                         <span class='winLossesSeparator'></span>
-                                        <span class='losses'>패배: <span class='lossesNumber'>66</span></span>
+                                        <span class='losses'>패배: <span class='lossesNumber'>".$rows['sLoses']."</span></span>
                                     </div>
                                 </div>
                             </div>
@@ -169,17 +321,17 @@
                     <div class='other-league-content'>
                         <div class='img-align-block'>
                             <div>
-                            <img src='//lolg-cdn.porofessor.gg/img/fond_sprite.png' alt='Gold IV' title='Gold IV' height='48' width='48' class='leagueicons-48-4-4 '>                    
+                                <img src='../resources/img/tier-img/".$rows['flexRank'].".png' alt='".$flexRank."' height='48' width='48' class='leagueicons-48-4-4 '>                    
                             </div>
                             <div class='txt'>
                             <div class='leagueTier no-margin-bottom'>
-                                Gold IV                        
+                                ".$flexRank."                  
                             </div>
                             <div>
                             <div class='league-points'>자유랭크</span></div>
                             </div>
                             <div class='queue'>
-                                85승 66패/56%
+                                ".$rows['fWins']."승 ".$rows['fLoses']."패/".$fWinRate."%
                             </div>
                             </div>
                         </div>

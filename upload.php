@@ -244,9 +244,9 @@
                                     <option value="d2">다이아몬드 2</option>
                                     <option value="d1">다이아몬드 1</option>
 
-                                    <option value="mm">MASTER 1</option>
-                                    <option value="gm">GRANDMASTER 1</option>
-                                    <option value="cc">CHALLENGER 1</option>
+                                    <option value="m1">MASTER 1</option>
+                                    <option value="gm1">GRANDMASTER 1</option>
+                                    <option value="c1">CHALLENGER 1</option>
                                 </select>
                                 <select class="menu-title select-style" name="season8" id="">
                                     <option value="default">시즌 8</option>
