@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="16px" viewBox="0 0 30 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>ph</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="30" height="16" rx="8"></rect>
+        <rect id="path-3" x="0" y="0" width="30" height="16" rx="8"></rect>
+        <filter x="-3.3%" y="-6.2%" width="106.7%" height="112.5%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="1" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ph">
+            <g id="Shape-+-Shape-+-Shape-+-Rectangle-Mask">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#CE1126" xlink:href="#path-1"></use>
+                <polygon id="Shape" fill="#0038A8" fill-rule="nonzero" mask="url(#mask-2)" points="0 0 30 0 30 8 0 8"></polygon>
+                <polygon id="Shape" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-2)" points="0 0 5 0 16 8 5 16 0 16"></polygon>
+            </g>
+            <g id="Rectangle-5-Copy-4" fill="black" fill-opacity="1">
+                <use filter="url(#filter-4)" xlink:href="#path-3"></use>
+            </g>
+            <g id="Group" transform="translate(3.000000, 2.000000)" fill="#FCD116" fill-rule="nonzero">
+                <g id="f" transform="translate(8.792400, 5.000000)">
+                    <polygon id="e" points="2 1 1.3236 1.2352 1.309 1.9512 0.8764 1.3804 0.191 1.5878 0.6 1"></polygon>
+                    <g id="e-link" transform="translate(1.000000, 0.500000) scale(-1, 1) rotate(-180.000000) translate(-1.000000, -0.500000) ">
+                        <polygon id="e" points="2 0 1.3236 0.2352 1.309 0.9512 0.8764 0.3804 0.191 0.5878 0.6 0"></polygon>
+                    </g>
+                </g>
+                <g id="f-link" transform="translate(1.450000, 10.495191) rotate(120.000000) translate(-1.450000, -10.495191) translate(0.350000, 9.495191)">
+                    <g id="f" transform="translate(0.192400, 0.000000)">
+                        <polygon id="e" points="2 1 1.3236 1.2352 1.309 1.9512 0.8764 1.3804 0.191 1.5878 0.6 1"></polygon>
+                        <g id="e-link" transform="translate(1.000000, 0.500000) scale(-1, 1) rotate(-180.000000) translate(-1.000000, -0.500000) ">
+                            <polygon id="e" points="2 0 1.3236 0.2352 1.309 0.9512 0.8764 0.3804 0.191 0.5878 0.6 0"></polygon>
+                        </g>
+                    </g>
+                </g>
+                <g id="f-link" transform="translate(1.450000, 1.504809) rotate(-120.000000) translate(-1.450000, -1.504809) translate(0.350000, 0.504809)">
+                    <g id="f" transform="translate(0.192400, 0.000000)">
+                        <polygon id="e" points="2 1 1.3236 1.2352 1.309 1.9512 0.8764 1.3804 0.191 1.5878 0.6 1"></polygon>
+                        <g id="e-link" transform="translate(1.000000, 0.500000) scale(-1, 1) rotate(-180.000000) translate(-1.000000, -0.500000) ">
+                            <polygon id="e" points="2 0 1.3236 0.2352 1.309 0.9512 0.8764 0.3804 0.191 0.5878 0.6 0"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="Group" transform="translate(3.000000, 4.000000)" fill="#FCD116" fill-rule="nonzero">
+                <circle id="Oval" cx="4.00445672" cy="3.99553712" r="1.28428013"></circle>
+                <g id="d" transform="translate(0.008919, -0.000001)">
+                    <g id="c">
+                        <g id="b" transform="translate(1.284280, 1.141582)">
+                            <polygon id="Shape" points="0 2.85395585 0.168098 3.02205385 2.71125806 2.85395585 0.168098 2.68585785"></polygon>
+                            <polygon id="a" points="0.284470847 3.17240304 0.421732567 3.30966476 2.71125806 2.85395585"></polygon>
+                            <g id="a-link" transform="translate(1.641025, 1.426978) scale(-1, 1) rotate(-180.000000) translate(-1.641025, -1.426978) translate(0.142698, 0.000000)">
+                                <polygon id="a" points="0.141773054 0.318447191 0.279034774 0.455708911 2.56856027 0"></polygon>
+                            </g>
+                        </g>
+                        <g id="b-link" transform="translate(3.188318, 3.188318) rotate(45.000000) translate(-3.188318, -3.188318) translate(1.618642, 0.334362)">
+                            <g id="b">
+                                <polygon id="Shape" points="0 2.85395585 0.168098 3.02205385 2.71125806 2.85395585 0.168098 2.68585785"></polygon>
+                                <polygon id="a" points="0.284470847 3.17240304 0.421732567 3.30966476 2.71125806 2.85395585"></polygon>
+                                <g id="a-link" transform="translate(1.641025, 1.426978) scale(-1, 1) rotate(-180.000000) translate(-1.641025, -1.426978) translate(0.142698, 0.000000)">
+                                    <polygon id="a" points="0.141773054 0.318447191 0.279034774 0.455708911 2.56856027 0"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="c-link" transform="translate(4.566329, 3.210700) rotate(90.000000) translate(-4.566329, -3.210700) translate(1.355629, -0.214047)">
+                        <g id="c">
+                            <g id="b" transform="translate(1.284280, 1.141582)">
+                                <polygon id="Shape" points="0 2.85395585 0.168098 3.02205385 2.71125806 2.85395585 0.168098 2.68585785"></polygon>
+                                <polygon id="a" points="0.284470847 3.17240304 0.421732567 3.30966476 2.71125806 2.85395585"></polygon>
+                                <g id="a-link" transform="translate(1.641025, 1.426978) scale(-1, 1) rotate(-180.000000) translate(-1.641025, -1.426978) translate(0.142698, 0.000000)">
+                                    <polygon id="a" points="0.141773054 0.318447191 0.279034774 0.455708911 2.56856027 0"></polygon>
+                                </g>
+                            </g>
+                            <g id="b-link" transform="translate(3.188318, 3.188318) rotate(45.000000) translate(-3.188318, -3.188318) translate(1.618642, 0.334362)">
+                                <g id="b">
+                                    <polygon id="Shape" points="0 2.85395585 0.168098 3.02205385 2.71125806 2.85395585 0.168098 2.68585785"></polygon>
+                                    <polygon id="a" points="0.284470847 3.17240304 0.421732567 3.30966476 2.71125806 2.85395585"></polygon>
+                                    <g id="a-link" transform="translate(1.641025, 1.426978) scale(-1, 1) rotate(-180.000000) translate(-1.641025, -1.426978) translate(0.142698, 0.000000)">
+                                        <polygon id="a" points="0.141773054 0.318447191 0.279034774 0.455708911 2.56856027 0"></polygon>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="d-link" transform="translate(3.999995, 4.566326) rotate(180.000000) translate(-3.999995, -4.566326) translate(-0.000005, 1.141577)">
+                    <g id="d">
+                        <g id="c">
+                            <g id="b" transform="translate(1.284280, 1.141582)">
+                                <polygon id="Shape" points="0 2.85395585 0.168098 3.02205385 2.71125806 2.85395585 0.168098 2.68585785"></polygon>
+                                <polygon id="a" points="0.284470847 3.17240304 0.421732567 3.30966476 2.71125806 2.85395585"></polygon>
+                                <g id="a-link" transform="translate(1.641025, 1.426978) scale(-1, 1) rotate(-180.000000) translate(-1.641025, -1.426978) translate(0.142698, 0.000000)">
+                                    <polygon id="a" points="0.141773054 0.318447191 0.279034774 0.455708911 2.56856027 0"></polygon>
+                                </g>
+                            </g>
+                            <g id="b-link" transform="translate(3.188318, 3.188318) rotate(45.000000) translate(-3.188318, -3.188318) translate(1.618642, 0.334362)">
+                                <g id="b">
+                                    <polygon id="Shape" points="0 2.85395585 0.168098 3.02205385 2.71125806 2.85395585 0.168098 2.68585785"></polygon>
+                                    <polygon id="a" points="0.284470847 3.17240304 0.421732567 3.30966476 2.71125806 2.85395585"></polygon>
+                                    <g id="a-link" transform="translate(1.641025, 1.426978) scale(-1, 1) rotate(-180.000000) translate(-1.641025, -1.426978) translate(0.142698, 0.000000)">
+                                        <polygon id="a" points="0.141773054 0.318447191 0.279034774 0.455708911 2.56856027 0"></polygon>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="c-link" transform="translate(4.566329, 3.210700) rotate(90.000000) translate(-4.566329, -3.210700) translate(1.355629, -0.214047)">
+                            <g id="c">
+                                <g id="b" transform="translate(1.284280, 1.141582)">
+                                    <polygon id="Shape" points="0 2.85395585 0.168098 3.02205385 2.71125806 2.85395585 0.168098 2.68585785"></polygon>
+                                    <polygon id="a" points="0.284470847 3.17240304 0.421732567 3.30966476 2.71125806 2.85395585"></polygon>
+                                    <g id="a-link" transform="translate(1.641025, 1.426978) scale(-1, 1) rotate(-180.000000) translate(-1.641025, -1.426978) translate(0.142698, 0.000000)">
+                                        <polygon id="a" points="0.141773054 0.318447191 0.279034774 0.455708911 2.56856027 0"></polygon>
+                                    </g>
+                                </g>
+                                <g id="b-link" transform="translate(3.188318, 3.188318) rotate(45.000000) translate(-3.188318, -3.188318) translate(1.618642, 0.334362)">
+                                    <g id="b">
+                                        <polygon id="Shape" points="0 2.85395585 0.168098 3.02205385 2.71125806 2.85395585 0.168098 2.68585785"></polygon>
+                                        <polygon id="a" points="0.284470847 3.17240304 0.421732567 3.30966476 2.71125806 2.85395585"></polygon>
+                                        <g id="a-link" transform="translate(1.641025, 1.426978) scale(-1, 1) rotate(-180.000000) translate(-1.641025, -1.426978) translate(0.142698, 0.000000)">
+                                            <polygon id="a" points="0.141773054 0.318447191 0.279034774 0.455708911 2.56856027 0"></polygon>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

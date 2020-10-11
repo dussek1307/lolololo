@@ -1,0 +1,764 @@
+.confirm{margin-bottom:30px;margin-top:-10px}.small-schedule{position:relative;min-height:180px}.small-schedule-timezone{margin-top:8px;font-size:12px;color:#777;text-align:center}.flex-center{display:flex;justify-content:center;align-items:center}.LessonsCard-desktop .lessonCard-box,.LessonsCard-mobile .lessonCard-box{margin-bottom:15px;padding:5px;border:1px solid #ddd;border-radius:6px;cursor:pointer;position:relative}.LessonsCard-desktop .lessonCard-box .lessonCard-discount,.LessonsCard-mobile .lessonCard-box .lessonCard-discount{position:absolute;right:30px;top:0;border-bottom-left-radius:4px;border-bottom-right-radius:4px;background-color:#ff7b73;color:#fff;padding:4px 8px;font-size:10px}.LessonsCard-desktop .lessonCard-box:disabled,.LessonsCard-desktop .lessonCard-box[disabled],.LessonsCard-mobile .lessonCard-box:disabled,.LessonsCard-mobile .lessonCard-box[disabled]{cursor:not-allowed}.LessonsCard-desktop .lessonCards-bar,.LessonsCard-mobile .lessonCards-bar{display:flex;flex-direction:column}.LessonsCard-desktop .lessonCard-bar,.LessonsCard-mobile .lessonCard-bar{padding:12px 15px 11px;border-radius:3px;display:flex;flex-direction:row;justify-content:space-between;align-items:center;background-color:#fff}.LessonsCard-desktop .lessonCard-box:hover .lessonCard-bar,.LessonsCard-mobile .lessonCard-box:hover .lessonCard-bar{background-color:hsla(0,0%,80%,.2)}.LessonsCard-desktop .lessonCard-title,.LessonsCard-mobile .lessonCard-title{font-size:14px;color:#333}.LessonsCard-desktop .cardTitle.LessonsCard-title,.LessonsCard-mobile .cardTitle.LessonsCard-title{margin-bottom:30px}.LessonsCard-desktop .lessonCard-content,.LessonsCard-mobile .lessonCard-content{font-size:12px;color:#777}.LessonsCard-desktop .blackbar,.LessonsCard-mobile .blackbar{height:auto;margin:7px 0 10px}.LessonsCard-desktop .lessonCard-price-green,.LessonsCard-desktop .lessonCard-price-red,.LessonsCard-mobile .lessonCard-price-green,.LessonsCard-mobile .lessonCard-price-red{min-width:88px;height:30px;padding:0 15px;border-radius:103px;display:flex;flex-direction:row;justify-content:center;align-items:center;font-size:14px;font-weight:500;color:#4cd1d0;background-color:rgba(76,209,208,.1);white-space:nowrap}.LessonsCard-desktop .lessonCard-price-red,.LessonsCard-mobile .lessonCard-price-red{color:#ff7b73;background-color:rgba(255,123,115,.1)}.LessonsCard-mobile .lessonCard-bar{padding:12px 9px}.LessonsCard-mobile .lessonCard-bar .lessonCard-title{font-weight:700}.LessonsCard-mobile .lessonCard-bar .lessonCard-discount{position:static;border-radius:4px;margin-top:7px;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content}.LessonsCard-mobile .lessonCard-bar .lessonCard-right{position:absolute;right:0;bottom:16px}.LessonsCard-mobile .lessonCard-bar .lessonCard-right .lessonCard-price-green,.LessonsCard-mobile .lessonCard-bar .lessonCard-right .lessonCard-price-red{border-top-right-radius:0;border-bottom-right-radius:0;font-size:12px;height:25px;line-height:25px}.Video{position:relative}.Video{width:100%;top:0;left:0}.Video-body{width:100%;height:100%}.Video video::-internal-media-controls-download-button{display:none}.Video video::-webkit-media-controls-enclosure{overflow:hidden}.Video video::-webkit-media-controls-panel{width:calc(100% + 33px)}.Video-url{display:block;margin-top:20px;word-wrap:break-word;word-break:break-all;white-space:normal}.TextOverflow{overflow:hidden;position:relative;z-index:7;word-break:break-word}.stars-box{height:12px;display:flex;flex-direction:row;align-items:center}.stars-box .number{font-weight:500;color:#fec400}.bottom-right{top:35px;right:-2px}.TeacherInfoCard-desktop .teacherCard,.TeacherInfoCard-mobile .teacherCard{margin-bottom:40px;display:flex;flex:1 1;flex-direction:row;justify-content:flex-start;align-items:flex-start}.TeacherInfoCard-desktop .teacherCard-left,.TeacherInfoCard-mobile .teacherCard-left{padding:30px;display:flex;flex-direction:column;justify-content:flex-start;align-items:center}.TeacherInfoCard-desktop .teacherCard-part1,.TeacherInfoCard-mobile .teacherCard-part1{display:flex;flex-direction:row;justify-content:space-between;align-items:flex-start}.TeacherInfoCard-desktop .teacherCard-part2,.TeacherInfoCard-mobile .teacherCard-part2{display:flex;justify-content:space-between}.TeacherInfoCard-desktop .teacherCard-middle,.TeacherInfoCard-mobile .teacherCard-middle{padding-top:30px;display:flex;flex:1 1;flex-direction:column;justify-content:flex-start;align-items:flex-start}.TeacherInfoCard-desktop .teacherCard-right,.TeacherInfoCard-mobile .teacherCard-right{width:150px;padding-top:20px;padding-right:30px;display:flex;flex-direction:column;justify-content:center;align-items:flex-end}.TeacherInfoCard-desktop .Online:before,.TeacherInfoCard-mobile .Online:before{content:"";display:inline-block;width:8px;height:8px;margin-right:5px;border-radius:4px;background-color:#5ebd5e}.TeacherInfoCard-desktop .Online,.TeacherInfoCard-mobile .Online{margin-top:15px;font-size:11px;color:#777}.TeacherInfoCard-desktop .teacherCard-name,.TeacherInfoCard-mobile .teacherCard-name{margin-bottom:3px;font-size:23px;font-weight:500;color:#333}.TeacherInfoCard-desktop .teacherCard-personalInfo,.TeacherInfoCard-mobile .teacherCard-personalInfo{margin-bottom:15px;font-size:14px;font-weight:300;font-style:normal;font-stretch:normal;line-height:25px;letter-spacing:normal;text-align:left;color:#777}.TeacherInfoCard-desktop .teacherCard-time,.TeacherInfoCard-mobile .teacherCard-time{font-size:10px;color:#777}.TeacherInfoCard-desktop .teacherCard-teaches,.TeacherInfoCard-mobile .teacherCard-teaches{margin-top:20px;display:flex;flex-direction:row;justify-content:flex-start;align-items:flex-start}.TeacherInfoCard-desktop .teacherCard-teaches-title,.TeacherInfoCard-mobile .teacherCard-teaches-title{margin-top:4px;margin-right:15px;white-space:nowrap;font-size:13px;font-weight:300;color:#777;text-transform:uppercase}.TeacherInfoCard-desktop .teacherCard-teaches-languages,.TeacherInfoCard-mobile .teacherCard-teaches-languages{display:flex;flex-direction:row;justify-content:flex-start;align-items:center;flex-wrap:wrap}.TeacherInfoCard-desktop .teacherCard-teaches-languages>div,.TeacherInfoCard-mobile .teacherCard-teaches-languages>div{margin-right:10px}.TeacherInfoCard-desktop .teacherCard-teaches-languages>div .language,.TeacherInfoCard-mobile .teacherCard-teaches-languages>div .language{text-transform:capitalize}.TeacherInfoCard-desktop .teacherCard-right-body,.TeacherInfoCard-mobile .teacherCard-right-body{margin-top:10px;display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-end;line-height:26px;font-size:12px;color:#333}.TeacherInfoCard-desktop .teacherCard-stars,.TeacherInfoCard-mobile .teacherCard-stars{margin-top:6px;margin-bottom:6px}.TeacherInfoCard-desktop .teacherCard-right-icon,.TeacherInfoCard-mobile .teacherCard-right-icon{display:flex;flex-direction:row;justify-content:center;align-items:center;cursor:pointer}.TeacherInfoCard-desktop .teacherCard-right-icon .Favourite img:hover,.TeacherInfoCard-desktop .teacherCard-right-icon .teacherCard-right-icon img:hover,.TeacherInfoCard-mobile .teacherCard-right-icon .Favourite img:hover,.TeacherInfoCard-mobile .teacherCard-right-icon .teacherCard-right-icon img:hover{opacity:.5}.TeacherInfoCard-desktop .teacherCard-right-icon1,.TeacherInfoCard-mobile .teacherCard-right-icon1{cursor:pointer}.TeacherInfoCard-desktop .teacherCard-right-icon2,.TeacherInfoCard-mobile .teacherCard-right-icon2{margin-left:20px;cursor:pointer}.TeacherInfoCard-desktop .flag-icon,.TeacherInfoCard-mobile .flag-icon{margin-left:10px;vertical-align:unset}.TeacherInfoCard-desktop .aboutMe,.TeacherInfoCard-mobile .aboutMe{margin:0 30px 40px;padding-top:40px;border-top:1px solid #ddd;white-space:pre-wrap}.TeacherInfoCard-desktop .aboutMe .cardTitle,.TeacherInfoCard-mobile .aboutMe .cardTitle{margin-bottom:20px}.TeacherInfoCard-desktop .aboutMe .aboutMe-content,.TeacherInfoCard-mobile .aboutMe .aboutMe-content{line-height:21px;word-break:break-word}.TeacherInfoCard-desktop .aboutMe ul,.TeacherInfoCard-mobile .aboutMe ul{line-height:21px}.TeacherInfoCard-desktop .aboutMe .aboutMeTime,.TeacherInfoCard-mobile .aboutMe .aboutMeTime{font-size:14px;font-weight:400;color:#777}.TeacherInfoCard-desktop .teacherCard-body,.TeacherInfoCard-mobile .teacherCard-body{width:100%}.TeacherInfoCard-desktop .teacherCard{margin-bottom:30px}.TeacherInfoCard-desktop .aboutMe{margin-bottom:30px;padding-top:30px}.TeacherInfoCard-mobile .teacherCard{margin-bottom:0}.TeacherInfoCard-mobile .teacherCard-body{margin:20px 20px 0;display:flex;flex-direction:column;flex:1 1}.TeacherInfoCard-mobile .teacherCard-avatar{width:100%;margin-bottom:15px;display:flex;flex-direction:row;justify-content:space-between;align-items:center}.TeacherInfoCard-mobile .redbar-left-title{font-size:1.6rem}.TeacherInfoCard-mobile .aboutMe{margin:30px 20px 0;padding-top:30px;border-bottom:1px solid #ddd}.TeacherInfoCard-mobile .aboutMe-content{line-height:21px;font-size:1.4rem;color:#333;margin-bottom:30px}.TeacherInfoCard-mobile .teacherCard-part1{display:flex;flex-direction:column}.TeacherInfoCard-mobile .teacherCard-right{width:unset;padding-bottom:18px;align-items:flex-start}.TeacherInfoCard-mobile .teacherCard-right-body{margin-top:0;display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;line-height:26px;font-size:12px;color:#333}.TeacherInfoCard-mobile .teacherCard-teaches{margin-top:16px;flex-direction:column}.TeacherInfoCard-mobile .teacherCard-teaches-title{margin-bottom:7px}.TeacherInfoCard-mobile .Online{margin-top:4px}.TeacherInfoCard-mobile .teacherCard-middle{padding-top:0}.TeacherInfoCard-mobile .teacherCard-name{height:27px;margin-bottom:5px;font-size:1.8rem;font-weight:500;color:#333;display:flex;flex-direction:row;justify-content:flex-start;align-items:center}.TeacherInfoCard-mobile .teacherCard-personalInfo{margin-bottom:10px;font-size:1.4rem}.TeacherInfoCard-mobile .teacherCard-stars{margin-top:0}.Teacher .ProfessionalExpCard-desktop.teacherCard-box,.Teacher .ProfessionalExpCard-mobile.teacherCard-box{padding-top:0;padding-bottom:20px}.ProfessionalExpCard-desktop .experiences,.ProfessionalExpCard-mobile .experiences{display:flex;flex:1 1;flex-direction:row;justify-content:flex-start;align-items:flex-start}.ProfessionalExpCard-desktop .experiences-text,.ProfessionalExpCard-mobile .experiences-text{margin:10px 0;width:200px;font-size:14px;line-height:20px;color:#777}.ProfessionalExpCard-desktop .experiences-text-time,.ProfessionalExpCard-mobile .experiences-text-time{font-size:12px}.ProfessionalExpCard-desktop .redbar-left,.ProfessionalExpCard-desktop .redbar-left-title,.ProfessionalExpCard-mobile .redbar-left,.ProfessionalExpCard-mobile .redbar-left-title{height:14px;padding-left:10px;border-left:2px solid #ff4338;display:flex;flex-direction:row;justify-content:flex-start;align-items:center;font-size:16px;font-weight:500;color:#333}.ProfessionalExpCard-desktop .redbar-left,.ProfessionalExpCard-mobile .redbar-left{margin-top:4px;margin-bottom:23px}.ProfessionalExpCard-desktop .redbar-left-title,.ProfessionalExpCard-mobile .redbar-left-title{margin-bottom:30px;font-size:23px}.Teacher .ProfessionalExpCard-desktop.teacherCard-box{padding-top:40px}.Teacher .ProfessionalExpCard-mobile.teacherCard-box{padding-top:30px}.Teacher-mobile .ProfessionalExpCard-mobile .cardTitle{margin-bottom:20px}.StatisticsCard-desktop .statistics,.StatisticsCard-mobile .statistics{display:flex;flex-direction:row;justify-content:space-between;align-items:flex-start}.StatisticsCard-desktop .statistic,.StatisticsCard-mobile .statistic{width:192px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}.StatisticsCard-desktop .statistic-number,.StatisticsCard-mobile .statistic-number{height:42px;margin-bottom:5px;font-size:36px;font-weight:100;color:#333}.StatisticsCard-desktop .statistic-label,.StatisticsCard-mobile .statistic-label{font-size:14px;font-weight:300;color:#333;display:flex;flex-direction:row;justify-content:center;align-items:center}.StatisticsCard-desktop .progress-row,.StatisticsCard-mobile .progress-row{width:135px;margin-top:20px;display:flex;flex-direction:row;justify-content:space-between;align-items:center}.StatisticsCard-desktop .progress-col,.StatisticsCard-mobile .progress-col{height:92px;margin-top:27px;display:flex;flex-direction:column;justify-content:space-between;align-items:center}.StatisticsCard-desktop .review,.StatisticsCard-mobile .review{width:100%;margin-bottom:40px}.StatisticsCard-desktop .review .teacherCard-flag,.StatisticsCard-mobile .review .teacherCard-flag{margin-left:10px}.StatisticsCard-desktop .review .review-content,.StatisticsCard-mobile .review .review-content{line-height:1.5;font-size:14px;color:#333;display:flex}.Teacher .StatisticsCard-desktop .teacherCard-box{padding-bottom:20px}.StatisticsCard-mobile .statistics{display:flex;flex-direction:row;justify-content:space-between;align-items:flex-start;padding-bottom:31px}.StatisticsCard-mobile .statistic{width:30%;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}.StatisticsCard-mobile .statistic-number{margin-top:0;margin-bottom:10px;font-size:20px;font-weight:500;color:#333}.StatisticsCard-mobile .statistic-label{font-size:12px;font-weight:300;line-height:1.33;color:#777}.StatisticsCard-mobile .reviews{padding-top:10px}.StatisticsCard-mobile .review{margin-bottom:30px}.StatisticsCard-mobile #StatisticsCard{padding-bottom:0;margin-bottom:30px}.progressBar-row{border:.5px solid #ddd;border-radius:11px;flex-direction:row}.progressBar-col,.progressBar-row{position:relative;display:flex;justify-content:flex-start;align-items:center}.progressBar-col{border:.5px solid #ddd;border-radius:4px;border-top-left-radius:1px;border-top-right-radius:1px;flex-direction:column-reverse}.progressBar-row-bar{min-width:1px;flex-direction:row;justify-content:flex-start}.progressBar-col-bar,.progressBar-row-bar{overflow:hidden;display:flex;align-items:center;font-size:14px;color:#fff}.progressBar-col-bar{min-height:1px;flex-direction:column;justify-content:flex-end}.progressBar-row-text{width:40px}.progressBar-col-text,.progressBar-row-text{display:flex;flex-direction:row;justify-content:center;align-items:center;font-size:12px;font-weight:300;letter-spacing:0;color:#777}.progressBar-col-text{height:20px}.ProgressBar-row-number-bg{margin-left:5px;font-size:12px;color:#777}.ProgressBar-col-number-bg{margin-bottom:5px;font-size:12px;color:#777}.progressBar-row-number{margin-left:5px}.progressBar-col-number{margin-bottom:5px}.bar-box-row{border-top-right-radius:11px;border-bottom-right-radius:11px;bottom:0}.bar-box-col,.bar-box-row{position:absolute;overflow:hidden}.bar-box-col{border-top-left-radius:1px;border-top-right-radius:1px;display:flex;flex-direction:column;justify-content:flex-end;align-items:center}.teacher-right{display:flex;flex-direction:column}.bookCard{position:relative;top:0;right:0}.teacher-book{width:367px;border-radius:6px;background-color:#fff;box-shadow:0 7px 25px 0 rgba(0,0,0,.1)}.bookCards div.bookCard-hr:nth-last-child(2){border-bottom:none}.teacher-right-booknow{width:327px;height:42px;margin:0 20px 20px;font-size:18px}.teacher-right-booknow:first-child{margin-top:20px}.teacher-schedule{margin-top:20px;padding:20px 20px 10px;border-radius:6px;background-color:#fff;box-shadow:0 7px 25px 0 rgba(0,0,0,.1);cursor:pointer}.bookCard-box{padding:5px;display:flex}.bookCard-left{display:flex;flex-direction:row;justify-content:flex-start;align-items:center}.bookCard-right{display:flex;flex-direction:column;justify-content:center;align-items:flex-end}.bookCard-title{font-size:16px;color:#333}.bookCard-priceNew{font-size:18px;font-weight:500;color:#333}.bookCard-hr{width:327px;margin:0 auto;border-bottom:1px solid #ddd}.bookCard-price-from{position:absolute;top:8px;right:15px;font-size:11px;color:#333}.bookCard{width:357px;min-height:71px;padding:0 15px;border-radius:2px;display:flex;flex-direction:row;justify-content:space-between;align-items:center;cursor:pointer}.bookCard:hover{background-color:hsla(0,0%,80%,.2)}.bookCard:disabled,.bookCard[disabled]{cursor:not-allowed}.bookCard-time{font:16px;color:#333}.teacher-contact{padding:20px;border-top:1px solid #ddd}.teacher-contact p{font-size:12px;text-align:center}.teacher-contact button{width:100%}.teacher-contact .teacher-contact-btn-info{display:flex;height:24px;align-items:center;justify-content:center}.teacher-contact .teacher-contact-btn-info svg{margin-right:8px}.book-time-selected{display:inline-block;margin-right:10px;width:12px;height:12px;border-radius:50%}.book-time-selected{background-color:#cff1c2;background-image:-webkit-repeating-linear-gradient(45deg,transparent,transparent 1px,#fff 0,#fff 3px);background-image:repeating-linear-gradient(45deg,transparent,transparent 1px,#fff 0,#fff 3px)}.reviews-box{min-height:261px}.review-header{display:flex;justify-content:space-between}.review-header .reviews-toggles{position:relative}.reviews-header{font-size:24px;font-weight:500;line-height:1.5;color:#333}.reviews-lists{position:relative}.reviews-lists .review-list-mobile{width:100%}.review-list-box{background-color:#fafafc;padding:24px 16px 8px;margin-bottom:16px;width:330px;margin-right:10px;margin-top:20px;background-color:#fff}.review-list-box,.review-list-box:hover{-webkit-transition:all .2s ease;transition:all .2s ease}.review-list-box:hover{background-color:#f5f5f8}.review-list-box .review-flex{display:flex;align-items:center}.review-list-box .review-comment{word-break:break-word;font-size:16px;line-height:1.5;overflow:hidden}.review-list-box .review-user .review-user-name{font-size:14px;color:#333}.review-list-box .review-user .review-avatar{margin-right:8px}.review-list-box .review-user .review-time{font-size:11px;color:#777;position:absolute;right:10px}.review-modal-flex{display:flex;position:absolute;top:23px;align-items:center}.review-modal-flex .review-modal-header{margin-left:10px}.review-modal-wrapper{max-width:559px}.review-modal-wrapper .modal-head{line-height:normal;margin:0 24px;min-height:78px}.review-modal-wrapper .modal-body{min-height:100px;padding-top:0;padding-bottom:0}.review-modal-wrapper .modal-body:after{display:none}.review-modal-wrapper .modal-footer{margin-right:24px;margin-left:24px}.review-modal-desktop-wrapper .modal-head{height:75px}.review-content-list{border-bottom:1px solid #ddd;padding-top:24px;padding-bottom:31px;position:relative}.review-content-list:last-child{border:1px solid #fff}.review-content-list .review-comment{word-break:break-word;min-height:40px;font-size:14px;font-style:italic;line-height:1.5}.Teacher-desktop .small-schedule-timezone,.Teacher-mobile .small-schedule-timezone{margin-top:0}.Teacher-desktop .blackbar,.Teacher-mobile .blackbar{width:10px;height:4px;border-bottom:1px solid #333}.Teacher-desktop .redbar,.Teacher-mobile .redbar{width:15px;border-bottom:2px solid #ff4338;border-radius:1px}.Teacher-desktop .redbar-left,.Teacher-desktop .redbar-left-title,.Teacher-mobile .redbar-left,.Teacher-mobile .redbar-left-title{height:14px;padding-left:10px;border-left:2px solid #ff4338;display:flex;flex-direction:row;justify-content:flex-start;align-items:center;font-size:16px;font-weight:500;color:#333}.Teacher-desktop .redbar-left-title,.Teacher-mobile .redbar-left-title{margin-bottom:30px;font-size:23px}.Teacher-desktop .flex-row,.Teacher-mobile .flex-row{display:flex;flex-direction:row}.Teacher-desktop .flex-row-center,.Teacher-mobile .flex-row-center{display:flex;flex-direction:row;justify-content:center;align-items:center}.Teacher-desktop .teacherCard-box1,.Teacher-mobile .teacherCard-box1{width:752px;margin-bottom:21px;border-radius:6px;background-color:#fff;box-shadow:0 7px 25px 0 rgba(0,0,0,.1);overflow:hidden}.Teacher-desktop .teacherCard-box,.Teacher-mobile .teacherCard-box{width:752px;margin-bottom:20px;padding:40px 30px;border-radius:6px;background-color:#fff;box-shadow:0 7px 25px 0 rgba(0,0,0,.1)}.Teacher-desktop .teacherCard-box>div:last-child,.Teacher-mobile .teacherCard-box>div:last-child{padding-top:41px;padding-bottom:0;border:none}.Teacher-desktop .teacherCard-box>div:first-child,.Teacher-mobile .teacherCard-box>div:first-child{padding-top:0}.Teacher-desktop .teacherCard-bar,.Teacher-mobile .teacherCard-bar{padding:30px 0 40px;border-bottom:1px solid #ddd}.Teacher-desktop .cardTitle,.Teacher-mobile .cardTitle{height:27px;margin-top:0;margin-bottom:40px;display:flex;flex:1 1;flex-direction:row;justify-content:space-between;align-items:center;font-size:23px;font-weight:500;color:#333}.Teacher-desktop .cardTitle-start,.Teacher-mobile .cardTitle-start{justify-content:start}.Teacher-desktop .cardTitle-flexStart,.Teacher-mobile .cardTitle-flexStart{display:flex;flex-direction:row;justify-content:flex-start;align-items:center}.Teacher-desktop.Teacher,.Teacher-mobile.Teacher{font-size:14px;color:#333}.Teacher-desktop .Teacher-main,.Teacher-mobile .Teacher-main{display:flex;flex-direction:column}.Teacher-desktop .Teacher-bottom-text,.Teacher-mobile .Teacher-bottom-text{position:absolute;left:50%;bottom:15px;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);font-size:14px;color:#777}.Teacher-desktop.Teacher{width:1140px;margin:0 auto;position:relative;padding-bottom:50px;display:flex;flex:1 1;flex-direction:row;justify-content:flex-start;align-items:flex-start}.Teacher-desktop .Teacher-main{margin-right:20px}.Teacher-desktop .Favourite{margin-left:16px}.Teacher-mobile{background-color:#fff}.Teacher-mobile .small-schedule-button-mobile{max-width:none}.Teacher-mobile .redbar-left,.Teacher-mobile .redbar-left-title{font-size:1.6rem}.Teacher-mobile .teacherCard-box1,.Teacher-mobile.Teacher{width:100%;border:none;display:block}.Teacher-mobile .teacherCard-box1{margin-bottom:0;padding-bottom:0;border-radius:0;box-shadow:none}.Teacher-mobile .teacherCard-box{width:unset;padding:30px 0;margin:0 20px;border-bottom:1px solid #ddd;border-radius:unset;display:block;box-shadow:none}.Teacher-mobile .teacherCard-box>div:last-child{padding-top:30px}.Teacher-mobile .teacherCard-box.ProfessionalExpCard>div:last-child,.Teacher-mobile .teacherCard-box>div:first-child{padding-top:0}.Teacher-mobile .teacherCard-bar{padding:30px 0}.Teacher-mobile .cardTitle{margin-top:0;margin-bottom:20px;display:flex;flex:1 1;flex-direction:row;justify-content:space-between;align-items:center;font-size:1.8rem;font-weight:500;color:#333}.Teacher-mobile .teacher-schedule{margin-top:0;padding:0;box-shadow:unset}.Teacher-mobile .Teacher-bottom{width:100%;height:82px;padding:20px;border-radius:6px;display:flex;justify-content:flex-start;align-items:center;background-color:#fff;box-shadow:0 -5px 25px 0 rgba(0,0,0,.1);z-index:99}.Teacher-mobile .Teacher-bottom.hidden{display:none}.Teacher-mobile .booknow{flex:1 1;margin-left:10px;height:42px;margin-top:0;border-radius:3px;display:flex;justify-content:center;align-items:center;font-size:16px;color:#fff;background-image:-webkit-gradient(linear,right top,left top,from(#ff786b),to(#ff4338));background-image:-webkit-linear-gradient(right,#ff786b,#ff4338);background-image:linear-gradient(270deg,#ff786b,#ff4338);cursor:pointer}.Teacher-mobile .booknow:disabled,.Teacher-mobile .booknow[disabled]{opacity:.5;cursor:not-allowed}.Teacher-mobile .Favourite{margin-right:16px}.hidden-booknow{display:none!important}.lessonCard-toggles{position:relative}.TeacherInfoCard-desktop .teacherCard-stars{font-size:14px}
+
+.progressBar-row-number {
+    z-index: 99;
+    font-size: 14px;
+    color: rgb(109, 109, 109);
+    margin: 0;
+}
+footer, header, main, .review-time {
+    text-align: right;
+    font-size: 11px;
+}
+.casino_banner,
+.ad-section {
+    margin: 9.5px 9.5px 15px 9.5px;
+    align-items: center;
+}
+.banner-label {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width : 70px;
+    padding: 5px;
+    margin: 0 0 10px 0;
+    display: inline-block;
+    position: relative;
+    left: -20px;
+    font-size: 22px;
+    background-color: #ff4338;
+    color: white;
+    box-shadow: 0px 2px 5px grey;
+}
+.teacher-right-booknow {
+    font-family: 'Do Hyeon', sans-serif;
+}
+#banner-text {
+    margin-left: 15px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+#game_devider {
+    margin-left: 150px;
+    margin-bottom: 15px;
+}
+
+.teacher-schedule {
+    background-color: rgb(236, 238, 235);
+    box-shadow: 1px 1px 5px grey;
+    cursor: auto;
+}
+#teacher_profile_nav_lessons {
+    background-color: #e5f0e8;
+}
+#schedule-lesson {
+    text-decoration: none;
+}
+.slot_banner {
+    margin: 1.5px;
+}
+.review-flex {
+    margin-top:10px;
+}
+/* signup pop */
+#alert-box {
+    width: 500px;
+    overflow: hidden;
+    background: #1b7422;
+    box-shadow: 0 0 500px 50px rgb(0, 0, 0);
+    border-radius: 8px;
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    padding: 10px;
+    text-align: center;
+}
+#alert-box span {
+    color: #43e285;
+    font-size: 40px;
+    display: block;
+    margin: 20px 0;
+}
+#alert-box h1 {
+    color: rgb(255, 255, 255);
+}
+.close-alert {
+    font-size: 20px;
+    color: white;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: #ff4338;
+    display: inline-block;
+    border-radius: 4px;
+}
+/* review */
+
+.review-container {
+    width: 100%;
+    padding: 15px 10px 0 10px;
+}
+.cmt-textarea {
+    font-size: 16px;
+    height: 34px;
+    width: 520px;
+    overflow: hidden;
+    border: none;
+    border-bottom: 2px solid rgb(78, 78, 78);
+    background-color: transparent;
+    margin-left: 5;
+    resize: none;
+    outline: none;
+    transition: .5s;
+}
+.btn-container button {
+    padding: 7px 15px;
+    width: 90px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    display: none;
+}
+
+.btn-container button[type='submit'] {
+    color: white;
+    background-color: #ff4338;
+    margin-right: 5px;
+}
+
+.btn-container button[type='button'] {
+    color: #333;
+    background-color: transparent;
+    border: 1px solid #333;
+    
+}
+
+.reviews-lists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 692px;
+}
+
+.review-list-box {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 0;
+    left: 0;
+    top: 0;
+    width: 650px;
+}
+
+.review-user-name {
+    margin-left: 15px;
+    font-weight: bold;
+}
+.review-comment {
+    display: inline-block;
+    margin-top: 0;
+    margin-left: 25px;
+}
+.cmt-cmt-btn {
+    position: absolute;
+    left: 55px;
+    font-weight: bold;
+    color: rgb(255, 123, 115);
+    margin: 0;
+}
+.cmt-cmt-container {
+    position: relative;
+    margin-top: 15px;
+    margin: auto;
+    padding: 0;
+    left: 0;
+    top: 0;
+    width: 500px;
+    display: none;
+}
+.cmt-cmt-box {
+    margin-bottom: 10px;
+}
+.cmt-cmt-profile {
+    height: 24px;
+    width: 24px;
+}
+.cmt-cmt-username {
+    font-size: 12.5px;
+    margin-top: 2px;
+    margin-left: 5px;
+}
+.cmt-cmt-time-container {
+    position: relative;
+}
+.review_cmt_cmt {
+    margin-left: 30px;
+}
+.score-section {
+    display: inline-block;
+    width: 43px;
+    color: #fec400;
+    font-weight: bold;
+    text-align: center;
+}
+.dropdown-img {
+    opacity: 45%;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 5px;
+}
+
+.dropdown {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    height: 40px;
+    cursor: pointer;
+    display: none;
+    padding: 10px;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    text-align: center;
+    z-index: 1;
+    padding: 0;
+    left: 20px;
+    
+}
+.dropdown-content form {
+    margin: 0;
+    padding: 0;
+}
+.dropdown-content button {
+    background-color: #f9f9f9;
+    color: black;
+    padding: 5px;
+    margin: 0px;
+    border: none;
+    outline: none;
+}
+.menu-from button {
+    width: 100%;
+    margin: auto;
+}
+.menu-from button:hover {
+    background-color: rgb(221, 221, 221);
+}
+.edit-textarea {
+    font-size: 14px;
+    height: 35px;
+    width: 550px;
+    overflow: hidden;
+    border: none;
+    border-bottom: 2px solid rgb(78, 78, 78);
+    background-color: transparent;
+    margin-bottom: 10px;
+    outline: none;
+    transition: .5s;
+    display: none;
+    margin-left: 20px;
+}
+.edit-confirm {
+    color: white;
+    background-color: #ff4338;
+    padding: 5px 10px;
+    width: 60px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+    display: none;
+}
+.edit-cancel {
+    color: #333;
+    background-color: transparent;
+    border: 1px solid #333;
+    padding: 5px 10px;
+    width: 60px;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 40px;
+    display: none;
+}
+.edit-container {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+.edit-btn-area {
+    text-align: right;
+}
+.login-warning {
+    width: 100%;
+    padding: 0;
+    margin: 0 0 10 0;
+    color: #ff4338;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.reply {
+    position: absolute;
+    right: 450px;
+}
+.reply-container {
+    min-height: 70px;
+    margin: 0;
+    display: none;
+}
+.reply-textarea {
+    margin-top: 5px;
+    margin-left: 70px;
+    font-size: 14px;
+    height: 30px;
+    width: 550px;
+    overflow: hidden;
+    border: none;
+    border-bottom: 2px solid rgb(78, 78, 78);
+    background-color: transparent;
+    outline: none;
+    transition: .5s;
+
+}
+.reply-btn-section {
+    position: absolute;
+    right: 30px;
+}
+.reply-btn-section button {
+    margin-top: 10px;
+    margin-right: 5px;
+    padding: 5px 10px;
+    width: 55px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    
+}
+
+.reply-btn {
+    color: white;
+    background-color: #ff4338;
+    margin-right: 5px;
+    border: none;
+}
+.cancel {
+    color: #333;
+    background-color: transparent;
+    border: 1px solid #333;
+}
+.select-score {
+    margin-left: 10px;
+}
+
+.recommend-section {
+    position: absolute;
+    margin-left: 150px !important;
+    left:  55px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+.recommend-section button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-left: 5px;
+}
+
+.teacherCard-right-icon {
+    padding: 0;
+    margin: 0;
+}
+.Favourite {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+.Header-desktop {
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .1);
+}
+.Header-banner {
+    width: 90%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+    .Header-banner {
+        width: 100%;
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .btn-container {
+        margin: 15px;
+    }
+    .btn-container {
+        margin-left: 0px !important;
+    }
+    .btn-container button[type='submit'] {
+        margin-left: 0;
+        margin-right: 25px !important;
+    }
+    .reply {
+        display: none;
+    }
+    .stars-box .number {
+        font-size: 12px;
+    }
+    .Footer-desktop .Footer-link-box ul li a {
+        font-size: 14px !important;
+    }
+    .live-container .casino_banner {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .flex-container {
+        margin-top: 70px;
+    }
+    .teacherCard-right-icon {
+        margin-bottom: 10px;
+    }
+    .teacher-right,
+    .teacherCard-right-body div:nth-child(3),
+    .aboutMeTime,
+    .Header-desktop .Header-button-wrap,
+    .recommend-section {
+        display: none;
+    }
+    .cmt-textarea {
+        margin-bottom: 10px;
+    }
+    .Teacher-desktop.Teacher {
+        width: 100%;
+    }
+    .Video img {
+        width: 400px !important;
+        height: 250px !important;
+    }
+    .Teacher-desktop .teacherCard-box1, 
+    .Teacher-mobile .teacherCard-box1, 
+    .Teacher-tablet .teacherCard-box1,
+    .Teacher-desktop .Teacher-main,
+    .Teacher-desktop .teacherCard-box, 
+    .Teacher-mobile .teacherCard-box, 
+    .Teacher-tablet .teacherCard-box,
+    .review-list-box,
+    .reviews-lists,
+    .cmt-textarea,
+    .reply-container,
+    .cmt-cmt-container,
+    .bookCard {
+        width: 100%
+    }
+    .reply-container {
+        margin-bottom: 20px;;
+    }
+    .reply-btn-section button {
+        width: 100px;
+        height: 35px;
+        margin-right: 10px;
+    }
+    .reply-btn-section {
+        right: 5px;
+    }
+    .Header-banner a {
+        margin-left: 20px;
+    }
+    .Header-banner a img {
+        width: 130px;
+    }
+    .Header-desktop .Header-banner {
+        padding-left: 0px;
+    }
+    .TeacherInfoCard-desktop .teacherCard-left {
+        padding: 10px;
+        width: 25%;
+    }
+    .avatar-big {
+        width: 60px !important;
+        height: 60px !important;
+    }
+    .TeacherInfoCard-desktop .teacherCard-middle {
+        padding-top: 10px;
+        width: 70%;
+    }
+    .TeacherInfoCard-desktop .teacherCard-right {
+        width: 30%;
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+    .teacher-right-booknow,
+    .teacher-right-booknow:first-child,
+    .Teacher-desktop .Teacher-main {
+        margin: 0;
+    }
+    #game_devider {
+        margin-left: 0;
+    }
+    .Teacher-desktop .teacherCard-box {
+        padding: 20px 0;
+    }
+    .Teacher-desktop .cardTitle {
+        display: block;
+        margin-top: 10px;
+    }
+    .cardTitle-flexStart span {
+        margin: auto;
+    }
+    .lessonCard-toggles {
+        text-align: center;
+    }
+    #game_devider {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .StatisticsCard-desktop .statistics,
+    .ProfessionalExpCard-desktop .experiences {
+        display: block;
+    }
+    .statistics .statistic {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .cardTitle {
+        text-align: center;
+    }
+    .Teacher .StatisticsCard-desktop .teacherCard-box {
+        padding-top: 15px;
+    }
+    .lessonCards-box {
+        margin-top: 80px;
+    }
+    .ProfessionalExpCard-desktop .experiences-text,
+    .Teacher-desktop .redbar-left span {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .redbar-left span {
+        font-size: 18px;
+    }
+    #teacher_profile_nav_resume {
+        padding-top: 10px;
+    }
+    .Footer-desktop .Footer-part2 {
+        display: block;
+        padding: 30px 30px 15px 30px;
+    }
+    .review-header {
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+    .hamburger,
+    .mobile-casino-info,
+    .nav-list {
+        display: block !important;
+    }
+    .recommend-section {
+        margin-left: 110px !important;
+    }
+    .reply {
+        right: 140px;
+        font-size: 16px;
+    }
+    .dropdown-img {
+        width: 7px;
+        height: 28px;
+    }
+    .nav-links {
+        display: flex;
+        list-style: none;
+        width: 100%;
+        height: 100vh;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: auto;
+        position: fixed;
+        background: #00bfbd;
+        flex-direction: column;
+    
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(100px at 90% -10%);
+        transition: all 1s ease-out;
+        z-index: 100;
+        pointer-events: none;
+    }
+    .nav-links.open {
+        clip-path: circle(1000px at 90% 10%);
+        -webkit-clip-path: circle(1000px at 90% 10%);
+        pointer-events: all;
+    }
+    .nav-links li a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    .nav-links li {
+        opacity: 0;
+        display: none;
+    }
+    .nav-links li a {
+        font-size: 25px;
+    }
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+    .cmt-cmt-btn {
+        left: 25px;
+    }
+    .review-comment {
+        margin-bottom: 10px;
+    }
+    .reply-textarea {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .TextOverflow,
+    .TeacherInfoCard-desktop .teacherCard-personalInfo {
+        font-size: 15px;
+    }
+    .tag.tag-selected,
+    .Footer-desktop .Footer-link-box ul li a {
+        font-size: 16px;
+    }
+    .Footer-desktop .Footer-link-box ul li:nth-child(2),
+    .Footer-desktop .Footer-link-box ul li:nth-child(3) {
+        margin-left: 30px;
+    }
+    .Footer-desktop .Footer-link-box ul {
+        margin: auto;
+    }
+    .Footer-desktop.Footer-prelogin .Footer-copyright-box {
+        text-align: center;
+    }
+    .StatisticsCard-desktop .statistic-label {
+        font-size: 18px;
+    }
+    .TeacherInfoCard-desktop .Online,
+    .review-time {
+        font-size: 12px !important;
+    }
+    .bookCard-price-from {
+        font-size: 12px;
+        top: 6px;
+    }
+    .LessonsCard-desktop .lessonCard-box .lessonCard-discount,
+    .Footer-desktop .Footer-copyright-box {
+        font-size: 14px;
+    }
+    .ProfessionalExpCard-desktop .experiences-text {
+        font-size: 16px;
+        width: 220px;
+    }
+    .Favourite img {
+        width: 35px;
+        height: 35px;
+    }
+    .TeacherInfoCard-desktop .teacherCard {
+        margin-top: 10px;
+    }
+    .teacherCard-part2 .teacherCard-teaches:nth-child(1) {
+        margin-top: 5px;
+    }
+    .select-score {
+        margin-left: 0;
+    }
+    .btn-container {
+        display: inline-block;
+        margin-left: 20px;
+    }
+    .btn-container button[type='submit'] {
+        margin-right: 18px;
+    }
+    .review-flex {
+        margin-top: 5px;
+    }
+    /* .review_cmt_cmt {
+        max-width: 220px;
+    } */
+    .dropdown-content {
+        position: absolute;
+        left: -110px;
+    }
+    .slot_banner {
+        margin-bottom: 15px;
+    }
+    .live-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .slot-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .Footer-desktop .flex-row,
+    .Teacher-desktop .cardTitle-flexStart {
+        margin-bottom: 10px;
+    }
+    .TeacherInfoCard-desktop .teacherCard-part2 {
+        width: 115%;
+        margin-top: 10px;
+        position: relative;
+        left: -60px;
+    }
+    .TeacherInfoCard-desktop .teacherCard-body {
+        width: 75%;
+    }
+    .mobile-wrap {
+        margin-right: 10px;
+    }
+
+}
+/* MOBILE-NAV */
+.mobile-wrap {
+    height: 70px;
+    padding-right: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.line {
+    width: 30px;
+    height: 3px;
+    background: black;
+    margin: 5px;
+}
+.hamburger {
+    cursor: pointer;
+    z-index: 5;
+    display: none;
+}
+.nav-list,
+.mobile-casino-info {
+    display: none;
+}
+
+li.fade {
+    opacity: 1;
+    display: block;
+}
+/* MOBILE WORK ENDS */

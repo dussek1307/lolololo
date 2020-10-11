@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="16px" viewBox="0 0 30 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>gb</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="30" height="16" rx="8"></rect>
+        <rect id="path-3" x="0" y="0" width="30" height="16" rx="8"></rect>
+        <filter x="-3.3%" y="-6.2%" width="106.7%" height="112.5%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="1" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="gb">
+            <g id="Shape-+-Shape-+-Shape-+-Rectangle-Mask-Copy">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                <g id="au" mask="url(#mask-2)" fill-rule="nonzero">
+                    <polygon id="Shape" fill="#00267F" points="0 0 30 0 30 16 0 16"></polygon>
+                    <path d="M0,0 L0,1.7888 L26.6460409,16 L30,16 L30,14.2112 L3.35395911,0 L0,0 Z M30,0 L30,1.7888 L3.35395911,16 L0,16 L0,14.2112 L26.6460409,0 L30,0 Z" id="Shape" fill="#FFFFFF"></path>
+                    <path d="M12.5,0 L12.5,16 L17.5,16 L17.5,0 L12.4999132,0 L12.5,0 Z M0,5.333312 L0,10.666624 L30,10.666624 L30,5.333312 L0,5.333312 Z" id="Shape" fill="#FFFFFF"></path>
+                    <path d="M0,6.4 L0,9.6 L29.9998264,9.6 L29.9998264,6.4 L0,6.4 Z M13.4999393,0 L13.4999393,16 L16.4998872,16 L16.4998872,0 L13.4999393,0 Z M0,16 L9.99994214,10.666624 L12.2359309,10.666624 L2.23598873,16 L0,16 Z M0,0 L9.99994214,5.333312 L7.76395341,5.333312 L0,1.192512 L0,0 Z M17.7638088,5.333312 L27.7639245,0 L29.9998264,0 L19.9998843,5.333312 L17.7638088,5.333312 Z M30,16 L19.9999711,10.666624 L22.2359598,10.666624 L30,14.807424 L30,16 Z" id="Shape" fill="#CC0000"></path>
+                </g>
+            </g>
+            <g id="Rectangle-5-Copy-4" fill="black" fill-opacity="1">
+                <use filter="url(#filter-4)" xlink:href="#path-3"></use>
+            </g>
+        </g>
+    </g>
+</svg>

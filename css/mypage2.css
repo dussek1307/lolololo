@@ -1,0 +1,42 @@
+body {
+    height: 1500px;
+}
+#img {
+    border: 2px solid #5bc758;
+    padding: 10px;
+    margin: 20px;
+    width: 100px;
+}
+#btn {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: #ff4338; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.profileCard {
+    position: relative;
+}
+input[type='file'] {
+    cursor: pointer;
+}
+.chanPwd {
+    width: 200px;
+    height: 30px;
+    margin: 5px;
+    border: 1px solid grey;
+}
+#changeBtn {
+    background-color: lightgreen;
+    border: 1px solid green;
+}
+#changeBtn:hover {
+    opacity: 0.8;
+}
