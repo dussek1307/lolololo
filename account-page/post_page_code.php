@@ -16,7 +16,7 @@
         if($rows['owner'] == "third") $owner = "명의: 3대 본주";
 
         switch($rows['serverLocation']) {
-            case "default":
+            case "KR":
                 $serverLocation = "한국";
                 break;
             case "PBE":
@@ -217,6 +217,237 @@
         }
 
         if($rows['isPrivate'] == 1) $summonerName = $rows['summonerName'];
+
+        switch($rows['season7']) {
+            case "unranked":
+                $season7 = "X";
+                break;
+            case "i4":
+                $season7 = "S7 Iron IV";
+                break;
+            case "i3":
+                $season7 = "S7 Iron III";
+                break;
+            case "i2":
+                $season7 = "S7 Iron II";
+                break;
+            case "i1":
+                $season7 = "S7 Iron I";
+                break;
+            case "s4":
+                $season7 = "S7 Silver IV";
+                break;
+            case "s3":
+                $season7 = "S7 Silver III";
+                break;
+            case "s2":
+                $season7 = "S7 Silver II";
+                break;
+            case "s1":
+                $season7 = "S7 Silver I";
+                break;
+            case "g4":
+                $season7 = "S7 Gold IV";
+                break;
+            case "g3":
+                $season7 = "S7 Gold III";
+                break;
+            case "g2":
+                $season7 = "S7 Gold II";
+                break;
+            case "g1":
+                $season7 = "S7 Gold I";
+                break;
+            case "p4":
+                $season7 = "S7 Platinum IV";
+                break;
+            case "p3":
+                $season7 = "S7 Platinum III";
+                break;
+            case "p2":
+                $season7 = "S7 Platinum II";
+                break;
+            case "p1":
+                $season7 = "S7 Platinum I";
+                break;
+            case "d4":
+                $season7 = "S7 Diamond IV";
+                break;
+            case "d3":
+                $season7 = "S7 Diamond III";
+                break;
+            case "d2":
+                $season7 = "S7 Diamond II";
+                break;
+            case "d1":
+                $season7 = "S7 Diamond I";
+                break;
+            case "m1":
+                $season7 = "S7 Master I";
+                break;
+            case "gm1":
+                $season7 = "S7 GrandMaster I";
+                break;
+            case "c1":
+                $season7 = "S7 Challenger I";
+                break;
+            default:
+                $season7 = "S7 X";
+        }
+
+        switch($rows['season8']) {
+            case "unranked":
+                $season8 = "X";
+                break;
+            case "i4":
+                $season8 = "S8 Iron IV";
+                break;
+            case "i3":
+                $season8 = "S8 Iron III";
+                break;
+            case "i2":
+                $season8 = "S8 Iron II";
+                break;
+            case "i1":
+                $season8 = "S8 Iron I";
+                break;
+            case "s4":
+                $season8 = "S8 Silver IV";
+                break;
+            case "s3":
+                $season8 = "S8 Silver III";
+                break;
+            case "s2":
+                $season8 = "S8 Silver II";
+                break;
+            case "s1":
+                $season8 = "S8 Silver I";
+                break;
+            case "g4":
+                $season8 = "S8 Gold IV";
+                break;
+            case "g3":
+                $season8 = "S8 Gold III";
+                break;
+            case "g2":
+                $season8 = "S8 Gold II";
+                break;
+            case "g1":
+                $season8 = "S8 Gold I";
+                break;
+            case "p4":
+                $season8 = "S8 Platinum IV";
+                break;
+            case "p3":
+                $season8 = "S8 Platinum III";
+                break;
+            case "p2":
+                $season8 = "S8 Platinum II";
+                break;
+            case "p1":
+                $season8 = "S8 Platinum I";
+                break;
+            case "d4":
+                $season8 = "S8 Diamond IV";
+                break;
+            case "d3":
+                $season8 = "S8 Diamond III";
+                break;
+            case "d2":
+                $season8 = "S8 Diamond II";
+                break;
+            case "d1":
+                $season8 = "S8 Diamond I";
+                break;
+            case "m1":
+                $season8 = "S8 Master I";
+                break;
+            case "gm1":
+                $season8 = "S8 GrandMaster I";
+                break;
+            case "c1":
+                $season8 = "S8 Challenger I";
+                break;
+            default:
+                $season8 = "X";
+        }
+
+        switch($rows['season9']) {
+            case "unranked":
+                $season9 = "X";
+                break;
+            case "i4":
+                $season9 = "S9 Iron IV";
+                break;
+            case "i3":
+                $season9 = "S9 Iron III";
+                break;
+            case "i2":
+                $season9 = "S9 Iron II";
+                break;
+            case "i1":
+                $season9 = "S9 Iron I";
+                break;
+            case "s4":
+                $season9 = "S9 Silver IV";
+                break;
+            case "s3":
+                $season9 = "S9 Silver III";
+                break;
+            case "s2":
+                $season9 = "S9 Silver II";
+                break;
+            case "s1":
+                $season9 = "S9 Silver I";
+                break;
+            case "g4":
+                $season9 = "S9 Gold IV";
+                break;
+            case "g3":
+                $season9 = "S9 Gold III";
+                break;
+            case "g2":
+                $season9 = "S9 Gold II";
+                break;
+            case "g1":
+                $season9 = "S9 Gold I";
+                break;
+            case "p4":
+                $season9 = "S9 Platinum IV";
+                break;
+            case "p3":
+                $season9 = "S9 Platinum III";
+                break;
+            case "p2":
+                $season9 = "S9 Platinum II";
+                break;
+            case "p1":
+                $season9 = "S9 Platinum I";
+                break;
+            case "d4":
+                $season9 = "S9 Diamond IV";
+                break;
+            case "d3":
+                $season9 = "S9 Diamond III";
+                break;
+            case "d2":
+                $season9 = "S9 Diamond II";
+                break;
+            case "d1":
+                $season9 = "S9 Diamond I";
+                break;
+            case "m1":
+                $season9 = "S9 Master I";
+                break;
+            case "gm1":
+                $season9 = "S9 GrandMaster I";
+                break;
+            case "c1":
+                $season9 = "S9 Challenger I";
+                break;
+            default:
+                $season9 = "X";
+        }
     
         echo "<div class='flex-container'>
         <div style='position: static; z-index: inherit;'>
@@ -339,7 +570,7 @@
                 </div>
                 </div>
 
-                <div class='content active' data-tab-id='championsData-ranked'>
+                <div class='content active' data-tab-id='championsData-ranked' style='width: 313px'>
 <table class='data_table sortable_table'>
     <tbody>
         <tr>
@@ -349,18 +580,18 @@
         <tr class=''>
             <td class='champColumn'>
                 <div class='img-align-block'>
-                    <div class='relative requireTooltip' tooltip='<itemname>Mastery Level 5</itemname><br/>Points: 58,192'>
-                        <img src='https://opgg-static.akamaized.net/images/lol/champion/Leblanc.png?image=q_auto,w_140&v=1591083841' alt='LeBlanc' title='LeBlanc' height='48' width='48' class='champion-7-48' />
+                    <div class='relative requireTooltip'>
+                        <img src='../resources/img/champions/".$rows['mostPlayed1'].".png' alt='".$rows['mostPlayed1']."' height='48' width='48' class='champion-7-48' />
                     </div>
                     <div class='txt'>
-                        <div class='name'>르블랑</div>
+                        <div class='name'>".$rows['mostPlayed1']."</div>
                     </div>
                 </div>
             </td>
 
             <td data-sort-value='17'>
                 <div class='progress-bar-container' style='width: 80px;'>
-                    <div class='progressBarTxt'>17</div>
+                    <div class='progressBarTxt'>".$rows['numOfPlayed1']."</div>
                 </div>
             </td>
         </tr>
@@ -368,17 +599,17 @@
             <td class='champColumn'>
                 <div class='img-align-block'>
                     <div class='relative requireTooltip' tooltip='<itemname>Mastery Level 5</itemname><br/>Points: 132,397'>
-                        <img src='https://opgg-static.akamaized.net/images/lol/champion/LeeSin.png?image=q_auto,w_140&v=1591083841' alt='Lee Sin' title='Lee Sin' height='48' width='48' class='champion-64-48' />
+                        <img src='../resources/img/champions/".$rows['mostPlayed2'].".png' alt='".$rows['mostPlayed2']."' height='48' width='48' class='champion-64-48' />
                     </div>
                     <div class='txt'>
-                        <div class='name'>리신</div>
+                        <div class='name'>".$rows['mostPlayed2']."</div>
                     </div>
                 </div>
             </td>
             <td data-sort-value='15'>
                 <div class='progress-bar-container' style='width: 80px;'>
                     <div class='full-progress-bar wgblue' style='width: 53px;'></div>
-                    <div class='progressBarTxt'>15</div>
+                    <div class='progressBarTxt'>".$rows['numOfPlayed2']."</div>
                 </div>
             </td>
 
@@ -387,34 +618,30 @@
             <td class='champColumn'>
                 <div class='img-align-block'>
                     <div class='relative requireTooltip'>
-                        <img src='https://opgg-static.akamaized.net/images/lol/champion/Nidalee.png?image=q_auto,w_140&v=1591083841' alt='Nidalee' title='Nidalee' height='48' width='48' class='champion-76-48' />
+                        <img src='../resources/img/champions/".$rows['mostPlayed3'].".png' alt='".$rows['mostPlayed3']."' height='48' width='48' class='champion-76-48' />
                     </div>
                     <div class='txt'>
-                        <div class='name'>니달리</div>
+                        <div class='name'>".$rows['mostPlayed3']."</div>
                     </div>
                 </div>
             </td>
             <td data-sort-value='13'>
                 <div class='progress-bar-container' style='width: 80px;'>
                     <div class='full-progress-bar wgblue' style='width: 46px;'></div>
-                    <div class='progressBarTxt'>13</div>
+                    <div class='progressBarTxt'>".$rows['numOfPlayed3']."</div>
                 </div>
             </td>
 
         </tr>
     </tbody>
 </table>
-<!-- By Season -->
 <br>
 <div class='box tags-box'>
     <div class='tag requireTooltip brown'>
-        S7 Gold
+        ".$season8."
     </div>
     <div class='tag requireTooltip brown'>
-        S8 Gold
-    </div>
-    <div class='tag requireTooltip brown'>
-        S9 Gold
+        ".$season9."
     </div>
 </div>
 </div>

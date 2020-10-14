@@ -67,9 +67,9 @@
                                     <option value="d2">다이아몬드 2</option>
                                     <option value="d1">다이아몬드 1</option>
 
-                                    <option value="mm">MASTER 1</option>
-                                    <option value="gm">GRANDMASTER 1</option>
-                                    <option value="cc">CHALLENGER 1</option>
+                                    <option value="m1">MASTER 1</option>
+                                    <option value="gm1">GRANDMASTER 1</option>
+                                    <option value="c1">CHALLENGER 1</option>
                                 </select>
                             </div>
                             <div>
@@ -115,9 +115,9 @@
                                     <option value="d2">다이아몬드 2</option>
                                     <option value="d1">다이아몬드 1</option>
 
-                                    <option value="mm">MASTER 1</option>
-                                    <option value="gm">GRANDMASTER 1</option>
-                                    <option value="cc">CHALLENGER 1</option>
+                                    <option value="m1">MASTER 1</option>
+                                    <option value="gm1">GRANDMASTER 1</option>
+                                    <option value="c1">CHALLENGER 1</option>
                                 </select>
                             </div>
                             <div>
@@ -218,7 +218,7 @@
                             <div class="cityMenu">
                                 <select class="menu-title select-style" name="season7" id="">
                                     <option value="default">시즌 7</option>
-                                    <option value="unranked">언랭</option>
+                                    <option value="unranked">언랭/랭크없음</option>
                                     <option value="i4">아이언 4</option>
                                     <option value="i3">아이언 3</option>
                                     <option value="i2">아이언 2</option>
@@ -250,7 +250,7 @@
                                 </select>
                                 <select class="menu-title select-style" name="season8" id="">
                                     <option value="default">시즌 8</option>
-                                    <option value="unranked">언랭</option>
+                                    <option value="unranked">언랭/랭크없음</option>
                                     <option value="i4">아이언 4</option>
                                     <option value="i3">아이언 3</option>
                                     <option value="i2">아이언 2</option>
@@ -276,13 +276,13 @@
                                     <option value="d2">다이아몬드 2</option>
                                     <option value="d1">다이아몬드 1</option>
 
-                                    <option value="mm">MASTER 1</option>
-                                    <option value="gm">GRANDMASTER 1</option>
-                                    <option value="cc">CHALLENGER 1</option>
+                                    <option value="m1">MASTER 1</option>
+                                    <option value="gm1">GRANDMASTER 1</option>
+                                    <option value="c1">CHALLENGER 1</option>
                                 </select>
                                 <select class="menu-title select-style" name="season9" id="">
                                     <option value="default">시즌 9</option>
-                                    <option value="unranked">언랭</option>
+                                    <option value="unranked">언랭/랭크없음</option>
                                     <option value="i4">아이언 4</option>
                                     <option value="i3">아이언 3</option>
                                     <option value="i2">아이언 2</option>
@@ -308,9 +308,9 @@
                                     <option value="d2">다이아몬드 2</option>
                                     <option value="d1">다이아몬드 1</option>
 
-                                    <option value="mm">MASTER 1</option>
-                                    <option value="gm">GRANDMASTER 1</option>
-                                    <option value="cc">CHALLENGER 1</option>
+                                    <option value="m1">MASTER 1</option>
+                                    <option value="gm1">GRANDMASTER 1</option>
+                                    <option value="c1">CHALLENGER 1</option>
                                 </select>
                             </div>
                         </div>
@@ -318,7 +318,7 @@
                     <div class="profileInfo-bar">
                         <span class="profileInfo-label"><span>서버</span></span>
                         <select class="menu-title select-style" name="serverLocation">
-                            <option value="default">KR</option>
+                            <option value="KR">KR</option>
                             <option value="PBE">PBE</option>
                             <option value="NA">NA</option>
                             <option value="JP">JP</option>
