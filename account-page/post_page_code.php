@@ -10,7 +10,9 @@
     while($rows = mysqli_fetch_assoc($result_post_detail)) {
         $owner = "명의: 1대 본주";
         $summonerName = "비공개";
-        $fWinRate = round(($rows['fWins'] / ($rows['fWins'] + $rows['fLoses'])) * 100, 2);
+        $fWinRate = 0;
+        if($rows['fWins'] > 0) 
+            $fWinRate = round(($rows['fWins'] / ($rows['fWins'] + $rows['fLoses'])) * 100, 2);
 
         if($rows['owner'] == "second") $owner = "명의: 2대 본주";
         if($rows['owner'] == "third") $owner = "명의: 3대 본주";
@@ -456,7 +458,7 @@
                     <div class='Teacher-main'>
                         <div id='teacher_profile_nav_aboutme' class='TeacherInfoCard teacherCard-box1 TeacherInfoCard-desktop'>
                             <div class='Video'>
-                                <img style='width: 755px; height: 453px;' src='../testPic.png' alt='로고'>
+                                <img style='width: 755px; height: 453px;' src='../resources/img/post-main/post_".$rows['post_id'].".png' alt='로고'>
                             </div>
                             <div class='teacherCard'>
                                 <div class='teacherCard-left'>

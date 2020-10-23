@@ -1,9 +1,11 @@
 <?php
 include_once "../inc/dbh.php";
 session_start();
+date_default_timezone_set('Asia/Seoul');
 
 if(isset($_POST['submit'])) {
     $summonerName = $_POST['summonerName'];
+    $upload_date = date('Y-m-d H:i:s');
 
     if(isset($_POST['isPrivate'])) {
         $isPrivate = 1;
@@ -51,11 +53,11 @@ if(isset($_POST['submit'])) {
 
     $sql_post = "INSERT INTO posts (summonerName, isPrivate, soloRank, flexRank, fWins, fLoses, sWins, sLoses, level, owner, numOfChams, numOfSkins,
     blueEssence, season7, season8, season9, serverLocation, mostPlayed1, mostPlayed2, mostPlayed3, numOfPlayed1, numOfPlayed2, numOfPlayed3,
-    meansOfTrade1, meansOfTrade2, meansOfTrade3, title, tel, price, intro, user_id)
+    meansOfTrade1, meansOfTrade2, meansOfTrade3, title, tel, price, intro, user_id, upload_date)
         VALUES ('$summonerName', '$isPrivate','$soloRank', '$flexRank', '$fWins', '$fLoses', '$sWins', '$sLoses', '$level', 
         '$owner', '$numOfChams', '$numOfSkins', '$blueEssence', '$season7', '$season8', '$season9', '$serverLocation',
         '$mostPlayed1', '$mostPlayed2', '$mostPlayed3', '$numOfPlayed1', '$numOfPlayed2', '$numOfPlayed3',
-        '$meansOfTrade1', '$meansOfTrade2', '$meansOfTrade3', '$title','$tel', '$price', '$intro', '$user_id'
+        '$meansOfTrade1', '$meansOfTrade2', '$meansOfTrade3', '$title','$tel', '$price', '$intro', '$user_id', '$upload_date'
         );";
 
     mysqli_query($conn, $sql_post);
@@ -90,7 +92,7 @@ if(isset($_POST['submit'])) {
         if($fileError === 0) {
             if($fileSize < 5000000) {
                 $newFileName = "post_".$post_id.".".$fileActualExt;
-                $fileDestination = '../resources/img/post-img/'.$newFileName;
+                $fileDestination = '../resources/img/post-main/'.$newFileName;
                 move_uploaded_file($fileTmpName, $fileDestination);
                 $post_page = fopen($post_id.".php", "w");
                 fwrite($post_page, $post_page_code);
