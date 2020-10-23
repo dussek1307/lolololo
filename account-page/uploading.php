@@ -8,7 +8,11 @@ if(isset($_POST['submit'])) {
     $upload_date = date('Y-m-d H:i:s');
 
     if(isset($_POST['isPrivate'])) {
-        $isPrivate = 1;
+        if($_POST['isPrivate'] == "Yes") {
+            $isPrivate = 1;
+        } else {
+            $isPrivate = 0;
+        }
     } else {
         $isPrivate = 0;
     }

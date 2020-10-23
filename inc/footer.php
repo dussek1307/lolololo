@@ -209,12 +209,11 @@
 			var limit = 7;
 			var start = 0;
 			var action = "inactive";
-			var main_load_order = mainArr[Math.floor(Math.random() * orderArr.length)];
-			function load_post_data(limit, start, main_order) {
+			function load_post_data(limit, start) {
 				$.ajax({
 					url: "./inc/get_cards/fetch_start.php",
 					method: "POST",
-					data: {limit:limit, start:start, main_order:main_order},
+					data: {limit:limit, start:start},
 					cache:false,
 					success:function(data) {
 						$("#result").append(data);
@@ -231,14 +230,14 @@
 			}
 			if(action == "inactive") {
 				action = "active";
-				load_post_data(limit, start, main_load_order);
+				load_post_data(limit, start);
 			}
 			$(window).scroll(function() {
 				if($(window).scrollTop() + $(window).height() > $("#result").height() && action == "inactive") {
 					action = "active";
 					start += limit;
 					setTimeout(function() {
-						load_post_data(limit, start, main_load_order);
+						load_post_data(limit, start);
 					}, 1000);
 				}
 				if($(window).scrollTop() + $(window).height() > $("#result").height() && filter_scroll_on == true) {

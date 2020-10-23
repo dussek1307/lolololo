@@ -766,7 +766,7 @@
                         </span>
                     </div>
                     <div class='bookCard-right'>
-                        <div class='bookCard-priceNew'><span>150,000</span></div>
+                        <div class='bookCard-priceNew'><span>".$rows['price']."</span></div>
                     </div>
                 </div>
             </div>
