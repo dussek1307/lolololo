@@ -234,14 +234,14 @@ if( isset($_POST["limit"]) && isset($_POST["start"]) ) {
                     <div class='iframe-video'>
                         
                             <img class='post-image' src='./resources/img/post-main/post_".$row['post_id'].".png' alt='poster'>
-                        
+    
                     </div>
                 </div>
                 
                 <div class='teacher-card-intro' style='display: none'>
                     <p><span>".$row['intro']."<span>&nbsp;...&nbsp;</span>
                         <a href='./accout-page/".$row['post_id'].".php' rel='noopener noreferrer' target='_blank' class='teacher-card-read-more'>
-                            <span>Read more</span>
+                            <span>더 보기</span>
                         </a>
                     </span></p>
                 </div>

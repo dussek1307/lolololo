@@ -151,7 +151,7 @@
 														<span class="ant-checkbox-inner"></span></span><span><span>130+</span></span>
 													</label>
 													<label class="filter-checkbox ant-checkbox-wrapper"><span class="ant-checkbox">
-														<input type="checkbox" class="ant-checkbox-input numOfChamps" value="100">
+														<input type="checkbox" class="ant-checkbox-input numOfChamps" value="all">
 														<span class="ant-checkbox-inner"></span></span><span><span>All Champions</span></span>
 													</label>
 												</div>

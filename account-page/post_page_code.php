@@ -796,7 +796,7 @@
         </div>
     </div>
             <div class='bookCard-hr'></div>
-            <button onclick='directTo('http://www.kingho77.com')' type='button' class='teacher-right-booknow btn btn-standard btn-main btn-gradient'><span>구매하기</span></button>
+            <button onclick='directTo('#')' type='button' class='teacher-right-booknow btn btn-standard btn-main btn-gradient'><span>구매하기</span></button>
             <div class='teacher-contact'>
                 <a href='../cs.php'><button type='button' class='btn btn-standard btn-ghost-default'>
                 <div class='teacher-contact-btn-info'>

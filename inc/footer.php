@@ -157,7 +157,7 @@
 				limit_f = 7;
 				start_f = 0;
 
-				orderBy = orderArr[Math.floor(Math.random() * orderArr.length)];
+				orderBy = "upload_date"
 				action = "active";
 				action_f = "data";
 				ranks = get_filter("tier");
