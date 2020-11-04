@@ -58,7 +58,7 @@ if(isset($_POST['signup-submit'])) {
         $sqlOnline_name = "SELECT user_online_name FROM users WHERE user_online_name = ?";
         $stmt = mysqli_stmt_init($conn);
         if(!mysqli_stmt_prepare($stmt, $sql)) {
-            header('Location: ' . $uri[0]."?error=sqlerror");
+            header('Location: ' . $uri[0]."?error=sqlerror1");
             exit();
         } else {
             mysqli_stmt_bind_param($stmt, "s", $uid_reg);
@@ -75,7 +75,7 @@ if(isset($_POST['signup-submit'])) {
 
 
                 if(!mysqli_stmt_prepare($stmt, $sqlEmail)) {
-                    header('Location: ' . $uri[0]."?error=sqlerror");
+                    header('Location: ' . $uri[0]."?error=sqlerror2");
                     exit();
                 } else {
                     mysqli_stmt_bind_param($stmt, "s", $email_reg);
@@ -88,7 +88,7 @@ if(isset($_POST['signup-submit'])) {
                         exit();
                     } else {
                         if(!mysqli_stmt_prepare($stmt, $sqlTel)) {
-                            header('Location: ' . $uri[0]."?error=sqlerror");
+                            header('Location: ' . $uri[0]."?error=sqlerror3");
                             exit();
                         } else {
                             mysqli_stmt_bind_param($stmt, "s", $tel_reg);
@@ -101,7 +101,7 @@ if(isset($_POST['signup-submit'])) {
                                 exit();
                             } else {
                                 if(!mysqli_stmt_prepare($stmt, $sqlOnline_name)) {
-                                    header('Location: ' . $uri[0]."?error=sqlerror");
+                                    header('Location: ' . $uri[0]."?error=sqlerror4");
                                     exit();
                                 } else {
                                     mysqli_stmt_bind_param($stmt, "s", $online_name_reg);
@@ -113,16 +113,16 @@ if(isset($_POST['signup-submit'])) {
                                         $tel_reg."&uid=".$uid_reg);
                                         exit();
                                     } else {
-                                        $sql = "INSERT INTO users (user_name, user_online_name, email, uid, upwd, tel, profile_img, register_date, register_ip) 
+                                        $sql = "INSERT INTO users (user_name, user_online_name, email, uid, upwd, tel, profile_img, reg_date, register_ip) 
                                             VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)";
                                         $stmt = mysqli_stmt_init($conn);
                                         if(!mysqli_stmt_prepare($stmt, $sql)) {
-                                            header('Location: ' . $uri[0]."?error=sqlerror");
+                                            header('Location: ' . $uri[0]."?error=sqlerror5");
                                             exit();
                                         } else {
                                             $profile = "default-user".rand(1,7).".png";
-                                            // $hashedPwd = password_hash($pwd_reg, PASSWORD_DEFAULT);
-                                            mysqli_stmt_bind_param($stmt, "sssssssss", $name_reg, $online_name_reg, $email_reg, $uid_reg, $pwd_reg, $tel_reg, $profile, $date, $ip);
+                                            $hashedPwd = password_hash($pwd_reg, PASSWORD_DEFAULT);
+                                            mysqli_stmt_bind_param($stmt, "sssssssss", $name_reg, $online_name_reg, $email_reg, $uid_reg, $hashedPwd, $tel_reg, $profile, $date, $ip);
                                             mysqli_stmt_execute($stmt);
                                             header('Location: ' . $uri[0]."?signup=success");
                                             exit();

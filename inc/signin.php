@@ -41,18 +41,6 @@ if(isset($_POST['login-submit'])) {
                     mysqli_query($conn, $ip_sql);
 
                     exit();
-                } else if($password == $row['upwd']) {
-                    session_start();
-                    $_SESSION['user_id'] = $row['user_id'];
-                    $_SESSION['uid'] = $row['uid'];
-                    $_SESSION['online_name'] = $row['user_online_name'];
-                    $_SESSION['profile_img'] = $row['profile_img'];
-                    header('Location: '.$uri[0]);
-
-                    $ip_sql = "UPDATE users SET login_ip = '$ip', latest_login = '$date' WHERE uid = '$username_id';";
-                    mysqli_query($conn, $ip_sql);
-
-                    exit();
                 } else {
                     header('Location: '.$uri[0]."?error=wrongpwd");
                     exit();

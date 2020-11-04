@@ -11,7 +11,7 @@ if(isset($_POST["action_f"])) {
             } else if($r_name == "silver") {
                 $sql .= "AND soloRank REGEXP '^s' ";
             } else if($r_name == "gold") {
-                $sql .= "AND soloRank REGEXP '^g' ";
+                $sql .= "AND soloRank REGEXP '^g1|^g2|^g3|^g4' ";
             } else if($r_name == "platinum") {
                 $sql .= "AND soloRank REGEXP '^p' ";
             } else if($r_name == "diamond") {

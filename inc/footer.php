@@ -157,7 +157,7 @@
 				limit_f = 7;
 				start_f = 0;
 
-				orderBy = "upload_date"
+				orderBy = "upload_date DESC"
 				action = "active";
 				action_f = "data";
 				ranks = get_filter("tier");
