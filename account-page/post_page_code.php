@@ -218,7 +218,7 @@
             $flexRank = "Unranked";
         }
 
-        if($rows['isPrivate'] == 1) $summonerName = $rows['summonerName'];
+        if($rows['isPrivate'] == 0) $summonerName = $rows['summonerName'];
 
         switch($rows['season7']) {
             case "unranked":

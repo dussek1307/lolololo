@@ -11,9 +11,15 @@ if( isset($_POST["limit"]) && isset($_POST["start"]) ) {
         while($row = mysqli_fetch_assoc($result)) {
             #@@@@@@START@@@@@@
             $post_id = $row['post_id'];
+            $user_id = $row['user_id'];
 
-            $summonerName = "비공개";
-            if($row['isPrivate'] == 1) $summonerName = $row['summonerName'];
+            $sql_seller = "SELECT user_online_name FROM users WHERE user_id = $user_id";
+            $result_seller = mysqli_query($conn, $sql_seller);
+            $seller = "판매자: ";
+            while($rows = mysqli_fetch_assoc($result_seller)) {
+                $seller .= $rows['user_online_name'];
+            }
+
 
             $owner = "명의: 1대 본주";
             if($row['owner'] == "second") $owner = "명의: 2대 본주";
@@ -187,7 +193,7 @@ if( isset($_POST["limit"]) && isset($_POST["start"]) ) {
                                 <span class='number'>".$soloRank."</span>
                             </div>
                         </div>
-                        <p style='font-weight: 300; font-size: 12px; line-height: 18px;'><a href='#'><span class='user-name'>".$summonerName."</span></a>
+                        <p style='font-weight: 300; font-size: 12px; line-height: 18px;'><a href='#'><span class='user-name'>".$seller."</span></a>
                         </p>
                     </div>
                     <div>
@@ -240,7 +246,7 @@ if( isset($_POST["limit"]) && isset($_POST["start"]) ) {
                 
                 <div class='teacher-card-intro' style='display: none'>
                     <p><span>".$row['intro']."<span>&nbsp;...&nbsp;</span>
-                        <a href='./accout-page/".$row['post_id'].".php' rel='noopener noreferrer' target='_blank' class='teacher-card-read-more'>
+                        <a href='./account-page/".$row['post_id'].".php' rel='noopener noreferrer' target='_blank' class='teacher-card-read-more'>
                             <span>더 보기</span>
                         </a>
                     </span></p>

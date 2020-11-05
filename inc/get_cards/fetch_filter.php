@@ -94,7 +94,7 @@ if(isset($_POST["action_f"])) {
             $post_id = $row['post_id'];
 
             $summonerName = "비공개";
-            if($row['isPrivate'] == 1) $summonerName = $row['summonerName'];
+            if($row['isPrivate'] == 0) $summonerName = $row['summonerName'];
 
             $owner = "명의: 1대 본주";
             if($row['owner'] == "second") $owner = "명의: 2대 본주";
@@ -321,7 +321,7 @@ if(isset($_POST["action_f"])) {
                 
                 <div class='teacher-card-intro' style='display: none'>
                     <p><span>".$row['intro']."<span>&nbsp;...&nbsp;</span>
-                        <a href='./accout-page/".$row['post_id'].".php' rel='noopener noreferrer' target='_blank' class='teacher-card-read-more'>
+                        <a href='./account-page/".$row['post_id'].".php' rel='noopener noreferrer' target='_blank' class='teacher-card-read-more'>
                             <span>더 보기</span>
                         </a>
                     </span></p>
@@ -329,7 +329,7 @@ if(isset($_POST["action_f"])) {
             </div>
         </div>
     </div>";
-            $count++;                                        
+            $count++;                                  
         }
     }
 }
