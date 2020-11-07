@@ -450,7 +450,14 @@
             default:
                 $season9 = "X";
         }
-    
+        $user_id = $_SESSION['user_id'];
+        $sql_likes = "SELECT * FROM post_liked WHERE post_id = $post_id && user_id = '$user_id';";
+        $result_likes = mysqli_query($conn, $sql_likes);
+        $like_path = "favorite";
+
+        if(mysqli_num_rows($result_likes) > 0) {
+            while($row_like = mysqli_fetch_assoc($result_likes)) if($row_like['is_true'] == 1) $like_path = "favorite-clicked";
+        }
         echo "<div class='flex-container'>
         <div style='position: static; z-index: inherit;'>
             <div>
@@ -477,7 +484,7 @@
                                             <div class='redbar'></div>
                                         </div><div class='teacherCard-right'>
                                             <form id='teacher_profile_icons_anchor' class='teacherCard-right-icon' action='../inc/post_like.php' method='POST'>
-                                            <button class='Favourite' name='favorite' value='71'><img src='../resources/img/favorite.svg' alt='favourite' width='24' height='24'></button>
+                                            <button class='Favourite' name='favorite' value='".$rows['post_id']."'><img src='../resources/img/".$like_path.".svg' alt='favourite' width='24' height='24'></button>
                                             </form>
                                             <div class='teacherCard-right-body'>
                                                 <div class='teacherCard-stars'>

@@ -62,12 +62,18 @@
                                                             <input class='chanPwd' type='password' name='repeatPwd' placeholder='변경할 비밀번호 확인'>
                                                             <button name='change-submit' type='submit' id='changeBtn'>변경</button>
                                                         </form>";
-                                                        if($_SESSION['user_id'] == 1) {
-                                                            echo "<div class='profile-otherInfo'><a href='./ctr-admin/admin.php'><button>유저목록</button></a></div>
-                                                            <div class='profile-otherInfo'><a href='./ctr-admin/search-id.php'><button>판매글 수정</button></a></div>";
-                                                        }
+                                                if($_SESSION['user_id'] == 1) {
+                                                    echo "<div class='profile-otherInfo'><a href='./ctr-admin/admin.php'><button>유저목록</button></a></div>
+                                                    <div class='profile-otherInfo'><a href='./ctr-admin/search-id.php'><button>판매글 수정</button></a></div>";
+                                                }
+                                                $numOfPosts = 0;
 
-                                                echo  "</div>
+                                                $sql_post_count = "SELECT COUNT(*) AS count FROM posts WHERE user_id = '$user_id'";
+                                                $result_post = mysqli_query($conn, $sql_post_count);
+                                                while($rows = mysqli_fetch_assoc($result_post)) {
+                                                    $numOfPosts = $rows['count'];
+                                                }
+                                                    echo  "</div>
                                                 </div>
                                             </div>
                                             <div class='userCard-container-desktop'></div>
@@ -81,7 +87,7 @@
                                                 <div class='redbar'></div>
                                                 <div class='profile-lan-wrap'>
                                                     <div class='profile-languages'>
-                                                        <div class='teacherCard-teaches'><span class='teacherCard-teaches-title'><span>판매 글: 1개</span></span>
+                                                        <div class='teacherCard-teaches'><span class='teacherCard-teaches-title'><span>판매 글: ".$numOfPosts."개</span></span>
                                                             <div class='teacherCard-teaches-languages'>
                                                                 <div>
                                                                     <div></div>
@@ -120,14 +126,29 @@
                                                     <th style='width: 50px'><span>찜</span></th>
                                                 </tr>
                                             </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><a href='./account-page/4.php'><span>롤 골드 스킨 86개 있는 계정 판매합니다. 계좌거래 가능</span></a></td>
-                                                    <td style='text-align: cneter;'><span>2</span></td>
-                                                    <td>50</td>
-                                                    <td>1</td>
-                                                </tr>
-                                                </tbody>
+                                            <tbody>";
+                                            if($numOfPosts > 0) {
+                                                $sql_post = "SELECT * FROM posts WHERE user_id = '$user_id'";
+                                                $result_post = mysqli_query($conn, $sql_post);
+                                                while($rows = mysqli_fetch_assoc($result_post)) {
+                                                    echo "<tr>
+                                                        <td><a href='./account-page/".$rows['post_id'].".php'><span>".$rows['title']."</span></a></td>
+                                                        <td style='text-align: cneter;'><span>2</span></td>
+                                                        <td>50</td>
+                                                        <td>1</td>
+                                                    </tr>";
+                                                }
+                                            } else {
+                                                echo "<tr>
+                                                    <td style='border: none;'>
+
+                                                        <div class='no-data-container'><span>기록 없음</span></div>
+
+                                                    </td>
+                                                </tr>";
+                                            }
+                                        
+                                            echo "</tbody>
                                             </table>
                                         </div>
                                     </div>
