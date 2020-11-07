@@ -26,5 +26,5 @@ if(isset($_SESSION['user_id'])) {
         header('Location: ' . $_SERVER['HTTP_REFERER']."?error=noClick");
     }
 } else {
-    header('Location: ' . $_SERVER['HTTP_REFERER']."?error=noLogin");
+    header('Location: ' . $_SERVER['HTTP_REFERER']);
 }

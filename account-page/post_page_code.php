@@ -450,14 +450,18 @@
             default:
                 $season9 = "X";
         }
-        $user_id = $_SESSION['user_id'];
-        $sql_likes = "SELECT * FROM post_liked WHERE post_id = $post_id && user_id = '$user_id';";
-        $result_likes = mysqli_query($conn, $sql_likes);
         $like_path = "favorite";
+        if(isset($_SESSION['user_id'])) {
+            $user_id = $_SESSION['user_id'];
 
-        if(mysqli_num_rows($result_likes) > 0) {
-            while($row_like = mysqli_fetch_assoc($result_likes)) if($row_like['is_true'] == 1) $like_path = "favorite-clicked";
+            $sql_likes = "SELECT * FROM post_liked WHERE post_id = $post_id && user_id = '$user_id';";
+            $result_likes = mysqli_query($conn, $sql_likes);
+            if(mysqli_num_rows($result_likes) > 0) {
+                while($row_like = mysqli_fetch_assoc($result_likes)) if($row_like['is_true'] == 1) $like_path = "favorite-clicked";
+            }
         }
+
+        
         echo "<div class='flex-container'>
         <div style='position: static; z-index: inherit;'>
             <div>
