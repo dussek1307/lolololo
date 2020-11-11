@@ -220,159 +220,6 @@
 
         if($rows['isPrivate'] == 0) $summonerName = $rows['summonerName'];
 
-        switch($rows['season7']) {
-            case "unranked":
-                $season7 = "X";
-                break;
-            case "i4":
-                $season7 = "S7 Iron IV";
-                break;
-            case "i3":
-                $season7 = "S7 Iron III";
-                break;
-            case "i2":
-                $season7 = "S7 Iron II";
-                break;
-            case "i1":
-                $season7 = "S7 Iron I";
-                break;
-            case "s4":
-                $season7 = "S7 Silver IV";
-                break;
-            case "s3":
-                $season7 = "S7 Silver III";
-                break;
-            case "s2":
-                $season7 = "S7 Silver II";
-                break;
-            case "s1":
-                $season7 = "S7 Silver I";
-                break;
-            case "g4":
-                $season7 = "S7 Gold IV";
-                break;
-            case "g3":
-                $season7 = "S7 Gold III";
-                break;
-            case "g2":
-                $season7 = "S7 Gold II";
-                break;
-            case "g1":
-                $season7 = "S7 Gold I";
-                break;
-            case "p4":
-                $season7 = "S7 Platinum IV";
-                break;
-            case "p3":
-                $season7 = "S7 Platinum III";
-                break;
-            case "p2":
-                $season7 = "S7 Platinum II";
-                break;
-            case "p1":
-                $season7 = "S7 Platinum I";
-                break;
-            case "d4":
-                $season7 = "S7 Diamond IV";
-                break;
-            case "d3":
-                $season7 = "S7 Diamond III";
-                break;
-            case "d2":
-                $season7 = "S7 Diamond II";
-                break;
-            case "d1":
-                $season7 = "S7 Diamond I";
-                break;
-            case "m1":
-                $season7 = "S7 Master I";
-                break;
-            case "gm1":
-                $season7 = "S7 GrandMaster I";
-                break;
-            case "c1":
-                $season7 = "S7 Challenger I";
-                break;
-            default:
-                $season7 = "S7 X";
-        }
-
-        switch($rows['season8']) {
-            case "unranked":
-                $season8 = "X";
-                break;
-            case "i4":
-                $season8 = "S8 Iron IV";
-                break;
-            case "i3":
-                $season8 = "S8 Iron III";
-                break;
-            case "i2":
-                $season8 = "S8 Iron II";
-                break;
-            case "i1":
-                $season8 = "S8 Iron I";
-                break;
-            case "s4":
-                $season8 = "S8 Silver IV";
-                break;
-            case "s3":
-                $season8 = "S8 Silver III";
-                break;
-            case "s2":
-                $season8 = "S8 Silver II";
-                break;
-            case "s1":
-                $season8 = "S8 Silver I";
-                break;
-            case "g4":
-                $season8 = "S8 Gold IV";
-                break;
-            case "g3":
-                $season8 = "S8 Gold III";
-                break;
-            case "g2":
-                $season8 = "S8 Gold II";
-                break;
-            case "g1":
-                $season8 = "S8 Gold I";
-                break;
-            case "p4":
-                $season8 = "S8 Platinum IV";
-                break;
-            case "p3":
-                $season8 = "S8 Platinum III";
-                break;
-            case "p2":
-                $season8 = "S8 Platinum II";
-                break;
-            case "p1":
-                $season8 = "S8 Platinum I";
-                break;
-            case "d4":
-                $season8 = "S8 Diamond IV";
-                break;
-            case "d3":
-                $season8 = "S8 Diamond III";
-                break;
-            case "d2":
-                $season8 = "S8 Diamond II";
-                break;
-            case "d1":
-                $season8 = "S8 Diamond I";
-                break;
-            case "m1":
-                $season8 = "S8 Master I";
-                break;
-            case "gm1":
-                $season8 = "S8 GrandMaster I";
-                break;
-            case "c1":
-                $season8 = "S8 Challenger I";
-                break;
-            default:
-                $season8 = "X";
-        }
 
         switch($rows['season9']) {
             case "unranked":
@@ -450,6 +297,84 @@
             default:
                 $season9 = "X";
         }
+
+        switch($rows['season10']) {
+            case "unranked":
+                $season10 = "X";
+                break;
+            case "i4":
+                $season10 = "S10 Iron IV";
+                break;
+            case "i3":
+                $season10 = "S10 Iron III";
+                break;
+            case "i2":
+                $season10 = "S10 Iron II";
+                break;
+            case "i1":
+                $season10 = "S10 Iron I";
+                break;
+            case "s4":
+                $season10 = "S10 Silver IV";
+                break;
+            case "s3":
+                $season10 = "S10 Silver III";
+                break;
+            case "s2":
+                $season10 = "S10 Silver II";
+                break;
+            case "s1":
+                $season10 = "S10 Silver I";
+                break;
+            case "g4":
+                $season10 = "S10 Gold IV";
+                break;
+            case "g3":
+                $season10 = "S10 Gold III";
+                break;
+            case "g2":
+                $season10 = "S10 Gold II";
+                break;
+            case "g1":
+                $season10 = "S10 Gold I";
+                break;
+            case "p4":
+                $season10 = "S10 Platinum IV";
+                break;
+            case "p3":
+                $season10 = "S10 Platinum III";
+                break;
+            case "p2":
+                $season10 = "S10 Platinum II";
+                break;
+            case "p1":
+                $season10 = "S10 Platinum I";
+                break;
+            case "d4":
+                $season10 = "S10 Diamond IV";
+                break;
+            case "d3":
+                $season10 = "S10 Diamond III";
+                break;
+            case "d2":
+                $season10 = "S10 Diamond II";
+                break;
+            case "d1":
+                $season10 = "S10 Diamond I";
+                break;
+            case "m1":
+                $season10 = "S10 Master I";
+                break;
+            case "gm1":
+                $season10 = "S10 GrandMaster I";
+                break;
+            case "c1":
+                $season10 = "S10 Challenger I";
+                break;
+            default:
+                $season10 = "S10 X";
+        }
+
         $like_path = "favorite";
         if(isset($_SESSION['user_id'])) {
             $user_id = $_SESSION['user_id'];
@@ -651,10 +576,10 @@
 <br>
 <div class='box tags-box'>
     <div class='tag requireTooltip brown'>
-        ".$season8."
+        ".$season9."
     </div>
     <div class='tag requireTooltip brown'>
-        ".$season9."
+        ".$season10."
     </div>
 </div>
 </div>

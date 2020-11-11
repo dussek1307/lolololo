@@ -127,6 +127,7 @@
                                                 </tr>
                                             </thead>
                                             <tbody>";
+
                                             if($numOfPosts > 0) {
                                                 $sql_post = "SELECT * FROM posts WHERE user_id = '$user_id'";
                                                 $result_post = mysqli_query($conn, $sql_post);
@@ -162,30 +163,118 @@
                                     <div>
                                         <div class='profile-sessions-table-box'>
                                         <table>
-                                            <thead>
-                                                <tr>
-                                                    <th></th>
-                                                    <th><span>개인랭크</span></th>
-                                                    <th><span>챔피언</span></th>
-                                                    <th><span>스킨</span></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>";
-
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th><span>개인랭크</span></th>
+                                                <th><span>챔피언</span></th>
+                                                <th><span>스킨</span></th>
+                                            </tr>
+                                        </thead>";
+                                        $sql_liked = "SELECT post_id FROM post_liked WHERE user_id = '$user_id'";
+                                        $result_liked = mysqli_query($conn, $sql_liked);
+                                        if(mysqli_num_rows($result_liked) > 0) {
+                                            while($row_liked = mysqli_fetch_assoc($result_liked)) {
+                                                $post_id = $row_liked['post_id'];
+    
+                                                $sql_post_liked = "SELECT * FROM posts WHERE post_id = '$post_id'";
+                                                $result_post_liked = mysqli_query($conn, $sql_post_liked);
+                                                while($row_post_liked = mysqli_fetch_assoc($result_post_liked)) {
+                                                    
+                                                    switch($row_post_liked['soloRank']) {
+                                                        case "unranked":
+                                                            $soloRank = "Unranked";
+                                                            break;
+                                                        case "i4":
+                                                            $soloRank = "Iron IV";
+                                                            break;
+                                                        case "i3":
+                                                            $soloRank = "Iron III";
+                                                            break;
+                                                        case "i2":
+                                                            $soloRank = "Iron II";
+                                                            break;
+                                                        case "i1":
+                                                            $soloRank = "Iron I";
+                                                            break;
+                                                        case "s4":
+                                                            $soloRank = "Silver IV";
+                                                            break;
+                                                        case "s3":
+                                                            $soloRank = "Silver III";
+                                                            break;
+                                                        case "s2":
+                                                            $soloRank = "Silver II";
+                                                            break;
+                                                        case "s1":
+                                                            $soloRank = "Silver I";
+                                                            break;
+                                                        case "g4":
+                                                            $soloRank = "Gold IV";
+                                                            break;
+                                                        case "g3":
+                                                            $soloRank = "Gold III";
+                                                            break;
+                                                        case "g2":
+                                                            $soloRank = "Gold II";
+                                                            break;
+                                                        case "g1":
+                                                            $soloRank = "Gold I";
+                                                            break;
+                                                        case "p4":
+                                                            $soloRank = "Platinum IV";
+                                                            break;
+                                                        case "p3":
+                                                            $soloRank = "Platinum III";
+                                                            break;
+                                                        case "p2":
+                                                            $soloRank = "Platinum II";
+                                                            break;
+                                                        case "p1":
+                                                            $soloRank = "Platinum I";
+                                                            break;
+                                                        case "d4":
+                                                            $soloRank = "Diamond IV";
+                                                            break;
+                                                        case "d3":
+                                                            $soloRank = "Diamond III";
+                                                            break;
+                                                        case "d2":
+                                                            $soloRank = "Diamond II";
+                                                            break;
+                                                        case "d1":
+                                                            $soloRank = "Diamond I";
+                                                            break;
+                                                        case "m1":
+                                                            $soloRank = "Master I";
+                                                            break;
+                                                        case "gm1":
+                                                            $soloRank = "GrandMaster I";
+                                                            break;
+                                                        case "c1":
+                                                            $soloRank = "Challenger I";
+                                                            break;
+                                                        default:
+                                                        $soloRank = "Unranked";
+                                                    }                                                
+                                                    echo "<tbody>
+                                                    <tr>
+                                                    <td><a href='https://localhost/public_html/account-page/".$post_id.".php'><span>롤 골드 스킨 86개 있는 계정 판매합니다. 계좌거래 가능</span></a></td>
+                                                    <td>".$soloRank."</td>
+                                                    <td>".$row_post_liked['numOfChams']."</td>
+                                                    <td>".$row_post_liked['numOfSkins']."</td>
+                                                </tr>";
+                                                }
+                                            }
+                                        } else {
                                             echo "<tr>
-                                                <td><a href='https://localhost/public_html/account-page/4.php'><span>롤 골드 스킨 86개 있는 계정 판매합니다. 계좌거래 가능</span></a></td>
-                                                <td>골드2</td>
-                                                <td>82개</td>
-                                                <td>86개</td>
-                                            </tr>";
+                                                    <td style='border: none;'>
 
-                                            // echo "<tr>
-                                            //         <td style='border: none;'>
+                                                        <div class='no-data-container'><span>기록 없음</span></div>
 
-                                            //             <div class='no-data-container'><span>기록 없음</span></div>
-
-                                            //         </td>
-                                            //     </tr>";
+                                                    </td>
+                                                </tr>";
+                                        }
 
                                                 
                                     echo "</tbody>
