@@ -624,8 +624,21 @@
         <div class='review-header'>
             <header class='reviews-header'><span>2 리뷰</span></header>
         </div>
-        <div class='review-container'><a id='loginToCmt'><p class='login-warning'>로그인을 하고 리뷰를 남기세요!</p></a><div class='reviews-lists'>
+        <div class='review-container'>";
+        if(isset($_SESSION['user_id'])) {
+            echo "<form action=".'../inc/comment.php'." method='post'>
+            <input type='hidden' name='post_id' value='".$rows['post_id']."'>
+            <textarea placeholder='댓글..' name='message' class='cmt-textarea'></textarea>
+            <div class='btn-container'>
+                <button class='cmt-btn' type='submit' name='reviewSubmit'>등록</button>
+                <button class='clear-btn' type='button' id='clear'>취소</button>
+            </div>
+        </form>";
+        } else {
+            echo "<a id='loginToCmt'><p class='login-warning'>로그인을 하고 리뷰를 남기세요!</p></a>";
+        }
 
+        echo "<div class='reviews-lists'>
         <div class='review-list-box' onmouseover='dropdownHover(0)'>
             <section class='review-flex'>
                 <div class='avatar avatar-small review-avatar avatar-placeholder'><img src='../resources/img/profile-img/default-user3.png' alt='Avatar'></div>

@@ -259,7 +259,7 @@
                                                     }                                                
                                                     echo "<tbody>
                                                     <tr>
-                                                    <td><a href='https://localhost/public_html/account-page/".$post_id.".php'><span>롤 골드 스킨 86개 있는 계정 판매합니다. 계좌거래 가능</span></a></td>
+                                                    <td><a href='https://localhost/public_html/account-page/".$post_id.".php'><span>".$row_post_liked['title']."</span></a></td>
                                                     <td>".$soloRank."</td>
                                                     <td>".$row_post_liked['numOfChams']."</td>
                                                     <td>".$row_post_liked['numOfSkins']."</td>

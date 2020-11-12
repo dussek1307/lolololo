@@ -358,7 +358,10 @@ footer, header, main, .review-time {
     border: 1px solid #333;
 }
 .select-score {
+    position: relative;
+    bottom: 10px;
     margin-left: 10px;
+    width: 115px;
 }
 
 .recommend-section {
