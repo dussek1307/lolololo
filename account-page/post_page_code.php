@@ -621,8 +621,14 @@
         </div>
     </div>
 </div><div id='teacher_profile_nav_reviews' class='teacherCard-box reviews-box'>
-        <div class='review-header'>
-            <header class='reviews-header'><span>2 리뷰</span></header>
+        <div class='review-header'>";
+        $sql_numOfCmt = "SELECT count(cid) FROM comment WHERE post_id = '$post_id'";
+        $result_numOfCmt = mysqli_query($conn, $sql_numOfCmt);
+        $numOfCmt = 0;
+        while($row_numOfCmt = mysqli_fetch_assoc($result_numOfCmt)) {
+            $numOfCmt = $row_numOfCmt['count(cid)'];
+        }
+        echo "<header class='reviews-header'><span>".$numOfCmt." 리뷰</span></header>
         </div>
         <div class='review-container'>";
         if(isset($_SESSION['user_id'])) {
@@ -637,73 +643,98 @@
         } else {
             echo "<a id='loginToCmt'><p class='login-warning'>로그인을 하고 리뷰를 남기세요!</p></a>";
         }
-
-        echo "<div class='reviews-lists'>
-        <div class='review-list-box' onmouseover='dropdownHover(0)'>
-            <section class='review-flex'>
-                <div class='avatar avatar-small review-avatar avatar-placeholder'><img src='../resources/img/profile-img/default-user3.png' alt='Avatar'></div>
-                <section>
-                    <div class='review-user-name'>위너파</div>
-                </section>
-            </section>
-            <span class='score-section'>100 점</span>
-            <div class='review-comment'>비싸네요</div> <form class='edit-container' action='../inc/review_edit.php' method='post'>
-                <textarea class='edit-textarea' name='message' cols='90'></textarea>
-                <div class='edit-btn-area'>
-                    <input type='hidden' name='rid' value='95'>
-                    <input type='hidden' name='uid' value='jin13'>
-                    <input type='hidden' name='date' value='2020-06-23 12:41:33'>
-                    <button class='edit-confirm' name='edit-click'>수정</button>
-                    <button class='edit-cancel' onclick='cancel_edit(0)' type='button'>취소</button>
-                </div>
-            </form>
-
-
-            <div class='review-user'>
-                <section class='review-time'>2020-01-16 12:11:59</section>
-            </div><a class='cmt-cmt-btn' onclick='cmt_cmt_drop(0)'>▼&nbsp;&nbsp;&nbsp;&nbsp;댓글 더 보기</a>
-                </div></div><div class='cmt-cmt-container'>
-        <div class='cmt-cmt-box'><section class='review-flex'>
-                    <div class='avatar avatar-small review-avatar avatar-placeholder cmt-cmt-profile'><img src='../resources/img/profile-img/default-user7.png' alt='Avatar'></div>
-                    <section style='display: inline'>
-                        <span class='review-user-name cmt-cmt-username'>아담</span>
+        $sql_cmt = "SELECT * FROM comment WHERE post_id = '$post_id'";
+        $result_cmt = mysqli_query($conn, $sql_cmt);
+        $count = 0;
+        if(mysqli_num_rows($result_cmt) > 0) {
+            while($row_cmt = mysqli_fetch_assoc($result_cmt)) {
+                $uid = $row_cmt['uid'];
+                $sql_profile = "SELECT profile_img FROM users WHERE uid = '$uid'";
+                $result_profile = mysqli_query($conn, $sql_profile);
+                $profile = "";
+                while($row_profile = mysqli_fetch_assoc($result_profile)) {
+                    $profile = $row_profile['profile_img'];
+                }
+                
+                echo "<div class='reviews-lists'>
+                <div class='review-list-box' onmouseover='dropdownHover(".$count.")'>
+                <section class='review-flex'>
+                    <div class='avatar avatar-small review-avatar avatar-placeholder'><img src='../resources/img/profile-img/".$profile."' alt='Avatar'></div>
+                    <section>
+                        <div class='review-user-name'>".$row_cmt['author']."</div>
                     </section>
                 </section>
-                <div class='review_cmt_cmt'>얼마죠?</div>
-                <div class='review-user cmt-cmt-time-container'>
-                    <section class='review-time' style='bottom: 4px'>2020-04-29 03:01:08</section>
-                </div></div>
-        </div><div class='reviews-lists'>
+                <div class='review-comment'>".$row_cmt['message']."</div>";
 
-        <div class='review-list-box' onmouseover='dropdownHover(1)'>
-            <section class='review-flex'>
-                <div class='avatar avatar-small review-avatar avatar-placeholder'><img src='../resources/img/profile-img/default-user6.png' alt='Avatar'></div>
-                <section>
-                    <div class='review-user-name'>마이파</div>
-                </section>
-            </section>
-            <span class='score-section'>40 점</span>
-            <div class='review-comment'>hi</div> <form class='edit-container' action='../inc/review_edit.php' method='post'>
-                <textarea class='edit-textarea' name='message' cols='90'></textarea>
-                <div class='edit-btn-area'>
-                    <input type='hidden' name='rid' value='115'>
-                    <input type='hidden' name='uid' value='tr5555'>
-                    <input type='hidden' name='date' value='2020-06-23 12:41:33'>
-                    <button class='edit-confirm' name='edit-click'>수정</button>
-                    <button class='edit-cancel' onclick='cancel_edit(1)' type='button'>취소</button>
-                </div>
-            </form>
+                if(isset($_SESSION['user_id'])) {
+                    echo "<span class='dropdown' onclick='getDropdown($count)'>
+                            <img class='dropdown-img' src='../resources/img/cmt-menu.png'>
+                            <div class='dropdown-content'>
+
+                                <form class='menu-from' action='../inc/comment_delete.php' method='post'>
+                                <input type='hidden' name='cid' value='".$row_cmt['cid']."'>";
+                                if($row_cmt['uid'] == $_SESSION['uid']) {
+                                    echo "<button type='button' onclick='editReview($count)'>수정</button>
+                                    <button name='delete'>삭제</button>";
+                                } else {
+                                    echo "<button name='report'>신고하기</button>";
+                                }
+                                    
+                                echo "</form>
+                                
+                            </div>
+                        </span>";
+                }
+                echo "<form class='edit-container' action='../inc/comment_edit.php' method='post'>
+                    <textarea class='edit-textarea' name='message' cols='90'></textarea>
+                    <div class='edit-btn-area'>
+                        <input type='hidden' name='cid' value='".$row_cmt['cid']."'>
+                        <input type='hidden' name='uid' value='".$row_cmt['uid']."'>
+                        <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
+                        <button class='edit-confirm' name='edit-click'>수정</button>
+                        <button class='edit-cancel' onclick='cancel_edit($count)' type='button'>취소</button>
+                    </div>
+                </form>
+                <div class='review-user'>
+                    <section class='review-time'>".$row_cmt['date']."</section>
+                </div>";
+                $cid = $row_cmt['cid'];
+                $c_reply = mysqli_query($conn, "SELECT * FROM cmt_reply WHERE post_id = $post_id AND cid = '$cid';");
+                if(mysqli_num_rows($c_reply) > 0) {
+                    while($row_rply = mysqli_fetch_assoc($c_reply)) {
+                        $uid = $row_rply['uid'];
+                        $sql_rply_profile = "SELECT profile_img FROM users WHERE uid = '$uid'";
+                        $result_rply_profile = mysqli_query($conn, $sql_rply_profile);
+                        $profile_reply = "";
+                        while($row_rply_profile = mysqli_fetch_assoc($result_rply_profile)) {
+                            $profile_reply = $row_rply_profile['profile_img'];
+                        }
+                        echo "<a class='cmt-cmt-btn' onclick='cmt_cmt_drop($count)'>▼&nbsp;&nbsp;&nbsp;&nbsp;댓글 더 보기</a></div></div>
+                        <div class='cmt-cmt-container'>
+                        <div class='cmt-cmt-box'><section class='review-flex'>
+                            <div class='avatar avatar-small review-avatar avatar-placeholder cmt-cmt-profile'><img src='../resources/img/profile-img/".$profile_reply."' alt='Avatar'></div>
+                            <section style='display: inline'>
+                                <span class='review-user-name cmt-cmt-username'>".$row_rply['author']."</span>
+                            </section>
+                        </section>
+                        <div class='review_cmt_cmt'>".$row_rply['message']."</div>
+                        <div class='review-user cmt-cmt-time-container'>
+                            <section class='review-time' style='bottom: 4px'>".$row_rply['date']."</section>
+                        </div></div>
+                        </div>";
+                    }
+                    
+                } else {
+                    echo "<a class='cmt-cmt-btn' style='display: none' onclick='cmt_cmt_drop($count)'>▼&nbsp;&nbsp;&nbsp;&nbsp;댓글 더 보기</a></div></div>";
+                }
+            }
+        }
+        
+        
 
 
-            <div class='review-user'>
-                <section class='review-time'>2020-04-25 19:22:43</section>
-            </div><a class='cmt-cmt-btn' style='display: none' onclick='cmt_cmt_drop(1)'>▼&nbsp;&nbsp;&nbsp;&nbsp;댓글 더 보기</a>
-                </div></div><div class='cmt-cmt-container'>
-        <div class='cmt-cmt-box'></div>
-        </div></div>
+        echo "</div>
 </div>
-
-
 </div>
 <div class='teacher-right' style='left: auto; top: auto; bottom: auto;'>
     <div class='teacher-book'>
