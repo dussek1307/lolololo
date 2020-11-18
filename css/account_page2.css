@@ -2592,16 +2592,7 @@
    margin: 0;
    padding: 0; }
  
- /* Default Link Styles */
- a {
-   color: #008CBA;
-   line-height: inherit;
-   text-decoration: none; }
-   a:hover, a:focus {
-     color: #0078a0; }
-   a img {
-     border: none; }
- 
+
  /* Default paragraph styles */
  p {
    font-family: inherit;
@@ -3039,18 +3030,7 @@
  #pageContainer {
    min-height: calc(100vh - 50px); }
  
- a {
-   color: #0078A0;
-   font-size: 0.75rem; }
-   a.nocolor {
-     color: inherit !important; }
- 
- a:visited {
-   color: #0078A0; }
- 
- a:hover {
-   color: #0092c3; }
- 
+
  .img-align-block,
  .img-align-block-right {
    display: flex;

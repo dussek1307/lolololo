@@ -1,25 +1,25 @@
 <?php
+require "./dbh.php";
 if(isset($_POST['delete'])) {
-    require "./dbh.php";
     $uri = explode('?', $_SERVER['HTTP_REFERER']);
-    $rid = $_POST['rid'];
-
-    $sql = "DELETE FROM review WHERE rid = '$rid'";
-    $result = mysqli_query($conn, $sql);
+    $cid = $_POST['cid'];
+    $sql = "DELETE FROM comment WHERE cid = '$cid'";
+    $sql_reply = "DELETE FROM cmt_reply WHERE cid = '$cid";
+    mysqli_query($conn, $sql);
+    mysqli_query($conn, $sql_reply);
     header("Location: ".$uri[0]."?delete=success");
 } else if(isset($_POST["report"])) {
-    require "./dbh.php";
     $uri = explode('?', $_SERVER['HTTP_REFERER']);
-    $rid = $_POST['rid'];
+    $cid = $_POST['cid'];
     $report = 0;
-    $sql = "SELECT num_of_report FROM review WHERE rid = '$rid'";
+    $sql = "SELECT num_of_report FROM comment WHERE cid = '$cid'";
     $result = mysqli_query($conn, $sql);
     while($row = mysqli_fetch_assoc($result)) {
         $report = $row['num_of_report'];
     }
     $report += 1;
-    $sql = "UPDATE review
-    SET num_of_report = '$report' WHERE rid = '$rid';";
+    $sql = "UPDATE comment
+    SET num_of_report = '$report' WHERE cid = '$cid';";
     mysqli_query($conn, $sql);
     header("Location: ".$uri[0]."?report=success");
 }

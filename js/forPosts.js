@@ -189,7 +189,7 @@ cmt_textarea && cmt_textarea.addEventListener("keydown", autosize);
 let is_open = 0;
 
 function cmt_cmt_drop(e) {
-    0 == (is_open = "" == cmt_cmt_container[e].style.display || "none" == cmt_cmt_container[e].style.display ? 0 : 1) ? (cmt_cmt_btn[e].innerHTML = "▲    댓글 감추기", cmt_cmt_container[e].style.display = "block", is_open = 1) : (cmt_cmt_btn[e].innerHTML = "▼    댓글 더 보기", cmt_cmt_container[e].style.display = "none", is_open = 0)
+    0 == (is_open = "" == cmt_cmt_container[e].style.display || "none" == cmt_cmt_container[e].style.display ? 0 : 1) ? (cmt_cmt_btn[e].innerHTML = "▲&nbsp;&nbsp;&nbsp;&nbsp;댓글 감추기", cmt_cmt_container[e].style.display = "block", is_open = 1) : (cmt_cmt_btn[e].innerHTML = "▼&nbsp;&nbsp;&nbsp;&nbsp;댓글 더 보기", cmt_cmt_container[e].style.display = "none", is_open = 0)
 }
 let isDropdown = 0;
 if (dropdown.length > 0)
@@ -217,7 +217,12 @@ function reply_cancel(e) {
 }
 
 function open_reply(e) {
-    reply_container[e].style.display = "block", cmt_cmt_container[e].style.display = "block"
+    if (reply_container[e].style.display == "block") {
+        reply_container[e].style.display = "none", cmt_cmt_container[e].style.display = "none";
+    } else {
+        reply_container[e].style.display = "block", cmt_cmt_container[e].style.display = "block"
+    }
+
 }
 
 function directTo(e) {

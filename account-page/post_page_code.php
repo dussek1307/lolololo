@@ -633,10 +633,10 @@
         <div class='review-container'>";
         if(isset($_SESSION['user_id'])) {
             echo "<form action=".'../inc/comment.php'." method='post'>
-            <input type='hidden' name='post_id' value='".$rows['post_id']."'>
+            <input type='hidden' name='post_id' value='".$post_id."'>
             <textarea placeholder='댓글..' name='message' class='cmt-textarea'></textarea>
             <div class='btn-container'>
-                <button class='cmt-btn' type='submit' name='reviewSubmit'>등록</button>
+                <button class='cmt-btn' type='submit' name='cmtSubmit'>등록</button>
                 <button class='clear-btn' type='button' id='clear'>취소</button>
             </div>
         </form>";
@@ -690,7 +690,6 @@
                     <div class='edit-btn-area'>
                         <input type='hidden' name='cid' value='".$row_cmt['cid']."'>
                         <input type='hidden' name='uid' value='".$row_cmt['uid']."'>
-                        <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
                         <button class='edit-confirm' name='edit-click'>수정</button>
                         <button class='edit-cancel' onclick='cancel_edit($count)' type='button'>취소</button>
                     </div>
@@ -699,8 +698,34 @@
                     <section class='review-time'>".$row_cmt['date']."</section>
                 </div>";
                 $cid = $row_cmt['cid'];
-                $c_reply = mysqli_query($conn, "SELECT * FROM cmt_reply WHERE post_id = $post_id AND cid = '$cid';");
+                $sql_reply = "SELECT * FROM cmt_reply WHERE post_id = $post_id AND cid = '$cid';";
+                $c_reply = mysqli_query($conn, $sql_reply);
                 if(mysqli_num_rows($c_reply) > 0) {
+                    echo "<a class='cmt-cmt-btn' onclick='cmt_cmt_drop($count)'>▼&nbsp;&nbsp;&nbsp;&nbsp;댓글 더 보기</a>";
+                } else {
+                    echo "<a class='cmt-cmt-btn' style='display: none' onclick='cmt_cmt_drop($count)'>▼&nbsp;&nbsp;&nbsp;&nbsp;댓글 더 보기</a>";
+                }
+
+                if(isset($_SESSION['user_id'])) {
+                    echo "<a class='reply' onclick='open_reply($count)'>답변</a></div>";
+                }
+                if(isset($_SESSION['user_id'])) {
+                    echo "<form class='reply-container' action='../inc/cmt_reply.php' method='post'>
+                            <textarea name='reply_content' class='reply-textarea'></textarea>
+                            <input type='hidden' name='cid' value='".$row_cmt['cid']."'>
+                            <input type='hidden' name='post_id' value='".$post_id."'>
+                            <div class='reply-btn-section' style='z-index: 99'>
+                                <button class='reply-btn' name='reply_clicked'>답변</button>
+                                <button class='cancel' type='button' onclick='reply_cancel($count)'>취소</button>
+                            </div>
+                        </form></div>";
+                }
+
+                echo "<div class='cmt-cmt-container'>
+                    <div class='cmt-cmt-box'>";
+                $c_reply = mysqli_query($conn, $sql_reply);
+                if(mysqli_num_rows($c_reply) > 0) {
+                    
                     while($row_rply = mysqli_fetch_assoc($c_reply)) {
                         $uid = $row_rply['uid'];
                         $sql_rply_profile = "SELECT profile_img FROM users WHERE uid = '$uid'";
@@ -709,9 +734,7 @@
                         while($row_rply_profile = mysqli_fetch_assoc($result_rply_profile)) {
                             $profile_reply = $row_rply_profile['profile_img'];
                         }
-                        echo "<a class='cmt-cmt-btn' onclick='cmt_cmt_drop($count)'>▼&nbsp;&nbsp;&nbsp;&nbsp;댓글 더 보기</a></div></div>
-                        <div class='cmt-cmt-container'>
-                        <div class='cmt-cmt-box'><section class='review-flex'>
+                        echo "<section class='review-flex'>
                             <div class='avatar avatar-small review-avatar avatar-placeholder cmt-cmt-profile'><img src='../resources/img/profile-img/".$profile_reply."' alt='Avatar'></div>
                             <section style='display: inline'>
                                 <span class='review-user-name cmt-cmt-username'>".$row_rply['author']."</span>
@@ -720,13 +743,12 @@
                         <div class='review_cmt_cmt'>".$row_rply['message']."</div>
                         <div class='review-user cmt-cmt-time-container'>
                             <section class='review-time' style='bottom: 4px'>".$row_rply['date']."</section>
-                        </div></div>
                         </div>";
                     }
                     
-                } else {
-                    echo "<a class='cmt-cmt-btn' style='display: none' onclick='cmt_cmt_drop($count)'>▼&nbsp;&nbsp;&nbsp;&nbsp;댓글 더 보기</a></div></div>";
                 }
+                echo "</div></div>";
+                $count++;
             }
         }
         

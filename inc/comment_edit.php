@@ -4,7 +4,7 @@ if(isset($_POST['edit-click'])) {
     $uri = explode('?', $_SERVER['HTTP_REFERER']);
     $cid = $_POST['cid'];
     $uid = $_POST['uid'];
-    $date = $_POST['date'];
+    $date = date('Y-m-d H:i:s');
     $message = $_POST['message'];
     $message = nl2br(str_replace("'", "\'", $message));
 
