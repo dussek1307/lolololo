@@ -170,7 +170,8 @@
                                                 <th><span>챔피언</span></th>
                                                 <th><span>스킨</span></th>
                                             </tr>
-                                        </thead>";
+                                        </thead>
+                                        <tbody>";
                                         $sql_liked = "SELECT post_id FROM post_liked WHERE user_id = '$user_id'";
                                         $result_liked = mysqli_query($conn, $sql_liked);
                                         if(mysqli_num_rows($result_liked) > 0) {
@@ -257,8 +258,7 @@
                                                         default:
                                                         $soloRank = "Unranked";
                                                     }                                                
-                                                    echo "<tbody>
-                                                    <tr>
+                                                    echo "<tr>
                                                     <td><a href='https://localhost/public_html/account-page/".$post_id.".php'><span>".$row_post_liked['title']."</span></a></td>
                                                     <td>".$soloRank."</td>
                                                     <td>".$row_post_liked['numOfChams']."</td>
@@ -297,21 +297,39 @@
                                                     <th><span>내 댓글</span></th>
                                                     <th style='width: 50px'><span>답변</span></th>
                                                 </tr>
-                                            </thead>";
-
-                                                echo "<tbody>
-                                                    <tr>
-                                                        <td><a href='./account-page/4.php'><span>롤 골드 스킨 86개 있는 계정 판매합니다. 계좌거래 가능</span></a></td>
-                                                        <td style='text-align: cneter;'><span>4에 가능한가요?</span></td>
-                                                        <td>1</td>
-                                                    </tr>";
-  
-                                            // echo "<div class='reviews'>
-                                            //         <div class='no-data-container'><span>기록 없음</span></div>
-                                            //     </div>";
-                                                
-                                    echo "</tbody>
-                                    </table>
+                                            </thead><tbody>";
+                                            $uid = $_SESSION['uid'];
+                                            $sql_cmt = "SELECT * FROM comment WHERE uid = '$uid' ORDER BY date DESC";
+                                            $result_cmt = mysqli_query($conn, $sql_cmt);
+                                            if(mysqli_num_rows($result_cmt) > 0) {
+                                                while($row_cmt = mysqli_fetch_assoc($result_cmt)) {
+                                                    $title = "";
+                                                    $post_id = $row_cmt['post_id'];
+                                                    $result_title = mysqli_query($conn, "SELECT * FROM posts WHERE post_id = '$post_id'");
+                                                    while($row_title = mysqli_fetch_assoc($result_title)) {
+                                                        $title = $row_title['title'];
+                                                    }
+                                                    $cid = $row_cmt['cid'];
+                                                    $result_num = mysqli_query($conn, "SELECT count('cid') FROM cmt_reply WHERE cid = '$cid'");
+                                                    $numOfReply = 0;
+                                                    while($row_num = mysqli_fetch_assoc($result_num)) {
+                                                        $numOfReply = $row_num["count('cid')"];
+                                                    }
+                                                    echo "<tr>
+                                                            <td><a href='./account-page/".$row_cmt['post_id'].".php'><span>".$title."</span></a></td>
+                                                            <td style='text-align: cneter;'><span>".$row_cmt['message']."</span></td>
+                                                            <td>".$numOfReply."</td>
+                                                        </tr>";
+                                                }
+                                            } else {
+                                                echo "<tr>
+                                                    <td style='border: none;'>
+                                                        <div class='no-data-container'><span>기록 없음</span></div>
+                                                    </td>
+                                                </tr>";
+                                            }
+                                                  
+                                    echo "</tbody></table>
                                     </div>
                                         
                                     </div>

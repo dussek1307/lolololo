@@ -707,7 +707,7 @@
                 }
 
                 if(isset($_SESSION['user_id'])) {
-                    echo "<a class='reply' onclick='open_reply($count)'>답변</a></div>";
+                    echo "<a class='reply' onclick='open_reply($count)'>답변</a>";
                 }
                 if(isset($_SESSION['user_id'])) {
                     echo "<form class='reply-container' action='../inc/cmt_reply.php' method='post'>
@@ -718,10 +718,10 @@
                                 <button class='reply-btn' name='reply_clicked'>답변</button>
                                 <button class='cancel' type='button' onclick='reply_cancel($count)'>취소</button>
                             </div>
-                        </form></div>";
+                        </form>";
                 }
 
-                echo "<div class='cmt-cmt-container'>
+                echo "</div></div><div class='cmt-cmt-container'>
                     <div class='cmt-cmt-box'>";
                 $c_reply = mysqli_query($conn, $sql_reply);
                 if(mysqli_num_rows($c_reply) > 0) {

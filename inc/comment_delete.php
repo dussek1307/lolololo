@@ -4,7 +4,7 @@ if(isset($_POST['delete'])) {
     $uri = explode('?', $_SERVER['HTTP_REFERER']);
     $cid = $_POST['cid'];
     $sql = "DELETE FROM comment WHERE cid = '$cid'";
-    $sql_reply = "DELETE FROM cmt_reply WHERE cid = '$cid";
+    $sql_reply = "DELETE FROM cmt_reply WHERE cid = '$cid'";
     mysqli_query($conn, $sql);
     mysqli_query($conn, $sql_reply);
     header("Location: ".$uri[0]."?delete=success");
