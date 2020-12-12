@@ -1,5 +1,6 @@
 <?php
 include_once "../inc/dbh.php";
+require_once("tiny/vendor/autoload.php");
 session_start();
 date_default_timezone_set('Asia/Seoul');
 
@@ -26,9 +27,8 @@ if(isset($_POST['submit'])) {
     $numOfSkins = $_POST["numOfSkins"];
     $blueEssence = $_POST["blueEssence"];
 
-    $season7 = $_POST["season7"];
-    $season8 = $_POST["season8"];
     $season9 = $_POST["season9"];
+    $season10 = $_POST["season10"];
     $serverLocation = $_POST["serverLocation"];
 
     $mostPlayed1 = $_POST["mostPlayed1"];
@@ -47,24 +47,23 @@ if(isset($_POST['submit'])) {
 
     $title = $_POST["title"];
     $tel = $_POST["tel"];
-    $price = $_POST["price"];
+    $price = str_replace(",", "", $_POST["price"]);
     $intro = nl2br($_POST["intro"]);
     $user_id = $_SESSION['user_id'];
 
     $sql_post = "INSERT INTO posts (summonerName, isPrivate, soloRank, flexRank, fWins, fLoses, sWins, sLoses, level, owner, numOfChams, numOfSkins,
-    blueEssence, season7, season8, season9, serverLocation, mostPlayed1, mostPlayed2, mostPlayed3, numOfPlayed1, numOfPlayed2, numOfPlayed3,
+    blueEssence, season9, season10, serverLocation, mostPlayed1, mostPlayed2, mostPlayed3, numOfPlayed1, numOfPlayed2, numOfPlayed3,
     meansOfTrade1, meansOfTrade2, meansOfTrade3, title, tel, price, intro, user_id, upload_date)
         VALUES ('$summonerName', '$isPrivate','$soloRank', '$flexRank', '$fWins', '$fLoses', '$sWins', '$sLoses', '$level', 
-        '$owner', '$numOfChams', '$numOfSkins', '$blueEssence', '$season7', '$season8', '$season9', '$serverLocation',
+        '$owner', '$numOfChams', '$numOfSkins', '$blueEssence', '$season9', '$season10', '$serverLocation',
         '$mostPlayed1', '$mostPlayed2', '$mostPlayed3', '$numOfPlayed1', '$numOfPlayed2', '$numOfPlayed3',
         '$meansOfTrade1', '$meansOfTrade2', '$meansOfTrade3', '$title','$tel', '$price', '$intro', '$user_id', '$upload_date'
         );";
-
     mysqli_query($conn, $sql_post);
 
     // Get the post_id
     $post_id = "";
-    $result = mysqli_query($conn, "SELECT * FROM posts;");
+    $result = mysqli_query($conn, "SELECT * FROM posts ORDER BY post_id DESC LIMIT 1;");
     if(mysqli_num_rows($result) > 0) {
         while($row = mysqli_fetch_assoc($result)) {
             $post_id =  $row["post_id"];
@@ -73,7 +72,11 @@ if(isset($_POST['submit'])) {
         echo "You have no row.";
     }
 
+    $myfile = fopen("post_page_code.php", "r") or die("Unable to open file!");
+    $post_page_code = "<?php include './post_page_code.php';  ?>";
+    fclose($myfile);
 
+    \Tinify\setKey("KH151TcYhrCphqTpm3Dy8WY0wXcCyKV5");
     $file = $_FILES['file'];
     $fileName = $file['name'];
     $fileTmpName = $file['tmp_name'];
@@ -82,30 +85,25 @@ if(isset($_POST['submit'])) {
     $fileExt = explode('.', $fileName);
     $fileActualExt = strtolower(end($fileExt));
     $allowed = array('jpg', 'jpeg', 'png', 'pdf');
-
-
-    $myfile = fopen("post_page_code.php", "r") or die("Unable to open file!");
-    $post_page_code = "<?php include './post_page_code.php';  ?>";
-    fclose($myfile);
-
     if(in_array($fileActualExt, $allowed)) {
         if($fileError === 0) {
             if($fileSize < 5000000) {
                 $newFileName = "post_".$post_id.".".$fileActualExt;
                 $fileDestination = '../resources/img/post-main/'.$newFileName;
-                move_uploaded_file($fileTmpName, $fileDestination);
+                $source = \Tinify\fromFile($fileTmpName);
+                $source->toFile($fileDestination);
                 $post_page = fopen($post_id.".php", "w");
                 fwrite($post_page, $post_page_code);
                 fclose($post_page);
-                header("Location: ../upload.php?success");
+                // header("Location: ../upload.php?success");
             } else {
-                echo "Your file is too big to upload.";
+                echo "사진크기가 너무 큽니다.";
             }
         } else {
-            echo "There was an error uploading your file.";
+            echo "사진을 올리는데 문제가 있습니다";
         }
     } else {
-        echo "You can not upload ".end($fileExt).".";
+        echo "jpg, png를 이용해주세요. 올린확장자: ".end($fileExt).".";
     }
 
 }

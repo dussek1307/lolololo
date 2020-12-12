@@ -37,3 +37,64 @@ $(".i-checkbox").click(function () {
         privateCount = 1;
     }
 })
+// price comma separator format
+$('#price').on("keyup", function (event) {
+
+    // 1.
+    var selection = window.getSelection().toString();
+    if (selection !== '') {
+        return;
+    }
+
+    // 2.
+    if ($.inArray(event.keyCode, [38, 40, 37, 39]) !== -1) {
+        return;
+    }
+
+    // 3
+    var $this = $(this);
+    var input = $this.val();
+
+    // 4
+    var input = input.replace(/[\D\s\._\-]+/g, "");
+
+    // 5
+    input = input ? parseInt(input, 10) : 0;
+
+    // 6
+    $this.val(function () {
+        return (input === 0) ? "" : input.toLocaleString("en-US");
+    });
+
+});
+// phone number input
+function inputPhoneNumber(obj) {
+
+
+
+    var number = obj.value.replace(/[^0-9]/g, "");
+    var phone = "";
+
+
+
+    if (number.length < 4) {
+        return number;
+    } else if (number.length < 7) {
+        phone += number.substr(0, 3);
+        phone += "-";
+        phone += number.substr(3);
+    } else if (number.length < 11) {
+        phone += number.substr(0, 3);
+        phone += "-";
+        phone += number.substr(3, 3);
+        phone += "-";
+        phone += number.substr(6);
+    } else {
+        phone += number.substr(0, 3);
+        phone += "-";
+        phone += number.substr(3, 4);
+        phone += "-";
+        phone += number.substr(7);
+    }
+    obj.value = phone;
+}

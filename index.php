@@ -6,10 +6,11 @@
 <body>
 	<!-- mobile-menu -->
 	<nav class="nav-list">
-		<ul class="nav-links" style="padding-left: 0px;">
+		<ul class="nav-links" style="padding-left: 0px; margin-top: 20px;">
 		<?php 
 			if(isset($_SESSION['user_id'])) {
-				echo "<li><a href='./inc/logout.php'>로그아웃</a></li>";
+				echo "<li><a href='./inc/logout.php'>로그아웃</a></li>
+					<li><a href='./inc/upload.php'>판매하기</a></li>";
 				echo "<li><a href='./mypage.php'>마이페이지</a></li>";
 			} else {
 				echo "<li><a class='mobile_login_click'>로그인/회원가입</a></li>";
@@ -40,7 +41,8 @@
 					
 					<?php
 						if(isset($_SESSION['user_id'])) {
-							echo "<a href='./inc/logout.php'><div class='Header-button'><span>로그아웃</span></div></a>";
+							echo "<a href='./inc/logout.php'><div class='Header-button'><span>로그아웃</span></div></a>
+							<a href='./upload.php'><div class='Header-button'><span>판매하기</span></div></a>";
 						} else {
 							echo "<div class='Header-button' id='login_click'><span>로그인</span></div>
 							<div class='Header-button' id='reg_click'><span>회원가입</span></div>";
@@ -67,6 +69,10 @@
 					<div class="teachers-list TeacherSearch">
 						<div class="teachers-filter">
 						<div class="filter-bar" style="top: 70px;">
+							<div>
+								<button class="mobile-search-btn"><img src="https://aircasino2.com/resources/img/search-logo.svg" alt=""></button>
+								<button class="mobile-filter-btn"><img width="24px" src="https://aircasino2.com/resources/img/filter-icon.png" alt=""></button>
+							</div>
 								<div class="filter-section">
 									<div class="tag-filter video_filter" id='tier_btn'>
 										<span>랭크 등급</span>

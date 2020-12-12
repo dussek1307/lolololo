@@ -20,7 +20,7 @@
                            <span class='profileInfo-label'><span>소환사명</span></span>
                            <div class='undefined Text-container'>
                                <!-- SUMMONER'S NAME -->
-                               <input name='summonerName' type='text' class='text-common undefined undefined' placeholder='소환사명' dec='0' style='width: 200px;' />
+                               <input required name='summonerName' type='text' class='text-common undefined undefined' placeholder='소환사명' dec='0' style='width: 200px;' />
                            </div>
                        </div>
                        <div class='profileInfo-bar'>
@@ -222,72 +222,40 @@
                            <span class='profileInfo-label'><span>전 시즌(개인)</span></span>
                            <div>
                                <div class='cityMenu'>
-                                   <select class='menu-title select-style' name='season7' id=''>
-                                       <option value='default'>시즌 7</option>
-                                       <option value='unranked'>언랭/랭크없음</option>
-                                       <option value='i4'>아이언 4</option>
-                                       <option value='i3'>아이언 3</option>
-                                       <option value='i2'>아이언 2</option>
-                                       <option value='i1'>아이언 1</option>
-
-                                       <option value='b4'>브론즈 4</option>
-                                       <option value='b3'>브론즈 3</option>
-                                       <option value='b2'>브론즈 2</option>
-                                       <option value='b1'>브론즈 1</option>
-
-                                       <option value='g4'>골드 4</option>
-                                       <option value='g3'>골드 3</option>
-                                       <option value='g2'>골드 2</option>
-                                       <option value='g1'>골드 1</option>
-
-                                       <option value='p4'>플래티넘 4</option>
-                                       <option value='p3'>플래티넘 3</option>
-                                       <option value='p2'>플래티넘 2</option>
-                                       <option value='p1'>플래티넘 1</option>
-
-                                       <option value='d4'>다이아몬드 4</option>
-                                       <option value='d3'>다이아몬드 3</option>
-                                       <option value='d2'>다이아몬드 2</option>
-                                       <option value='d1'>다이아몬드 1</option>
-
-                                       <option value='m1'>MASTER 1</option>
-                                       <option value='gm1'>GRANDMASTER 1</option>
-                                       <option value='c1'>CHALLENGER 1</option>
-                                   </select>
-                                   <select class='menu-title select-style' name='season8' id=''>
-                                       <option value='default'>시즌 8</option>
-                                       <option value='unranked'>언랭/랭크없음</option>
-                                       <option value='i4'>아이언 4</option>
-                                       <option value='i3'>아이언 3</option>
-                                       <option value='i2'>아이언 2</option>
-                                       <option value='i1'>아이언 1</option>
-
-                                       <option value='b4'>브론즈 4</option>
-                                       <option value='b3'>브론즈 3</option>
-                                       <option value='b2'>브론즈 2</option>
-                                       <option value='b1'>브론즈 1</option>
-
-                                       <option value='g4'>골드 4</option>
-                                       <option value='g3'>골드 3</option>
-                                       <option value='g2'>골드 2</option>
-                                       <option value='g1'>골드 1</option>
-
-                                       <option value='p4'>플래티넘 4</option>
-                                       <option value='p3'>플래티넘 3</option>
-                                       <option value='p2'>플래티넘 2</option>
-                                       <option value='p1'>플래티넘 1</option>
-
-                                       <option value='d4'>다이아몬드 4</option>
-                                       <option value='d3'>다이아몬드 3</option>
-                                       <option value='d2'>다이아몬드 2</option>
-                                       <option value='d1'>다이아몬드 1</option>
-
-                                       <option value='m1'>MASTER 1</option>
-                                       <option value='gm1'>GRANDMASTER 1</option>
-                                       <option value='c1'>CHALLENGER 1</option>
-                                   </select>
                                    <select class='menu-title select-style' name='season9' id=''>
                                        <option value='default'>시즌 9</option>
+                                       <option value='unranked'>언랭/랭크없음</option>
+                                       <option value='i4'>아이언 4</option>
+                                       <option value='i3'>아이언 3</option>
+                                       <option value='i2'>아이언 2</option>
+                                       <option value='i1'>아이언 1</option>
+
+                                       <option value='b4'>브론즈 4</option>
+                                       <option value='b3'>브론즈 3</option>
+                                       <option value='b2'>브론즈 2</option>
+                                       <option value='b1'>브론즈 1</option>
+
+                                       <option value='g4'>골드 4</option>
+                                       <option value='g3'>골드 3</option>
+                                       <option value='g2'>골드 2</option>
+                                       <option value='g1'>골드 1</option>
+
+                                       <option value='p4'>플래티넘 4</option>
+                                       <option value='p3'>플래티넘 3</option>
+                                       <option value='p2'>플래티넘 2</option>
+                                       <option value='p1'>플래티넘 1</option>
+
+                                       <option value='d4'>다이아몬드 4</option>
+                                       <option value='d3'>다이아몬드 3</option>
+                                       <option value='d2'>다이아몬드 2</option>
+                                       <option value='d1'>다이아몬드 1</option>
+
+                                       <option value='m1'>MASTER 1</option>
+                                       <option value='gm1'>GRANDMASTER 1</option>
+                                       <option value='c1'>CHALLENGER 1</option>
+                                   </select>
+                                   <select class='menu-title select-style' name='season10' id=''>
+                                       <option value='default'>시즌 10</option>
                                        <option value='unranked'>언랭/랭크없음</option>
                                        <option value='i4'>아이언 4</option>
                                        <option value='i3'>아이언 3</option>
@@ -858,7 +826,7 @@
                            <div class='profile-introduction-input'>
                                <div class='textarea_left'>
                                    <div class='wrapbox'>
-                                       <textarea class='textarea_common textarea_limited' name='title' maxlength='1000' minlength='4' placeholder='' cols='40' lineheight='21' rows='5' style='width: 600px; height: 43px;'></textarea>
+                                       <textarea required class='textarea_common textarea_limited' name='title' maxlength='1000' minlength='4' placeholder='' cols='40' lineheight='21' rows='5' style='width: 600px; height: 43px;'></textarea>
                                    </div>
                                </div>
                            </div>
@@ -868,7 +836,7 @@
                            <div class='profile-introduction-input'>
                                <div class='textarea_left'>
                                    <div class='wrapbox'>
-                                       <input name='price' type='text' class='text-common undefined undefined' placeholder='가격' dec='0' style='width: 250px; height: 43px;' />
+                                       <input required id='price' name='price' type='text' class='text-common undefined undefined' placeholder='가격' dec='0' style='width: 250px; height: 43px;' />
                                    </div>
                                </div>
                            </div>
@@ -876,7 +844,7 @@
                            <div class='profile-introduction-input'>
                                <div class='textarea_left'>
                                    <div class='wrapbox'>
-                                       <input name='tel' type='text' class='text-common undefined undefined' placeholder='010-1234-5678' dec='0' style='width: 250px; height: 43px;' />
+                                       <input onkeyup='inputPhoneNumber(this)' required name='tel' type='text' class='text-common undefined undefined' placeholder='연락처' dec='0' style='width: 250px; height: 43px;' />
                                    </div>
                                </div>
                            </div>
@@ -886,7 +854,7 @@
                            <div class='profile-introduction-input'>
                                <div class='textarea_left'>
                                    <div class='wrapbox'>
-                                       <textarea placeholder='허위사실로 계정정보 기재 시 통보없이 게시글이 삭제될 수 있습니다.' class='textarea_common textarea_limited' name='intro' maxlength='1000' minlength='10' placeholder='' cols='40' lineheight='21' rows='5' style='width: 600px; height: 130px;'></textarea>
+                                       <textarea required placeholder='허위사실로 계정정보 기재 시 통보없이 게시글이 삭제될 수 있습니다.' class='textarea_common textarea_limited' name='intro' maxlength='1000' minlength='10' placeholder='' cols='40' lineheight='21' rows='5' style='width: 600px; height: 130px;'></textarea>
                                        <span class='wrapcount'><span class='number'>0</span>/1000</span>
                                    </div>
                                </div>
@@ -894,9 +862,10 @@
                        </div>
                        <div class='profileEdit-bar-title'><span>사진</span></div>
                        <div class='profilePhoto-note'><span>클라이언트 내 정보 페이지 캡처(PNG, JPG, JPEG, PDF 확장자만 가능)</span></div>
+                       <div class='profilePhoto-note'><span>사진을 올리지 않으면 게시글을 등록할 수 없습니다.</span></div>
                        <label class='upload-btn'><input type='file' onchange='preview(event)' name='file'/><span>업로드</span></label>
                        <div style='margin: 10px 0;'>
-                           <img style='width: 500px;' src='./resources/img/samplePage.png' id='img' alt=''>
+                           <img style='width: 500px;' src='./resources/img/sampleImg.jpg' id='img' alt=''>
                        </div> 
                    </div>
                </div>
