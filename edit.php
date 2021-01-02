@@ -1,7 +1,7 @@
 <?php
     include_once "./inc/head.php";
 
-    if(isset($_SESSION['user_id'])) {
+    if(isset($_SESSION['user_id']) & isset($_POST['post_id'])) {
        echo "<head>
        <link href='./css/upload2.css' rel='stylesheet'>
        <link href='./css/upload1.css' rel='stylesheet'>

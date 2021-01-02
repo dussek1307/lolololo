@@ -1,0 +1,2 @@
+[25-Dec-2020 03:53:37 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/lolupccount/public_html/inc/dbh.php on line 7
+[25-Dec-2020 03:53:37 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/lolupccount/public_html/inc/dbh.php on line 8

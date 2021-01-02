@@ -6,7 +6,9 @@ if(isset($_POST["action_f"])) {
     
     if(!empty($_POST['ranks'])) {
         foreach($_POST['ranks'] as $r_name) {
-            if($r_name == "bronze") {
+            if($r_name == "iron") {
+                $sql .= "AND soloRank REGEXP '^i' ";
+            } else if($r_name == "bronze") {
                 $sql .= "AND soloRank REGEXP '^b' ";
             } else if($r_name == "silver") {
                 $sql .= "AND soloRank REGEXP '^s' ";
@@ -85,7 +87,7 @@ if(isset($_POST["action_f"])) {
     }
 
     $orderBy = $_POST['order'];
-    $sql .= "ORDER BY $orderBy LIMIT ".$_POST["start_f"].", ".$_POST["limit_f"].";";
+    $sql .= " ORDER BY $orderBy LIMIT ".$_POST["start_f"].", ".$_POST["limit_f"].";";
     $result = mysqli_query($conn, $sql);
     // START!!
     $count = 0;
@@ -260,7 +262,7 @@ if(isset($_POST["action_f"])) {
             <div class='teacher-card-detail-top'>
             <div>
             <div class='new-avatar'><span class='ant-avatar ant-avatar-circle ant-avatar-image ant-avatar-icon' style='width: 79px; height: 79px; line-height: 79px; font-size: 39.5px;'>
-            <img src='./resources/img/tier-img/g4.png'></span></div>
+            <img src='./resources/img/tier-img/".$row['soloRank'].".png'></span></div>
                 <div class='teacher-card-rating' style='position: absolute; margin-top: 28px; margin-left: -8px;'>
                     <div style='margin-bottom: 24px;'>
                         <div class='teacher-card-stars'>

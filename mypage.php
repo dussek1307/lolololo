@@ -124,6 +124,7 @@
                                                     <th><span>댓글수</span></th>
                                                     <th><span>조회수</span></th>
                                                     <th style='width: 50px'><span>찜</span></th>
+                                                    <th><span>수정</span></th>
                                                 </tr>
                                             </thead>
                                             <tbody>";
@@ -131,12 +132,41 @@
                                             if($numOfPosts > 0) {
                                                 $sql_post = "SELECT * FROM posts WHERE user_id = '$user_id'";
                                                 $result_post = mysqli_query($conn, $sql_post);
+                                                
                                                 while($rows = mysqli_fetch_assoc($result_post)) {
+                                                    $num_of_cmt = 0;
+                                                    $num_of_liked = 0;
+                                                    $post_id = $rows['post_id'];
+                                                    $sql_num_cmt = "SELECT count(*) FROM comment WHERE post_id = '$post_id'";
+                                                    $result_num_cmt = mysqli_query($conn, $sql_num_cmt);
+                                                    while($row_num_cmt = mysqli_fetch_assoc($result_num_cmt)) {
+                                                        $num_of_cmt = $row_num_cmt['count(*)'];
+                                                    }
+                                                    
+                                                    $post_liked = "SELECT count(*) FROM post_liked WHERE post_id = '$post_id'";
+                                                    $result_post_liked = mysqli_query($conn, $post_liked);
+                                                    while($row_post_liked = mysqli_fetch_assoc($result_post_liked)) {
+                                                        $num_of_liked = $row_post_liked['count(*)'];
+                                                    }
+
                                                     echo "<tr>
                                                         <td><a href='./account-page/".$rows['post_id'].".php'><span>".$rows['title']."</span></a></td>
-                                                        <td style='text-align: cneter;'><span>2</span></td>
-                                                        <td>50</td>
-                                                        <td>1</td>
+                                                        <td style='text-align: cneter;'><span>".$num_of_cmt."</span></td>
+                                                        <td>미지원</td>
+                                                        <td>".$num_of_liked."</td>
+                                                        <td>
+                                                            <form action='./edit.php' method='post'><button name='post_id' value='".$post_id."'
+                                                            style='background-color: #ff4338;
+                                                            border: none;
+                                                            color: white;
+                                                            text-align: center;
+                                                            text-decoration: none;
+                                                            display: inline-block;
+                                                            font-size: 14px;
+                                                            font-weight: bold;
+                                                            border-radius: 5px;'>수정</button>
+                                                            </form>
+                                                        </td>
                                                     </tr>";
                                                 }
                                             } else {
@@ -259,7 +289,7 @@
                                                         $soloRank = "Unranked";
                                                     }                                                
                                                     echo "<tr>
-                                                    <td><a href='https://localhost/public_html/account-page/".$post_id.".php'><span>".$row_post_liked['title']."</span></a></td>
+                                                    <td><a href='./account-page/".$post_id.".php'><span>".$row_post_liked['title']."</span></a></td>
                                                     <td>".$soloRank."</td>
                                                     <td>".$row_post_liked['numOfChams']."</td>
                                                     <td>".$row_post_liked['numOfSkins']."</td>

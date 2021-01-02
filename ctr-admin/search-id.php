@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	include_once "../inc/dbh.php";
-	if($_SESSION['user_id'] != 33) {
+	if($_SESSION['user_id'] != 1) {
         header("location:javascript://history.go(-1)");
     }
 ?>

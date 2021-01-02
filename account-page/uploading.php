@@ -75,6 +75,10 @@ if(isset($_POST['submit'])) {
     $myfile = fopen("post_page_code.php", "r") or die("Unable to open file!");
     $post_page_code = "<?php include './post_page_code.php';  ?>";
     fclose($myfile);
+    
+    $post_page = fopen($post_id.".php", "w");
+    fwrite($post_page, $post_page_code);
+    fclose($post_page);
 
     \Tinify\setKey("KH151TcYhrCphqTpm3Dy8WY0wXcCyKV5");
     $file = $_FILES['file'];
@@ -89,13 +93,14 @@ if(isset($_POST['submit'])) {
         if($fileError === 0) {
             if($fileSize < 5000000) {
                 $newFileName = "post_".$post_id.".".$fileActualExt;
+                $sql_img = "UPDATE posts
+                SET img = '$newFileName'
+                WHERE post_id = $post_id;";
+                mysqli_query($conn, $sql_img);
                 $fileDestination = '../resources/img/post-main/'.$newFileName;
                 $source = \Tinify\fromFile($fileTmpName);
                 $source->toFile($fileDestination);
-                $post_page = fopen($post_id.".php", "w");
-                fwrite($post_page, $post_page_code);
-                fclose($post_page);
-                // header("Location: ../upload.php?success");
+                header("Location: ../upload.php?success");
             } else {
                 echo "사진크기가 너무 큽니다.";
             }
@@ -104,6 +109,7 @@ if(isset($_POST['submit'])) {
         }
     } else {
         echo "jpg, png를 이용해주세요. 올린확장자: ".end($fileExt).".";
+        header("Location: ../upload.php?success");
     }
 
 }

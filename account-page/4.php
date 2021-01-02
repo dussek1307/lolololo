@@ -1,3 +1,1 @@
-<?php
-    include "./post_page_code.php";
-?>
+<?php include './post_page_code.php';  ?>

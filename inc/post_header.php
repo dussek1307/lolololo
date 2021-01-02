@@ -54,6 +54,7 @@
 			<ul class='nav-links' style='padding-left: 0px;'>";
 			if(isset($_SESSION['user_id'])) {
 				echo "<li><a href='../inc/logout.php'>로그아웃</a></li>";
+				echo "<li><a href='../upload.php'>판매하기</a></li>";
 				echo "<li><a href='../mypage.php'>마이페이지</a></li>";
 			} else {
 				echo "<li><a class='mobile_login_click'>로그인/회원가입</a></li>";
@@ -80,7 +81,8 @@
 							<!-- nav -->
 							<div class='Header-button-wrap'>";
 							if(isset($_SESSION['user_id'])) {
-								echo "<a href='../inc/logout.php'><div class='Header-button'><span>로그아웃</span></div></a>";
+								echo "<a href='../inc/logout.php'><div class='Header-button'><span>로그아웃</span></div></a>
+								<a href='../upload.php'><div class='Header-button'><span>판매하기</span></div></a>";
 							} else {
 								echo "<div class='Header-button' id='login_click'><span>로그인</span></div>
 									<div class='Header-button' id='reg_click'><span>회원가입</span></div>";

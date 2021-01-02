@@ -186,7 +186,7 @@
                     <div class='teacher-card-detail-top'>
                     <div>
                     <div class='new-avatar'><span class='ant-avatar ant-avatar-circle ant-avatar-image ant-avatar-icon' style='width: 79px; height: 79px; line-height: 79px; font-size: 39.5px;'>
-                    <img src='./resources/img/tier-img/g4.png'></span></div>
+                    <img src='./resources/img/tier-img/".$row['soloRank'].".png'></span></div>
                         <div class='teacher-card-rating' style='position: absolute; margin-top: 28px; margin-left: -8px;'>
                             <div style='margin-bottom: 24px;'>
                                 <div class='teacher-card-stars'>

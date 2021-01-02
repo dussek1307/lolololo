@@ -1,6 +1,6 @@
 <?php
 session_start();
-if($_SESSION["user_id"] != 33) {
+if($_SESSION["user_id"] != 1) {
     header("location:javascript://history.go(-1)");
 } else {
     require "../inc/dbh.php";

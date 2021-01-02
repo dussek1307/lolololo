@@ -385,7 +385,6 @@
                 while($row_like = mysqli_fetch_assoc($result_likes)) if($row_like['is_true'] == 1) $like_path = "favorite-clicked";
             }
         }
-
         
         echo "<div class='flex-container'>
         <div style='position: static; z-index: inherit;'>
@@ -398,7 +397,7 @@
                             </div>
                             <div class='teacherCard'>
                                 <div class='teacherCard-left'>
-                                    <div class='avatar avatar-big avatar-shadow avatar-placeholder' ><img src='../resources/img/tier-img/g4.png' alt='Avatar'></div>
+                                    <div class='avatar avatar-big avatar-shadow avatar-placeholder' ><img src='../resources/img/tier-img/".$rows['soloRank'].".png' alt='Avatar'></div>
 
                                 </div>
                                 <div class='teacherCard-body'>
@@ -800,7 +799,7 @@
             <div class='bookCard-hr'></div>
             <button onclick='directTo('#')' type='button' class='teacher-right-booknow btn btn-standard btn-main btn-gradient'><span>구매하기</span></button>
             <div class='teacher-contact'>
-                <a href='../cs.php'><button type='button' class='btn btn-standard btn-ghost-default'>
+                <a href='../about.php'><button type='button' class='btn btn-standard btn-ghost-default'>
                 <div class='teacher-contact-btn-info'>
                     <svg width='24' height='24' viewBox='0 0 24 24' fill='none'>
                         <title></title>
