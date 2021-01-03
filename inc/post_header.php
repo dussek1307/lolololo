@@ -1,3 +1,8 @@
+<?php
+	session_start();
+	include_once '../inc/dbh.php';
+?>
+
 <!DOCTYPE html>
 	<html lang='ko' kp-country='kr' class='windows desktop landscape'>
 	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -8,8 +13,6 @@
 	<link rel="stylesheet" href="../css/account_page2.css">
 
 <?php
-	include_once '../inc/dbh.php';
-	session_start();
 	date_default_timezone_set('Asia/Seoul');
 	$uri = $_SERVER['REQUEST_URI'];
 	$post_id = basename($_SERVER['SCRIPT_FILENAME'], ".php");
