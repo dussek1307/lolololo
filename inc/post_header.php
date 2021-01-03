@@ -43,9 +43,9 @@
 		<meta property='og:type' content='article'>
 		<meta property='og:image' content='../resources/img/post-main/main-".$post_id.".jpg'>
 		<meta property='og:description' content='".$row['title']."'>
-		<meta property='og:url' content='https://upccount.com".$uri."'>
+		<meta property='og:url' content='https://lolupccount.com".$uri."'>
 		<link rel='image_src' href='../resources/img/post-main/main-".$post_id.".jpg'>
-		<link rel='canonical' href='https://upccount.com".$uri."'>
+		<link rel='canonical' href='https://lolupccount.com".$uri."'>
 		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 	</head>
 		<body>

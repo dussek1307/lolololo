@@ -155,7 +155,8 @@
                                                         <td>미지원</td>
                                                         <td>".$num_of_liked."</td>
                                                         <td>
-                                                            <form action='./edit.php' method='post'><button name='post_id' value='".$post_id."'
+                                                            <form action='./edit.php' method='post'>
+                                                            <button name='post_id' value='".$post_id."'
                                                             style='background-color: #ff4338;
                                                             border: none;
                                                             color: white;
