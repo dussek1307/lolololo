@@ -31,22 +31,28 @@
     echo "
 		<title>".$row['title']."</title>
 		<meta http-equiv='X-UA-Compatible' content='IE=Edge'>
-		<meta name='title' content='".$row['title']."'>
+		<meta name='title' content='".$row['title']." - 롤 계정 거래 사이트'>
 		<meta name='subject' content='".$row['title']."'>
 		<meta name='publisher' content='업카운트 - 롤 계정거래'>
 		<meta name='author' content='".$userOnlineName."'>
-		<meta name='description' content='".$row['intro']."'/>
+		<meta name='description' content='".$row['intro'].", 롤 계정 거래, 판매, 구매'/>
 		<meta name='keywords' content='업카운트, 롤 계정, 롤 아이디, 롤 닉네임, 아이디판매 사이트, 계정 판매, 계정 거래, 리그오브레전드 계정, 롤 대리, 리그오브레전드 판매, 롤 계정 판매 구매, 롤 다이아, 롤 마스터, 롤 챌린저'>
 		<meta name='theme-color' content='#000000'>
 		<link rel='shortcut icon' href='../resources/img/fav_icon.png' />
 		
-		<meta property='og:title' content='".$row['title']."'>
+		<meta property='og:title' content='".$row['title']." - 롤 계정 거래 사이트'>
 		<meta property='og:site_name' content='업카운트 - 롤 계정거래'>
 		<meta property='og:author' content='".$userOnlineName."'>
 		<meta property='og:type' content='article'>
-		<meta property='og:image' content='../resources/img/post-main/main-".$post_id.".jpg'>
-		<meta property='og:description' content='".$row['title']."'>
+		<meta property='og:image' content='../resources/img/post-main/".$row['img']."'>
+		<meta property='og:description' content='".$row['title'].", 롤 계정 거래, 판매, 구매'>
 		<meta property='og:url' content='https://lolupccount.com".$uri."'>
+
+		<meta name='twitter:title' content='".$row['title']." - 롤 계정 거래 사이트'>
+		<meta name='twitter:description' content='".$row['intro'].", 롤 계정 거래, 판매, 구매'>
+		<meta name='twitter:site' content='업카운트'>
+		<meta name='twitter:url' content='https://lolupccount.com".$uri."'>
+
 		<link rel='image_src' href='../resources/img/post-main/main-".$post_id.".jpg'>
 		<link rel='canonical' href='https://lolupccount.com".$uri."'>
 		<meta name='viewport' content='width=device-width, initial-scale=1.0'>

@@ -1,0 +1,1 @@
+[07-Feb-2021 05:25:26 UTC] PHP Fatal error:  Class 'Tinify\ResultMeta' not found in /home/drmingtch/lolupccount.com/account-page/tiny/vendor/tinify/tinify/lib/Tinify/Result.php on line 5

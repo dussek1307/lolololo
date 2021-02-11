@@ -393,7 +393,7 @@
                     <div class='Teacher-main'>
                         <div id='teacher_profile_nav_aboutme' class='TeacherInfoCard teacherCard-box1 TeacherInfoCard-desktop'>
                             <div class='Video'>
-                                <img style='width: 755px; height: 453px;' src='../resources/img/post-main/post_".$rows['post_id'].".png' alt='롤 계정 정보 이미지'>
+                                <img style='width: 755px; height: 453px;' src='../resources/img/post-main/".$rows['img']."' alt='롤 계정 정보 이미지'>
                             </div>
                             <div class='teacherCard'>
                                 <div class='teacherCard-left'>

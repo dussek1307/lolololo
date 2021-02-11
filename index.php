@@ -10,7 +10,7 @@
 		<?php 
 			if(isset($_SESSION['user_id'])) {
 				echo "<li><a href='./inc/logout.php'>로그아웃</a></li>
-					<li><a href='./inc/upload.php'>판매하기</a></li>";
+					<li><a href='./upload.php'>판매하기</a></li>";
 				echo "<li><a href='./mypage.php'>마이페이지</a></li>";
 			} else {
 				echo "<li><a class='mobile_login_click'>로그인/회원가입</a></li>";
@@ -266,6 +266,28 @@
 										echo "<div id='alert-box' display='block'>
 												<span class='ion-checkmark-round'></span>
 												<h1>회원가입 성공!</h1>
+												<a onclick='pop_alert()' class='close-alert'>닫기</a>
+											  </div>";
+										echo "<script type='text/javascript'>
+											let cururl = window.location.href;
+											const alert_box = document.querySelector('#alert-box');
+											const html = document.querySelector('html');
+											html.style='overflow: hidden;';
+											function pop_alert() {
+												alert_box.style = 'display: none';
+												let splitedUrl = cururl.split('?');
+												location.replace(splitedUrl[0]);
+												document.querySelector(body).style='overflow: auto';
+												html.style='overflow: auto';
+											}
+										</script>";
+									}
+								}
+								if(isset($_GET['upload'])) {
+									if($_GET['upload'] == "success") {
+										echo "<div id='alert-box' display='block'>
+												<span class='ion-checkmark-round'></span>
+												<h1>판매등록 완료!</h1>
 												<a onclick='pop_alert()' class='close-alert'>닫기</a>
 											  </div>";
 										echo "<script type='text/javascript'>

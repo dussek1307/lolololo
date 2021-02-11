@@ -1,0 +1,7 @@
+[07-Feb-2021 05:25:17 UTC] PHP Fatal error:  Class 'TestCase' not found in /home/drmingtch/lolupccount.com/account-page/tiny/vendor/tinify/tinify/test/TinifyClientTest.php on line 5
+[07-Feb-2021 05:25:18 UTC] PHP Fatal error:  Class 'TestCase' not found in /home/drmingtch/lolupccount.com/account-page/tiny/vendor/tinify/tinify/test/TinifyResultMetaTest.php on line 5
+[07-Feb-2021 05:25:18 UTC] PHP Fatal error:  Class 'TestCase' not found in /home/drmingtch/lolupccount.com/account-page/tiny/vendor/tinify/tinify/test/TinifyResultTest.php on line 5
+[07-Feb-2021 05:25:19 UTC] PHP Fatal error:  Class 'TestCase' not found in /home/drmingtch/lolupccount.com/account-page/tiny/vendor/tinify/tinify/test/TinifySourceTest.php on line 5
+[07-Feb-2021 05:25:19 UTC] PHP Fatal error:  Class 'TestCase' not found in /home/drmingtch/lolupccount.com/account-page/tiny/vendor/tinify/tinify/test/TinifyTest.php on line 5
+[07-Feb-2021 05:25:20 UTC] PHP Fatal error:  Class 'Tinify\Exception' not found in /home/drmingtch/lolupccount.com/account-page/tiny/vendor/tinify/tinify/test/curl_mock.php on line 5
+[07-Feb-2021 05:25:21 UTC] PHP Fatal error:  Class 'Tinify\Exception' not found in /home/drmingtch/lolupccount.com/account-page/tiny/vendor/tinify/tinify/test/curl_mock.php on line 5

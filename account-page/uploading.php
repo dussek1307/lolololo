@@ -109,7 +109,7 @@ if(isset($_POST['submit'])) {
         }
     } else {
         echo "jpg, png를 이용해주세요. 올린확장자: ".end($fileExt).".";
-        header("Location: ../upload.php?success");
+        header("Location: ../?upload=success");
     }
 
 }
