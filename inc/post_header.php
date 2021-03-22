@@ -6,6 +6,15 @@
 <!DOCTYPE html>
 	<html lang='ko' kp-country='kr' class='windows desktop landscape'>
 	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VC2FVK808K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VC2FVK808K');
+</script>
 	<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../css/style1.css">
 	<link rel="stylesheet" href="../css/style2.css">
@@ -16,7 +25,7 @@
 	date_default_timezone_set('Asia/Seoul');
 	$uri = $_SERVER['REQUEST_URI'];
 	$post_id = basename($_SERVER['SCRIPT_FILENAME'], ".php");
-	$sql_post = "SELECT title, intro, user_id FROM posts WHERE post_id = $post_id;";
+	$sql_post = "SELECT title, intro, user_id, img FROM posts WHERE post_id = $post_id;";
 	$result_post = mysqli_query($conn, $sql_post);
 	while($row = mysqli_fetch_assoc($result_post)) {
 		$getUser = "SELECT user_online_name FROM users WHERE user_id = ".$row['user_id']."";

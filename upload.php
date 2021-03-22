@@ -73,7 +73,8 @@
                            <span class='profileInfo-label'><span>소환사명</span></span>
                            <div class='undefined Text-container'>
                                <!-- SUMMONER'S NAME -->
-                               <input required name='summonerName' type='text' class='text-common undefined undefined' placeholder='소환사명' dec='0' style='width: 200px;' />
+                               <input required name='summonerName' id='summonerName' type='text' class='text-common undefined undefined' placeholder='소환사명' dec='0' style='width: 200px;' />
+                               <small style='margin-top: 10px;'> * 소환사명은 비공개가 가능하니 정확한 소환자명 미기재 시 허위사실로 게시글은 바로 삭제됩니다.</small>
                            </div>
                        </div>
                        <div class='profileInfo-bar'>
@@ -879,7 +880,7 @@
                            <div class='profile-introduction-input'>
                                <div class='textarea_left'>
                                    <div class='wrapbox'>
-                                       <textarea required class='textarea_common textarea_limited' name='title' maxlength='1000' minlength='4' placeholder='' cols='40' lineheight='21' rows='5' style='width: 600px; height: 43px;'></textarea>
+                                       <textarea required id='title' class='textarea_common textarea_limited' name='title' maxlength='1000' placeholder='' cols='40' lineheight='21' rows='5' style='width: 600px; height: 43px;'></textarea>
                                    </div>
                                </div>
                            </div>
@@ -897,7 +898,7 @@
                            <div class='profile-introduction-input'>
                                <div class='textarea_left'>
                                    <div class='wrapbox'>
-                                       <input onkeyup='inputPhoneNumber(this)' required name='tel' type='text' class='text-common undefined undefined' placeholder='연락처' dec='0' style='width: 250px; height: 43px;' />
+                                       <input onkeyup='inputPhoneNumber(this)' required name='tel' id='tel' type='text' class='text-common undefined undefined' placeholder='연락처' dec='0' style='width: 250px; height: 43px;' />
                                    </div>
                                </div>
                            </div>
@@ -907,7 +908,7 @@
                            <div class='profile-introduction-input'>
                                <div class='textarea_left'>
                                    <div class='wrapbox'>
-                                       <textarea required placeholder='허위사실로 계정정보 기재 시 통보없이 게시글이 삭제될 수 있습니다.' class='textarea_common textarea_limited' name='intro' maxlength='1000' minlength='10' placeholder='' cols='40' lineheight='21' rows='5' style='width: 600px; height: 130px;'></textarea>
+                                       <textarea required id='intro' placeholder='허위사실로 계정정보 기재 시 통보없이 게시글이 삭제될 수 있습니다.' class='textarea_common textarea_limited' name='intro' maxlength='1000' placeholder='' cols='40' lineheight='21' rows='5' style='width: 600px; height: 130px;'></textarea>
                                        <span class='wrapcount'><span class='number'>0</span>/1000</span>
                                    </div>
                                </div>
@@ -925,7 +926,7 @@
            </div>
            <div class='modal-footer profile-setting-modal-footer'>
                <div class='profileSetting-modal-footer-inner'>
-                   <button name='submit' type='submit' class='btn btn-standard btn-main'><span>판매 글 올리기</span></button>
+                   <button id='submit-btn' name='submit' type='submit' class='btn btn-standard btn-main'><span>판매 글 올리기</span></button>
                </div>
            </div>
        </div>
@@ -933,6 +934,18 @@
    </div>
 
    <script src='./js/upload.js'></script>
+   <script>
+        $('#submit-btn').click(function() {
+            if($('#summonerName').val() !== '')
+                if($('#title').val() !== '')
+                    if($('#price').val() !== '')
+                        if($('#tel').val() !== '')
+                            if($('#intro').val() !== '') {
+                                $('#submit-btn').hide();
+                            }
+
+        })
+   </script>
    </body>";
     } else {
         echo "<h1>로그인 해주세요</h1>

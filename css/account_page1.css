@@ -567,7 +567,7 @@ footer, header, main, .review-time {
         margin-left: 15px;
     }
     .hamburger,
-    .mobile-casino-info,
+    .mobile-account-info,
     .nav-list {
         display: block !important;
     }
@@ -733,6 +733,12 @@ footer, header, main, .review-time {
     .mobile-wrap {
         margin-right: 10px;
     }
+    .statistics .content {
+        width: 90%!important;
+        margin: 0 auto;
+        
+    }
+    
 
 }
 /* MOBILE-NAV */
@@ -756,7 +762,7 @@ footer, header, main, .review-time {
     display: none;
 }
 .nav-list,
-.mobile-casino-info {
+.mobile-account-info {
     display: none;
 }
 

@@ -1,8 +1,11 @@
 <?php
-
+date_default_timezone_set('Asia/Seoul');
 if(isset($_POST["action_f"])) {
     require "../dbh.php";
     $sql = "SELECT * FROM posts WHERE true ";
+    
+
+    
     
     if(!empty($_POST['ranks'])) {
         foreach($_POST['ranks'] as $r_name) {
@@ -17,7 +20,7 @@ if(isset($_POST["action_f"])) {
             } else if($r_name == "platinum") {
                 $sql .= "AND soloRank REGEXP '^p' ";
             } else if($r_name == "diamond") {
-                $sql .= "AND soloRank REGEXP '^d' ";
+                $sql .= "AND soloRank REGEXP '^d1|^d2|^d3|^d4' ";
             } else if($r_name == "master") {
                 $sql .= "AND soloRank REGEXP '^m' ";
             } else if($r_name == "grandMaster") {
@@ -87,6 +90,7 @@ if(isset($_POST["action_f"])) {
     }
 
     $orderBy = $_POST['order'];
+
     $sql .= " ORDER BY $orderBy LIMIT ".$_POST["start_f"].", ".$_POST["limit_f"].";";
     $result = mysqli_query($conn, $sql);
     // START!!
@@ -101,6 +105,9 @@ if(isset($_POST["action_f"])) {
             $owner = "명의: 1대 본주";
             if($row['owner'] == "second") $owner = "명의: 2대 본주";
             if($row['owner'] == "third") $owner = "명의: 3대 본주";
+            
+            $time_ago = time_elapsed_string($row['upload_date']);
+            
 
             switch($row['soloRank']) {
                 case "unranked":
@@ -276,6 +283,7 @@ if(isset($_POST["action_f"])) {
                     <div>
                         <button type='button' class='my-btn btn btn-medium btn-main'><span>더 보기</span></button>
                     </div>
+                    <div style='font-size: 13px; color: #606060'>".$time_ago."</div>
                 </div>
             </div>
             <div class='teacher-card-information' style='margin-left: 45px;'>
@@ -316,7 +324,7 @@ if(isset($_POST["action_f"])) {
                 <div class='teacher-card-video'>
                     <div class='iframe-video'>
                         
-                            <img class='post-image' src='./resources/img/post-main/post_".$row['post_id'].".png' alt='poster'>
+                            <img class='post-image' src='./resources/img/post-main/".$row['img']."' alt='티어'>
     
                     </div>
                 </div>
@@ -335,3 +343,32 @@ if(isset($_POST["action_f"])) {
         }
     }
 }
+
+function time_elapsed_string($datetime, $full = false) {
+                $now = new DateTime;
+                $ago = new DateTime($datetime);
+                $diff = $now->diff($ago);
+            
+                $diff->w = floor($diff->d / 7);
+                $diff->d -= $diff->w * 7;
+            
+                $string = array(
+                    'y' => '년',
+                    'm' => '개월',
+                    'w' => '주',
+                    'd' => '일',
+                    'h' => '시간',
+                    'i' => '분',
+                    's' => '초',
+                );
+                foreach ($string as $k => &$v) {
+                    if ($diff->$k) {
+                        $v = $diff->$k . ' ' . $v . ($diff->$k > 1 ? '' : '');
+                    } else {
+                        unset($string[$k]);
+                    }
+                }
+            
+                if (!$full) $string = array_slice($string, 0, 1);
+                return $string ? implode(', ', $string) . ' 전' : '방금 전';
+            }

@@ -77,7 +77,7 @@ if($_SESSION["user_id"] != 1) {
             <td>
                 <span>".$row["login_ip"]."</span>
             </td>
-            <td><span>".$row["register_date"]."</span></td>
+            <td><span>".$row["reg_date"]."</span></td>
             <td><span>".$row["latest_login"]."</span></td>
             <td class='wallet-action-th'>
                 <form action='./admin_ctr.php' method='POST'>

@@ -1,0 +1,101 @@
+[14-Feb-2021 11:37:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function time_elapsed_string() in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_filter.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_filter.php on line 6
+[14-Feb-2021 11:37:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function time_elapsed_string() in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_filter.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_filter.php on line 6
+[14-Feb-2021 11:37:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function time_elapsed_string() in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_filter.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_filter.php on line 6
+[14-Feb-2021 11:44:52 UTC] PHP Fatal error:  Cannot redeclare time_elapsed_string() (previously declared in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_filter.php:108) in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_filter.php on line 108
+[14-Feb-2021 11:45:54 UTC] PHP Fatal error:  Cannot redeclare time_elapsed_string() (previously declared in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_start.php:24) in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_start.php on line 24
+[14-Feb-2021 11:45:56 UTC] PHP Fatal error:  Cannot redeclare time_elapsed_string() (previously declared in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_start.php:24) in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_start.php on line 24
+[14-Feb-2021 11:46:21 UTC] PHP Fatal error:  Cannot redeclare time_elapsed_string() (previously declared in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_start.php:24) in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_start.php on line 24
+[14-Feb-2021 11:46:26 UTC] PHP Fatal error:  Cannot redeclare time_elapsed_string() (previously declared in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_start.php:24) in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_start.php on line 24
+[04-Mar-2021 20:10:09 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[04-Mar-2021 20:10:09 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[04-Mar-2021 20:10:09 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[04-Mar-2021 20:10:09 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[04-Mar-2021 20:10:09 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[04-Mar-2021 20:10:09 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[04-Mar-2021 20:10:10 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[04-Mar-2021 20:10:10 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[04-Mar-2021 20:10:10 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[04-Mar-2021 20:10:10 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[04-Mar-2021 20:10:10 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[04-Mar-2021 20:10:10 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[04-Mar-2021 20:10:10 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[04-Mar-2021 20:10:10 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[04-Mar-2021 20:10:14 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[04-Mar-2021 20:10:14 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[12-Mar-2021 11:43:45 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[12-Mar-2021 11:43:45 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[12-Mar-2021 11:43:45 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[12-Mar-2021 11:43:45 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[12-Mar-2021 11:43:45 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[12-Mar-2021 11:43:45 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[12-Mar-2021 11:43:46 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[12-Mar-2021 11:43:46 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[12-Mar-2021 11:43:46 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[12-Mar-2021 11:43:46 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[12-Mar-2021 11:43:46 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[12-Mar-2021 11:43:46 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[12-Mar-2021 11:43:46 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[12-Mar-2021 11:43:46 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[12-Mar-2021 11:43:47 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[12-Mar-2021 11:43:47 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[12-Mar-2021 11:43:47 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[12-Mar-2021 11:43:47 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[12-Mar-2021 11:43:47 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[12-Mar-2021 11:43:47 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[12-Mar-2021 11:43:47 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[12-Mar-2021 11:43:47 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[12-Mar-2021 11:43:47 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[12-Mar-2021 11:43:47 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[12-Mar-2021 11:43:47 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[12-Mar-2021 11:43:47 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[12-Mar-2021 11:43:48 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[12-Mar-2021 11:43:48 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[12-Mar-2021 11:43:48 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[12-Mar-2021 11:43:48 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[12-Mar-2021 11:43:48 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[12-Mar-2021 11:43:48 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[12-Mar-2021 11:43:48 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[12-Mar-2021 11:43:48 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[12-Mar-2021 11:43:48 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[12-Mar-2021 11:43:48 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[12-Mar-2021 11:43:50 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[12-Mar-2021 11:43:50 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[12-Mar-2021 11:43:52 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[12-Mar-2021 11:43:52 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[12-Mar-2021 11:43:52 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[12-Mar-2021 11:43:52 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[12-Mar-2021 11:43:53 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[12-Mar-2021 11:43:53 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[20-Mar-2021 13:33:02 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[20-Mar-2021 13:33:02 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[20-Mar-2021 13:33:02 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[20-Mar-2021 13:33:02 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[20-Mar-2021 13:33:02 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[20-Mar-2021 13:33:02 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[20-Mar-2021 13:33:02 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[20-Mar-2021 13:33:02 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[20-Mar-2021 13:33:02 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[20-Mar-2021 13:33:02 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[20-Mar-2021 13:33:02 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[20-Mar-2021 13:33:02 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[20-Mar-2021 13:33:02 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[20-Mar-2021 13:33:02 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[20-Mar-2021 13:33:02 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[20-Mar-2021 13:33:02 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[20-Mar-2021 13:33:08 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[20-Mar-2021 13:33:08 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[20-Mar-2021 13:33:09 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[20-Mar-2021 13:33:09 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[20-Mar-2021 13:33:22 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[20-Mar-2021 13:33:22 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19
+[20-Mar-2021 13:33:23 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 10
+[20-Mar-2021 13:33:23 Asia/Seoul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/get_cards/fetch_search.php on line 19

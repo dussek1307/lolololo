@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set('Asia/Seoul');
     include_once "../dbh.php";
     $eee = "this";
     if(!empty($_GET['q'])) {
@@ -12,7 +13,7 @@
             }
         }
 
-        $sql_post = "SELECT * FROM posts WHERE ".$user_query." title LIKE '%$q%'";
+        $sql_post = "SELECT * FROM posts WHERE ".$user_query." title LIKE '%$q%' ORDER BY upload_date DESC";
         $result_post = mysqli_query($conn, $sql_post);
         $count = 0;
         if(mysqli_num_rows($result_post) > 0) {
@@ -25,6 +26,8 @@
             $owner = "명의: 1대 본주";
             if($row['owner'] == "second") $owner = "명의: 2대 본주";
             if($row['owner'] == "third") $owner = "명의: 3대 본주";
+            
+            $time_ago = time_elapsed_string($row['upload_date']);
 
             switch($row['soloRank']) {
                 case "unranked":
@@ -200,6 +203,7 @@
                             <div>
                                 <button type='button' class='my-btn btn btn-medium btn-main'><span>더 보기</span></button>
                             </div>
+                            <div style='font-size: 13px; color: #606060'>".$time_ago."</div>
                         </div>
                     </div>
                     <div class='teacher-card-information' style='margin-left: 45px;'>
@@ -240,7 +244,7 @@
                         <div class='teacher-card-video'>
                             <div class='iframe-video'>
                                 
-                                    <img class='post-image' src='./resources/img/post-main/post_".$row['post_id'].".png' alt='poster'>
+                                    <img class='post-image' src='./resources/img/post-main/".$row['img']."' alt='티어'>
             
                             </div>
                         </div>
@@ -259,4 +263,33 @@
             }
         }
     }    
+    
+    function time_elapsed_string($datetime, $full = false) {
+                $now = new DateTime;
+                $ago = new DateTime($datetime);
+                $diff = $now->diff($ago);
+            
+                $diff->w = floor($diff->d / 7);
+                $diff->d -= $diff->w * 7;
+            
+                $string = array(
+                    'y' => '년',
+                    'm' => '개월',
+                    'w' => '주',
+                    'd' => '일',
+                    'h' => '시간',
+                    'i' => '분',
+                    's' => '초',
+                );
+                foreach ($string as $k => &$v) {
+                    if ($diff->$k) {
+                        $v = $diff->$k . ' ' . $v . ($diff->$k > 1 ? '' : '');
+                    } else {
+                        unset($string[$k]);
+                    }
+                }
+            
+                if (!$full) $string = array_slice($string, 0, 1);
+                return $string ? implode(', ', $string) . ' 전' : '방금 전';
+            }
 ?>

@@ -17,6 +17,43 @@
         if($rows['owner'] == "second") $owner = "명의: 2대 본주";
         if($rows['owner'] == "third") $owner = "명의: 3대 본주";
 
+        $price = number_format($rows['price']);
+        $tel = $rows['tel'];
+        $meansOfTrade = "계좌거래";
+        
+        if(isset($rows['meansOfTrade1'])) {
+            
+            if($rows['meansOfTrade1'] == "pay") {
+                $meansOfTrade = "계좌거래";
+            } else if($rows['meansOfTrade1'] == "direct") {
+                $meansOfTrade = "직거래";
+            } else if($rows['meansOfTrade1'] == "safe") {
+                $meansOfTrade = "안전거래";
+            }
+            
+            if(isset($rows['meansOfTrade2'])) {
+                if($rows['meansOfTrade2'] == "pay") {
+                $meansOfTrade .= ", 계좌거래";
+                } else if($rows['meansOfTrade2'] == "direct") {
+                    $meansOfTrade .= ", 직거래";
+                } else if($rows['meansOfTrade2'] == "safe") {
+                    $meansOfTrade .= ", 안전거래";
+                }
+            }
+            
+            if(isset($rows['meansOfTrade3'])) {
+                if($rows['meansOfTrade3'] == "pay") {
+                $meansOfTrade .= ", 계좌거래";
+                } else if($rows['meansOfTrade3'] == "direct") {
+                    $meansOfTrade .= ", 직거래";
+                } else if($rows['meansOfTrade3'] == "safe") {
+                    $meansOfTrade .= ", 안전거래";
+                }
+            
+            }
+            
+        }
+
         switch($rows['serverLocation']) {
             case "KR":
                 $serverLocation = "한국";
@@ -445,6 +482,63 @@
                 <div class='TextOverflow'>".$rows['intro']."</div>
         </div>
     </div>
+    <div class='mobile-account-info'>
+                  <div class='teacher-book' style='width: 100%; margin-bottom: 20px'>
+                  <div class='bookCards'>
+                      <div class='bookCard-box'>
+                          <div class='bookCard'>
+                              <div class='bookCard-left'>
+                                  <div class='bookCard-title'><span>가격</span></div><span class='tooltip-container-box' gap='5'><span class='tooltip-container' placement='bottom'><span class='tooltip-reference'></span></span>
+                                  </span>
+                              </div>
+                              <div class='bookCard-right'>
+                                  <div class='bookCard-priceNew'><span>".$price."</span></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class='bookCard-hr'></div>
+                      <div class='bookCard-box'>
+                          <div class='bookCard'>
+                              <div class='bookCard-left'>
+                                  <div class='bookCard-title'><span>거래방식</span></div><span class='tooltip-container-box' gap='5'><span class='tooltip-container' placement='bottom'></span>
+                                  </span>
+                              </div>
+                              <div class='bookCard-right'>
+                                  <div class='bookCard-priceNew'><span>".$meansOfTrade."</span></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class='bookCard-hr'></div>
+                      <div class='bookCard-box'>
+                      <div class='bookCard'>
+                          <div class='bookCard-left'>
+                              <div class='bookCard-title'><span>연락처</span></div>
+                          </div>
+                          <div class='bookCard-right'>
+                              <div class='bookCard-priceNew'><span>".$tel."</span></div>
+                          </div>
+                          <div class='bookCard-price-from'><span>카톡거래 유도시 사기일 가능성이 높습니다</span></div>
+                          
+                      </div>
+                  </div>
+                      <div class='bookCard-hr'></div>
+                      <div class='teacher-contact'>
+                          <button type='button' class='teacher-right-booknow btn btn-standard btn-main btn-gradient'><span>구매하기</span></button>
+                      </div>
+                      <div class='teacher-contact'>
+                          <a href='../cs.php'><button type='button' class='btn btn-standard btn-ghost-default'>
+                          <div class='teacher-contact-btn-info'>
+                              <svg width='24' height='24' viewBox='0 0 24 24' fill='none'>
+                                  <title></title>
+                                  <rect width='24' height='24' fill='white'></rect>
+                                  <path fill-rule='evenodd' clip-rule='evenodd' d='M18 3.11111H6C5.44772 3.11111 5 3.60857 5 4.22222V19.7778C5 20.3914 5.44772 20.8889 6 20.8889H18C18.5523 20.8889 19 20.3914 19 19.7778V4.22222C19 3.60857 18.5523 3.11111 18 3.11111ZM6 2C4.89543 2 4 2.99492 4 4.22222V19.7778C4 21.0051 4.89543 22 6 22H18C19.1046 22 20 21.0051 20 19.7778V4.22222C20 2.99492 19.1046 2 18 2H6Z' fill='#333333'></path>
+                                  <path fill-rule='evenodd' clip-rule='evenodd' d='M7 14.5C7 14.2239 7.22386 14 7.5 14H13.5C13.7761 14 14 14.2239 14 14.5C14 14.7761 13.7761 15 13.5 15H7.5C7.22386 15 7 14.7761 7 14.5ZM7 17.5C7 17.2239 7.22386 17 7.5 17H12.5C12.7761 17 13 17.2239 13 17.5C13 17.7761 12.7761 18 12.5 18H7.5C7.22386 18 7 17.7761 7 17.5Z' fill='#333333'></path>
+                              </svg><span>리그오브레전드: 구매 팁</span></div>
+                      </button></a>
+                      </div>
+                  </div>
+                  </div>
+                  </div>
 <div id='teacher_profile_nav_statistics' class='StatisticsCard StatisticsCard-desktop'>
     <div class='teacherCard-box' id='StatisticsCard'>
         <div class='teacherCard-bar'>
@@ -767,7 +861,7 @@
                         </span>
                     </div>
                     <div class='bookCard-right'>
-                        <div class='bookCard-priceNew'><span>".$rows['price']."</span></div>
+                        <div class='bookCard-priceNew'><span>".$price."</span></div>
                     </div>
                 </div>
             </div>
@@ -779,7 +873,7 @@
                         </span>
                     </div>
                     <div class='bookCard-right'>
-                        <div class='bookCard-priceNew'><span>계좌, 직거래</span></div>
+                        <div class='bookCard-priceNew'><span>".$meansOfTrade."</span></div>
                     </div>
                 </div>
             </div>
@@ -790,7 +884,7 @@
                 <div class='bookCard-title'><span>연락처</span></div>
             </div>
             <div class='bookCard-right'>
-                <div class='bookCard-priceNew'><span>010-5665-8165</span></div>
+                <div class='bookCard-priceNew'><span>".$tel."</span></div>
             </div>
             <div class='bookCard-price-from'><span>카톡거래 유도시 사기일 가능성이 높습니다</span></div>
             

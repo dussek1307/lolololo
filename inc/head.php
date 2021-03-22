@@ -6,7 +6,15 @@
 <!DOCTYPE html>
 <html lang="ko" kp-country="kr" class="windows desktop landscape">
 <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VC2FVK808K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-VC2FVK808K');
+</script>
 	<meta name="description" content="리그오브레전드 계정거래 사이트. 롤 계정 구매 판매, 롤 닉네임 거래, 롤 아이디 거래 | 게임 계정거래 사이트 업카운트" />
 	<meta name="keywords" content="업카운트, 롤 계정, 롤 아이디, 롤 닉네임, 아이디판매 사이트, 계정 판매, 계정 거래, 리그오브레전드 계정, 롤 대리, 리그오브레전드 판매, 롤 계정 판매 구매, 롤 다이아, 롤 마스터, 롤 챌린저" />
 

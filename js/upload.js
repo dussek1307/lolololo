@@ -67,6 +67,8 @@ $('#price').on("keyup", function (event) {
     });
 
 });
+
+
 // phone number input
 function inputPhoneNumber(obj) {
 

@@ -4,7 +4,15 @@
 <!DOCTYPE html>
 <html lang="ko" kp-country="kr">
 <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VC2FVK808K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-VC2FVK808K');
+</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <meta http-equiv='X-UA-Compatible' content='IE=Edge'>
@@ -73,7 +81,7 @@
                 <div class="about-section-box about-italki"><img class="italki-head-desc-img" src="./resources/img/about/upccount-img.jpg" alt="whoweare">
                     <div class="introduction-wrap">
                         <h4 class="about-title"><span>업카운트</span></h4>
-                        <p class="about-description-text"><span>업카운트는 리그오브레전드 계정거래 사이트로 판매자와 계정정보를 올리고 구매자가 직접적으로 판매자와 는데 역할을 합니다. 계정구매시 우려되는 사항을 최대한 없애려고 항상 노력하는 업카운트 입니다. 감사합니다.</span></p>
+                        <p class="about-description-text"><span>업카운트는 리그오브레전드 계정거래 사이트로 판매자가 계정정보를 올리고 구매자가 직접적으로 판매자와 연결하는 역할을 합니다. 계정구매 시 우려되는 사항을 최대한 없애려고 항상 노력하는 업카운트 입니다. 감사합니다.</span></p>
                     </div>
                 </div>
                 <div class="about-section-box about-news">

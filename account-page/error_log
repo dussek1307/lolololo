@@ -7,3 +7,88 @@
 [10-Feb-2021 00:29:22 Asia/Seoul] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 10
 [10-Feb-2021 19:21:07 Asia/Seoul] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/drmingtch/lolupccount.com/account-page/uploading.php:111) in /home/drmingtch/lolupccount.com/account-page/uploading.php on line 112
 [10-Feb-2021 19:21:29 Asia/Seoul] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/drmingtch/lolupccount.com/account-page/uploading.php:111) in /home/drmingtch/lolupccount.com/account-page/uploading.php on line 112
+[14-Feb-2021 12:16:15 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 27
+[14-Feb-2021 12:16:32 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 27
+[23-Feb-2021 02:03:41 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/drmingtch/lolupccount.com/inc/dbh.php on line 7
+[23-Feb-2021 02:03:41 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/drmingtch/lolupccount.com/inc/dbh.php on line 8
+[23-Feb-2021 18:36:33 Asia/Seoul] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/drmingtch/lolupccount.com/account-page/uploading.php:111) in /home/drmingtch/lolupccount.com/account-page/uploading.php on line 112
+[23-Feb-2021 18:36:40 Asia/Seoul] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/drmingtch/lolupccount.com/account-page/uploading.php:111) in /home/drmingtch/lolupccount.com/account-page/uploading.php on line 112
+[23-Feb-2021 18:36:43 Asia/Seoul] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/drmingtch/lolupccount.com/account-page/uploading.php:111) in /home/drmingtch/lolupccount.com/account-page/uploading.php on line 112
+[27-Feb-2021 19:20:48 Asia/Seoul] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/drmingtch/lolupccount.com/account-page/uploading.php:111) in /home/drmingtch/lolupccount.com/account-page/uploading.php on line 112
+[27-Feb-2021 19:20:59 Asia/Seoul] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/drmingtch/lolupccount.com/account-page/uploading.php:111) in /home/drmingtch/lolupccount.com/account-page/uploading.php on line 112
+[05-Mar-2021 20:07:23 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[06-Mar-2021 15:20:00 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[06-Mar-2021 16:21:48 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[06-Mar-2021 16:24:41 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[06-Mar-2021 16:37:27 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[06-Mar-2021 17:24:15 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[06-Mar-2021 18:54:37 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[06-Mar-2021 23:56:00 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[07-Mar-2021 01:57:58 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[07-Mar-2021 03:25:13 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[07-Mar-2021 03:41:00 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[07-Mar-2021 10:17:19 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[07-Mar-2021 12:57:20 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[07-Mar-2021 12:57:35 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[07-Mar-2021 15:30:41 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[07-Mar-2021 19:22:55 Asia/Seoul] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/drmingtch/lolupccount.com/account-page/uploading.php:111) in /home/drmingtch/lolupccount.com/account-page/uploading.php on line 112
+[07-Mar-2021 21:13:01 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[08-Mar-2021 04:00:57 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[08-Mar-2021 11:52:42 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[08-Mar-2021 16:35:34 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[08-Mar-2021 17:01:44 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[08-Mar-2021 18:01:40 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[08-Mar-2021 19:29:29 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[08-Mar-2021 21:45:26 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[09-Mar-2021 10:43:52 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[09-Mar-2021 13:26:43 Asia/Seoul] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/drmingtch/lolupccount.com/account-page/uploading.php:111) in /home/drmingtch/lolupccount.com/account-page/uploading.php on line 112
+[09-Mar-2021 15:53:10 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[09-Mar-2021 16:53:25 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[09-Mar-2021 19:20:44 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[09-Mar-2021 20:22:33 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[10-Mar-2021 00:27:54 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[10-Mar-2021 02:45:13 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[10-Mar-2021 02:55:08 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[10-Mar-2021 03:54:45 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[10-Mar-2021 14:57:57 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[10-Mar-2021 21:09:46 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[11-Mar-2021 13:19:17 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[11-Mar-2021 13:19:23 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[11-Mar-2021 13:19:59 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[11-Mar-2021 13:21:44 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[11-Mar-2021 18:12:43 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[11-Mar-2021 19:19:53 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[12-Mar-2021 12:21:30 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[12-Mar-2021 09:03:49 UTC] PHP Parse error:  syntax error, unexpected 'mobile' (T_STRING), expecting ',' or ';' in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 479
+[12-Mar-2021 09:03:54 UTC] PHP Parse error:  syntax error, unexpected 'mobile' (T_STRING), expecting ',' or ';' in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 479
+[12-Mar-2021 19:21:37 Asia/Seoul] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/drmingtch/lolupccount.com/account-page/uploading.php:111) in /home/drmingtch/lolupccount.com/account-page/uploading.php on line 112
+[12-Mar-2021 19:21:48 Asia/Seoul] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/drmingtch/lolupccount.com/account-page/uploading.php:111) in /home/drmingtch/lolupccount.com/account-page/uploading.php on line 112
+[13-Mar-2021 09:18:30 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[13-Mar-2021 09:31:15 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[13-Mar-2021 09:52:43 Asia/Seoul] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/drmingtch/lolupccount.com/account-page/uploading.php:111) in /home/drmingtch/lolupccount.com/account-page/uploading.php on line 112
+[13-Mar-2021 09:52:58 Asia/Seoul] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/drmingtch/lolupccount.com/account-page/uploading.php:111) in /home/drmingtch/lolupccount.com/account-page/uploading.php on line 112
+[13-Mar-2021 12:07:37 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[13-Mar-2021 22:21:10 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[13-Mar-2021 22:22:41 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[13-Mar-2021 22:23:24 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[13-Mar-2021 22:25:00 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[13-Mar-2021 22:26:54 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[13-Mar-2021 22:26:58 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[13-Mar-2021 22:28:02 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[13-Mar-2021 22:28:35 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[13-Mar-2021 22:30:29 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[13-Mar-2021 22:36:04 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[14-Mar-2021 22:19:31 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[14-Mar-2021 23:14:05 Asia/Seoul] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/drmingtch/lolupccount.com/account-page/uploading.php:111) in /home/drmingtch/lolupccount.com/account-page/uploading.php on line 112
+[15-Mar-2021 17:37:58 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[16-Mar-2021 22:28:36 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[18-Mar-2021 11:50:21 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[18-Mar-2021 21:18:56 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[18-Mar-2021 21:19:36 Asia/Seoul] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/post_header.php on line 30
+[18-Mar-2021 21:19:36 Asia/Seoul] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 10
+[18-Mar-2021 21:38:58 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[18-Mar-2021 21:40:56 Asia/Seoul] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/inc/post_header.php on line 30
+[18-Mar-2021 21:40:56 Asia/Seoul] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 10
+[18-Mar-2021 22:09:24 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[19-Mar-2021 05:18:14 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20
+[22-Mar-2021 08:31:31 Asia/Seoul] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/drmingtch/lolupccount.com/account-page/post_page_code.php on line 20

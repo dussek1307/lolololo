@@ -5,6 +5,7 @@ date_default_timezone_set('Asia/Seoul');
 
 if(isset($_POST['submit'])) {
     $summonerName = $_POST['summonerName'];
+    $upload_date = date('Y-m-d H:i:s');
     $post_id = $_POST['post_id'];
 
     if(isset($_POST['isPrivate'])) {
@@ -55,7 +56,7 @@ if(isset($_POST['submit'])) {
     blueEssence = '$blueEssence', season9 = '$season9', season10 = '$season10', serverLocation = '$serverLocation', mostPlayed1 = '$mostPlayed1',
     mostPlayed2 = '$mostPlayed2', mostPlayed3 = '$mostPlayed3', numOfPlayed1 = '$numOfPlayed1', numOfPlayed2 = '$numOfPlayed2', numOfPlayed3 = '$numOfPlayed3',
     meansOfTrade1 = '$meansOfTrade1', meansOfTrade2 = '$meansOfTrade2', meansOfTrade3 = '$meansOfTrade3', title = '$title', tel = '$tel', price = '$price', 
-    intro = '$intro', user_id = '$user_id'
+    intro = '$intro', user_id = '$user_id' 
     WHERE post_id = '$post_id'";
     mysqli_query($conn, $sql);
 

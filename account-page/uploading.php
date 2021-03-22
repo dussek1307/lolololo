@@ -108,8 +108,7 @@ if(isset($_POST['submit'])) {
             echo "사진을 올리는데 문제가 있습니다";
         }
     } else {
-        echo "jpg, png를 이용해주세요. 올린확장자: ".end($fileExt).".";
-        header("Location: ../?upload=success");
+        header("Location: ../upload.php?success");
     }
 
 }

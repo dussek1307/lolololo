@@ -4,6 +4,15 @@
 <!DOCTYPE html>
 <html lang="ko" kp-country="kr" class="windows desktop landscape">
 <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VC2FVK808K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VC2FVK808K');
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <title>업카운트 고객센터 | 롤 계정거래</title>
@@ -71,12 +80,12 @@
                         <div class="MainReferral desktop">
     <div class="MainReferral-header">
         <h2 class="MainReferral-title"><span>고객센터</span></h2>
-        <h6 class="MainReferral-header-sub-title"><span>고객센터는 이메일이나 카카오톡을 통해 운영됩니다.<br>고객센터는 평일 09:00 ~ 24:00 운영됩니다.</span></h6>
+        <h6 class="MainReferral-header-sub-title"><span>고객센터와 광고문의는 이메일을 통해 운영됩니다.<br>고객센터는 평일 09:00 ~ 24:00 운영됩니다.</span></h6>
     </div>
     <div class="MainReferral-actions">
         <div class='sns-section'>
-            <button type="button" class="MainReferral-action-btn btn btn-standard btn-default"><img src="./resources/img/mail.svg" height="24" alt="gmail"><span style='text-transform: lowercase;'>upccount@gmail.com</span></button>
-            <button type="button" class="MainReferral-action-btn btn btn-standard btn-default"><img src="./resources/img/kakao.svg" height="24" alt="messenger"><span style='color: black; text-transform: lowercase;'>upccount</span></button>
+            <button type="button" class="MainReferral-action-btn btn btn-standard btn-default"><img src="./resources/img/mail.svg" height="24" alt="gmail"><span style='text-transform: lowercase;'>ttrrsdd1688@gmail.com</span></button>
+            <button type="button" class="MainReferral-action-btn btn btn-standard btn-default"><img src="./resources/img/kakao.svg" height="24" alt="messenger"><span style='color: black; text-transform: lowercase;'>준비중</span></button>
         </div>  
     </div>
     <div class="MainReferral-how-does-it-work">
